@@ -1,0 +1,23 @@
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+h2{  
+    text-align: center;  
+}  
+table{  
+    border-collapse:collapse;  
+    text-align: center;  
+    margin: 0 auto;  
+} 
+.shjg{
+    padding-left: 10rem;
+    width: 30%;
+    float: left;
+}
+.file{
+    padding-right: 10rem;
+    width: 45rem;
+    float: right;
+
+}

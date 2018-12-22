@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>教学院长-课题发布</title>
+	<link rel="stylesheet" href="../">
+        <link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="__ROOT__/static/css/nav.css"> 
+        <script type="text/javascript" src="__ROOT__/static/js/jquery.min.js"> </script>
+</head>
+<body>
+<!--<div class="maofu" >-->
+	<table class="table panel-info bshadow" >
+		<thead>
+                    <tr><th colspan="10">点击相对应的数字即可查看相应的信息</th></tr>
+			<tr class="success">
+				<th>序号</th>
+				<th>班级</th>	
+				<th>班级总人数</th>
+				<th>已提交人数</th>
+				<th>未提交人数</th>				
+				<th>优秀</th>
+				<th>良好</th>
+				<th>中等</th>
+				<th>及格</th>
+                                <th>不及格</th>
+			</tr>
+		</thead>
+		<tbody>
+                <volist name="list" id="vo">
+			<tr>
+				<td>{$i}</td>
+				<td>{$vo.dep_name}</td>
+				<td>{$vo.renshu}</td>
+				<td>{$vo.tijiao}</td>
+				<td><a href="__ROOT__/Dean/Inspection/Unfinished/dep/{$vo.dep_id}">{$vo.kong}</a></td>
+				<td><a href="__ROOT__/Dean/Inspection/Excellent/dep/{$vo.dep_id}/option/1">{$vo.you}</a></td>
+				<td><a href="__ROOT__/Dean/Inspection/Excellent/dep/{$vo.dep_id}/option/2">{$vo.lang}</a></td>
+				<td><a href="__ROOT__/Dean/Inspection/Excellent/dep/{$vo.dep_id}/option/3">{$vo.zhong}</a></td>	
+				<td><a href="__ROOT__/Dean/Inspection/Excellent/dep/{$vo.dep_id}/option/4">{$vo.jige}</a></td>
+				<td><a href="__ROOT__/Dean/Inspection/Excellent/dep/{$vo.dep_id}/option/5">{$vo.bujige}</a></td>
+				
+			</tr>
+                </volist>
+                
+		</tbody>
+	</table>
+
+<!--</div>-->
+</body>
+</html>

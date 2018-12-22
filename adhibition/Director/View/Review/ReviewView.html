@@ -1,0 +1,42 @@
+<!DOCTYPE html>  
+<html>  
+    <head>  
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">  
+        <link rel="stylesheet" href="__ROOT__/static/css/nav.css"> 
+        <script src="__ROOT__/static/js/jquery.min.js"></script>
+        <script src="__ROOT__/static/js/bootstrap.min.js"></script> 
+        <title>教师选择学生</title>
+    </head>
+    <body>
+        <table class="table panel-info" >
+            <thead>
+                <tr class="success">
+                    <th>序号</th>
+                    <th>选题学生</th>
+                    <th>指导老师</th>
+                    <th>评阅老师</th>
+                    <th>课题名称</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+            <volist name="list" id="vo" >
+                <tr>
+                    <td>{$i}</td>
+                    <td>{$vo.stu_name}【{$vo.stu_number}】</td>
+                    <td>{$vo.tea_name}【{$vo.tea_number}】</td>
+                    <td>{$vo.review_tea_name}【{$vo.review_tea_number}】</td>
+                    <td class="twidth">
+                        <div class="ttext" >{$vo.name}</div>
+                    </td>
+                    <td><a href="__CONTROLLER__/DeleteReview/stu/{$vo.stu_number}" onclick="return confirm('确定移除“{$vo.stu_name}”吗？')">移除</a></td>
+                </tr>
+            </volist>
+
+        </tbody>
+        <tfoot><tr><td colspan="6">{$page}</td></tr></tfoot>
+    </table>
+</body>
+</html>

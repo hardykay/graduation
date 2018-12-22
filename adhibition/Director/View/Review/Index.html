@@ -1,0 +1,47 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="__ROOT__/static/css/nav.css"> 
+    <script src="__ROOT__/static/js/jquery.min.js"></script>
+    <script src="__ROOT__/static/js/bootstrap.min.js"></script> 
+    <title>专业毕业设计负责人审核任务书</title>
+</head>
+<body>
+<!--<form action="">
+<div class="maofu" >-->
+<a href="{:U('RandomAllotReview/Index')}" style="display: block;text-align: center;font-weight: 900;margin-bottom: 30px;margin-top: 20px;"  target="right" >一键分配评阅老师</a>
+	
+	<table class="table panel-info bshadow" >
+		<thead>
+			<tr class="success">
+                            <td>编号</td>
+				<th>专业名称</th>
+				<th>专业总人数</th>
+				<th>已分配总人数</th>
+				<th>未分配总人数</th>
+				<th>分配评阅老师</th>
+<!--				<th>按教师分配</th>-->
+			</tr>
+		</thead>
+		<tbody>	
+                <volist name="list" id="vo">
+			<tr>
+                            <td>{$i}</td>
+				<td>{$vo.name}</td>
+                                <td>{$vo.zz}</td>
+				<td><a href="__CONTROLLER__/ReviewView/dep/{$vo.dep}" title="点击进入查看已分配的学生">{$vo.fz}</a></td>
+				<td>{$vo.wei}</td>
+				<td><a href="__ROOT__/Director/Review/Teacher/dep/{$vo.dep}">进入</a></td>
+<!--				<td><a href="__ROOT__/Director/Review/Affirm/dep/{$vo.dep}">进入</a></td>-->
+			</tr>
+                </volist>
+		</tbody>
+                
+	</table>
+<!--</div>
+</form>-->
+</body>
+</html>

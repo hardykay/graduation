@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>审核课题-详细</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <style>
+        h2{
+            text-align: center;
+        }
+        td{
+            border:1px solid #000;
+            padding: 10px;
+        }
+        tr{
+            border:1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <h2>大学生毕业设计课题申请表</h2>  
+    <table cellspacing="0px">  
+        <tbody> 
+            <tr>  
+                <td  width="140" height="50" align="center">课题名称</td>  
+                <td width="500">{$topic.name}</td>  
+            </tr>   
+            <tr>  
+                <td height="40" align="center">结合科研</td>  
+                <td >{$topic.seientific}</td>
+            </tr> 
+            <tr>  
+                <td height="40 align="center"">结合生产实践和社会实际</td>  
+                <td >{$topic.practice}</td>
+            </tr>
+            <tr>  
+                <td height="40" align="center">题目类型</td>  
+                <td > {$topic.genre}</td>
+            </tr>
+            <tr>  
+                <td height="65" align="center">主要研究内容及要求</td>
+                <td width="470">{$topic.content|htmlspecialchars_decode}</td> 
+            </tr>  
+            <tr>  
+                <td height="70" rowspan="1" align="center">指导教师</td>
+                <td  height="40">{$topic.tea_name}（{$topic.tea_number}）<br></td>
+            </tr>  
+            
+            <tr>  
+                <td height="70" rowspan="1" align="center">选课适合的专业</td>
+        
+                <td   height="40"> 
+        <volist name="zhuanye" id="vo">
+                    {$vo.dep_name} <br> 
+        </volist>   
+                </td>
+            </tr>
+            <tr>  
+                <td height="60" align="center">附件</td>  
+                <td >
+                    <div style="width: 200px;margin: 0 auto;">
+                        {$topic.url}
+                    </div>
+                </td> 
+            </tr>  
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,12 @@
+[ 2018-06-04T05:00:55+08:00 ] ::1 /graduation/Student/Finalize/Index.html
+ERR: 1054:Unknown column 'rele' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `tp_topic_f` WHERE ( rele=2 and top_id=1 ) LIMIT 1  
+
+[ 2018-06-04T05:00:58+08:00 ] ::1 /graduation/Student/Finalize/Index.html
+ERR: 1054:Unknown column 'rele' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `tp_topic_f` WHERE ( rele=2 and top_id=1 ) LIMIT 1  
+
+[ 2018-06-04T05:00:59+08:00 ] ::1 /graduation/Student/Finalize/Index.html
+ERR: 1054:Unknown column 'rele' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `tp_topic_f` WHERE ( rele=2 and top_id=1 ) LIMIT 1  
+

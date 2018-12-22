@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>教学院长-课题发布</title>
+	<link rel="stylesheet" href="../">
+        <link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="__ROOT__/static/css/nav.css"> 
+        <script type="text/javascript" src="__ROOT__/static/js/jquery.min.js"> </script>
+</head>
+<body>
+<!--<div class="maofu" >-->
+	<table class="table panel-info bshadow" >
+		<thead>
+                    <tr>
+                        <th colspan="5">
+                            {$zy.zy|base64_decode}/{$zy.bj|base64_decode}
+                        </th>
+                    </tr>
+			<tr class="success">
+				<th>序号</th>
+				<th>学号</th>
+                <th>姓名</th>
+                <th>密码操作</th>
+                <th>删除操作</th>
+			</tr>
+		</thead>
+		<tbody>
+                <volist name="list" id="vo">
+			<tr>
+				<td>{$i}</td>
+				<td>{$vo.stu_number}</td>
+				<td>{$vo.name}</td>
+<!--                                <td>{$vo.xs}</td>
+				<td><a href="__ROOT__/Manager/Student/Student/dep/{$vo.dep_id}/zy/{$zy}/bj/{$vo.dep_name}">进入</a></td>-->
+				<td><a href="__MODULE__/Initialize/student/number/{$vo.stu_number}" onclick="return confirm('重置后，密码与账号相同！')">密码重置</a></td>
+				<td><a href="__MODULE__/Initialize/delstudent/number/{$vo.stu_number}" onclick="return confirm('确认删除“{$vo.name}”账号吗？')">删除</a></td>
+			</tr>
+                </volist>
+		</tbody>
+                <tfoot>
+			<tr class="active">
+				<td colspan="9">
+					<div class="left">
+						<i class="i"></i>
+						<input type="button" value="返回" class="btn btn-success" onclick="window.history.go(-1)">
+					</div>
+					{$page}
+				</td>
+			</tr>
+		</tfoot>
+	</table>
+
+<!--</div>-->
+</body>
+</html>

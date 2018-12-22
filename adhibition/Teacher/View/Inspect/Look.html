@@ -1,0 +1,48 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">  
+<link rel="stylesheet" href="__ROOT__/static/css/nav.css"> 
+<script src="__ROOT__/static/js/jquery.min.js"></script>
+<script src="__ROOT__/static/js/bootstrap.min.js"></script> 
+</head>
+
+<body>
+    
+    <div class="container">
+<div class="panel panel-success">
+    <div class="panel-heading">
+        <h3 class="panel-title">查看开题报告</h3>
+    </div>
+    <div class="panel-body">
+        
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <label class="col-sm-4 control-label">学生</label>
+              <div class="col-sm-8">
+                <p class="form-control-static">{$li.sname}[{$li.stu_number}]</p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-4 control-label">专业</label>
+              <div class="col-sm-8">
+                <p class="form-control-static">{$li.dep}</p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-4 control-label">附件</label>
+              <div class="col-sm-8">
+                <p class="form-control-static"><empty name="li.url"> 无<else/><a href="__ROOT__{$li.url}">附件下载</a></empty></p>
+              </div>
+            </div>
+        </form>
+    </div>
+</div>
+        <h3 style="text-align: center">周期进展报告</h3>
+        <div class="panel panel-info"><h1> </h1>{$li.progress|htmlspecialchars_decode}<h1> </h1></div>
+
+    </div>    
+</body>
+</html>

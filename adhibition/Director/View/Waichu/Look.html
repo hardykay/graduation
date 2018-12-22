@@ -1,0 +1,128 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">  
+<link rel="stylesheet" href="__ROOT__/static/css/nav.css"> 
+<script src="__ROOT__/static/js/jquery.min.js"></script>
+<script src="__ROOT__/static/js/bootstrap.min.js"></script> 
+    <title>外出毕业设计学生申请</title>
+</head>
+<body>
+<br>
+<div class="container" >
+      <div class="col-sm-12" >
+        <table  class="table panel-info bshadow" border=""  align="center" cellpadding="5" cellspacing="0">
+            <thead align="center" >
+                <tr  align="left">
+                    <th colspan="5" >中国石油大学本科生毕业设计（论文）申请表</th>
+                </tr>
+            </thead>
+            <tbody align="center">
+                <tr >
+                    <td class="col-sm-2"><b>学生姓名</b></td>
+                    <td>{$s.name}</td>
+                    <td><b>学生学号</b></td>
+                    <td>{$s.stu_number}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><b>学院</b></td>
+                    <td>{$s.college}</td>
+                    <td><b>专业</b></td>
+                    <td>{$s.major}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><b>拟定题目名称</b></td>
+                    <td colspan="4">{$s.name}</td>
+                </tr>
+                <tr>
+                    <td colspan="5"><b>校外指导老师信息</b></td>
+                </tr>
+                <tr>
+                    <td><b>联系电话</b></td>
+                    <td>{$s.phone}</td>
+                    <td><b>电子邮箱</b></td>
+                    <td>{$s.email}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><b>校外指导单位</b></td>
+                    <td>{$s.external}</td>
+                    <td><b>单位地址</b></td>
+                    <td>{$s.address}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><b>姓名</b></td>
+                    <td><b>性别</b></td>
+                    <td><b>学历、学位</b></td>
+                    <td><b>技术职称</b></td>
+                    <td><b>研究方向</b></td>
+                </tr>
+                <tr>
+                    <td>{$s.w_name}</td>
+                    <td>{$s.w_sex}</td>
+                    <td>{$s.w_degree}</td>
+                    <td>{$s.w_zhicheng}</td>
+                    <td>{$s.w_direction}</td>
+                </tr>
+                <tr>
+                    <td><b>校内指导老师</b></td>
+                    <td colspan="4">
+                        <a href="__ROOT__/Home/Teacher/Look/tea/{$s.tea_number}">{$s.tea_name}[{$s.tea_number}]</a>(点击可查看校内指导老师信息)
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>申请理由</b></td>
+                    <td colspan="4" style="text-align: left">{$s.content|htmlspecialchars_decode}</td>
+                </tr>
+                <tr>
+                    <td><b>校外指导单位<br>的意见</b></td>
+                    <td colspan="4">{$s.content2|htmlspecialchars_decode}</td>
+                </tr>
+               
+                <tr>
+                    <td><b>附件</b></td>
+                    <td colspan="4"><empty name="s.url">无<else/><a href="__ROOT__{$s.url}">附件下载</a></empty></td>
+                </tr>
+                <tr>
+                    <td><b>校内指导老师<br>的意见</b></td>
+                    <td colspan="4" style="text-align: left">{$s.content3|htmlspecialchars_decode}</td>
+                </tr>
+                <tr>
+                    <td><b>系主任<br>的意见</b></td>
+                    <td colspan="4" style="text-align: left">{$s.content4|htmlspecialchars_decode}</td>
+                </tr>
+                <tr>
+                    <td><b>教学院长<br>审核的结果</b></td>
+                    <td colspan="4" >
+                         <if condition="($s.shenhe3 eq 1)">
+                            <b class="langse">同意</b>
+                        <elseif condition="$s.shenhe3 eq 2"/>
+                            <b class="huise">不同意</b>
+                        <else />
+                            <b class="red">未审核，或者您没刷新，请退出这个界面再刷新！</b>
+                        </if>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>教学院长<br>的意见</b></td>
+                    <td colspan="4" style="text-align: left">{$s.content5|htmlspecialchars_decode}</td>
+                </tr>
+            </tbody>
+            <tfoot >
+                <tr>
+                    <td colspan="5" align="center">
+                        <input type="button" class="btn btn-success" onclick="history.back()" value="返回">
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        当前状态：申请书已经提交，等待教学院长审核。
+    </div>
+ </div>
+</body>
+</html>

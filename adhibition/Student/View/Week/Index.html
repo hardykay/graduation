@@ -1,0 +1,46 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">  
+<link rel="stylesheet" href="__ROOT__/static/css/nav.css"> 
+<script src="__ROOT__/static/js/jquery.min.js"></script>
+<script src="__ROOT__/static/js/bootstrap.min.js"></script> 
+    
+	<title>周进展</title>
+	
+</head>
+<body>
+<br>
+
+	<table class="table panel-info" >
+                
+		<thead>
+                    <tr>
+                        <th colspan="7"><a href="{:U('Student/Week/Week')}" class="btn btn-info btn-sm">发起周进展报告</a><sub>(注意：如果没通过请重新提交 )</sub></th>
+                    </tr>
+			<tr class="success">
+				<th>编号</th>
+                                <th>标题</th>
+				<th>发布时间</th>
+				<th>审核状态</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>	
+                 <volist name="list" id="vo">
+			<tr>
+				<td>{$i}</td>
+				<td>{$vo.title}</td>
+				<td>{$vo.t}</td>
+                                <td><switch name="vo.audit" ><case value="0"><b style="color:#888">审核中</b></case><case value="1">已通过</case><case value="2">没通过</case></switch>
+				<td><a href="__ROOT__/Student/Week/Look/b/{$vo.bianhao}/e/1">查看</a></td>
+			</tr>
+                 </volist>
+		</tbody>
+                
+	</table>
+
+</body>
+</html>

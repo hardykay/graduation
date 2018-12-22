@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>审核课题-详细</title>
+        <link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="__ROOT__/static/css/nav.css">
+        <link rel="stylesheet" href="__ROOT__/static/css/7.2.style.css">
+        <script src="__ROOT__/static/js/bootstrap.min.js"></script>
+        
+        <meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="__ROOT__/static/Redactor/css/style.css" /> 	
+	<script type="text/javascript" src="__ROOT__/static/Redactor/lib/jquery-1.7.min.js"></script>	
+	<link rel="stylesheet" href="__ROOT__/static/Redactor/redactor/css/redactor.css" />
+	<script src="__ROOT__/static/Redactor/redactor/redactor.js"></script>
+	
+	<script type="text/javascript">
+	$(document).ready(
+		function()
+		{
+			 $('#redactor').redactor({
+                            fixed: true,
+                            lang: "zh_cn",
+                            wym: true,
+                            air: true,
+                        });
+		}
+	);
+	</script>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-xs-12 col-sm-1" ></div>
+            <div class="col-xs-12 col-sm-10" >
+                <h2>大学生毕业设计课题申请表</h2>  
+                <table border="1"  class="table panel-info" >  
+                    <thead>
+                        <tr>
+                            <th class="col-sm-2">名称</th>
+                            <th class="col-sm-10">内容</th>
+                        </tr>
+                    </thead>
+                    <tbody> 
+                        <tr>  
+                            <td width="140" height="50" align="center">课题名称</td>  
+                            <td width="470">{$topic.name}</td>  
+                        </tr>   
+                        <tr>  
+                            <td height="40">结合科研</td>  
+                            <td >{$topic.seientific}</td>
+                        </tr> 
+                        <tr>  
+                            <td height="40">结合生产实践和社会实际</td>  
+                            <td >{$topic.practice}</td>
+                        </tr>
+                        <tr>  
+                            <td height="40">题目类型</td>  
+                            <td > {$topic.genre}</td>
+                        </tr>
+                        <tr>  
+                            <td height="65" >主要研究内容及要求</td>
+                            <td width="470" style="text-align:left">{$topic.content|htmlspecialchars_decode}</td> 
+                        </tr>  
+                        <tr>  
+                            <td>指导教师</td>
+                            <td >{$topic.tea_name}（{$topic.tea_number}）<br></td>
+                        </tr>  
+                    <empty name="stu.stu_number">
+                        <else/>
+                        <tr>  
+                            <td>学生</td>
+                            <td ><b>专业：</b>{$stu.dep_name}<i class="i"></i><i class="i"></i><b>姓名：</b>{$stu.name} <i class="i"></i><i class="i"></i><b>学号：</b>{$stu.stu_number}</td>
+                        </tr>  
+                    </empty>
+                    <tr>  
+                        <td>选课适合的专业</td>
+
+                        <td> 
+                    <volist name="zhuanye" id="vo">
+                        {$vo.dep_name} <br> 
+                    </volist>   
+                    </td>
+                    </tr>
+                    <tr>  
+                        <td>附件</td>  
+                        <td >
+                    <empty name="topic.url">
+                        <b class="huise">无</b>
+                        <else/>
+                        <a href="__ROOT__/Home/Index/Download/url/{$topic.url|base64_encode}/name/{$topic.name|base64_encode}/tea/{$topic.tea_name|base64_encode}">附件下载</a>
+                    </empty>
+
+                    </td> 
+                    </tr>  
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-1" ></div>
+            <div class="col-xs-12 col-sm-10" >
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">审核课题</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form" action="{:U('Topic/ReviewProcess3')}" enctype="multipart/form-data" method="post">
+                            <input name="top" type="hidden" value="{$topic.top_id}">
+
+                            <switch name="topic.audit">
+                            <case value="0">
+                                <div class="form-group">
+                                    <label for="name">评语【<span class="red">可以为空</span>】</label>
+                                    <textarea class="form-control" rows="15" id="redactor" name="advice"></textarea>
+                                </div>
+                                <div style="clear:both;width: 100%;">
+                                    <div class="shjg">
+                                        <label class="red ">
+                                            审核结果：
+                                        </label>
+                                        <select name="audit" >
+                                            <option selected = "selected"  value="1" name="audit">通过</option>
+                                            <option value="2">未通过</option>
+                                        </select>
+                                    </div>
+                                    <div class="file" >
+                                        上传附件【<span class="red">可选</span>】
+                                        <input class="right" type="file" name="file">
+                                    </div>
+                                </div>
+                            </case>
+                            <case value="1">
+                                <input name="i" type="hidden" value="1">
+                                <div>
+                                    <label class="red ">
+                                        审核结果：
+                                    </label>
+                                    <select name="audit" >
+                                        <option selected = "selected"  value="1" name="audit">同意</option>
+                                        <option value="0">不同意</option>
+                                    </select>
+                                </div>
+                            </case>
+                            <default />该课题不能审核
+                            </switch>
+                            <h1>&nbsp;</h1>
+                            <div>
+                                <input type="button"  class="btn btn-success col-sm-offset-4 col-sm-1" onclick="window.history.go(-1)" value="返回" >
+                                <input type="submit" id="fat-btn" class="btn btn-success col-sm-offset-1  col-sm-1" value="提交" > 
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

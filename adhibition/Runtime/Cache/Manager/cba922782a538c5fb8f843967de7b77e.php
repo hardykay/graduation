@@ -1,0 +1,79 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>设置成绩比例</title>
+<link rel="stylesheet" href="/graduation/static/css/pintuer.css">
+<link rel="stylesheet" href="/graduation/static/css/admin.css">
+<script>
+   window.onload=function(){
+    document.getElementById("butn").onclick=function(){
+        var i1 = parseFloat(document.getElementById("grade").value);  
+        var i2 = parseFloat(document.getElementById("zdgrade").value);
+        var i3 = parseFloat(document.getElementById("pingyuegrade").value);
+        var i4 = parseFloat(document.getElementById("dabiangrade").value);
+        var val = i1+i2+i3+i4;
+        if(val == 100){
+             document.getElementById("form").submit();
+        }else{
+            alert('平时成绩、指导老师评分、评阅评分、答辩评分总值要等于100，且都为整数！'); 
+            //alert(parseInt(i1+i2+i3+i4));
+            
+        }
+    };
+   }
+</script>
+</head>
+<body>
+<div class="panel admin-panel">
+  <div class="panel-head"><strong><span class="icon-edit"></span>设置各个成绩比例（正整数）</strong></div>
+  <div class="body-content">
+      <form method="post" class="form-x" action="/graduation/Manager/Score/Index.html" id="form">
+      <div class="form-group">
+        <div class="label">
+          <label for="sitename">平时成绩占：</label>
+        </div>
+        <div class="field">
+            <input value="<?php echo ($vo["grade"]); ?>"  type="number" class="input w50" id="grade" name="grade" required min="0" max="100"/><span style="font-size: 30px">%</span>   
+        </div>
+      </div>      
+      <div class="form-group">
+        <div class="label">
+          <label for="sitename">指导老师评分占：</label>
+        </div>
+        <div class="field">
+          <input value="<?php echo ($vo["zdgrade"]); ?>"  type="number" class="input w50" name="zdgrade" id="zdgrade" required min="0" max="100"/><span style="font-size: 30px">%</span>   
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label">
+          <label for="sitename">评阅老师评分占：</label>
+        </div>
+        <div class="field">
+          <input value="<?php echo ($vo["pingyuegrade"]); ?>"  type="number" class="input w50" name="pingyuegrade" id="pingyuegrade" required min="0" max="100"/><span style="font-size: 30px">%</span>   
+        </div>
+      </div>
+        
+      <div class="form-group">
+        <div class="label">
+          <label for="sitename">答辩成绩占：</label>
+        </div>
+        <div class="field">
+            <input value="<?php echo ($vo["dabiangrade"]); ?>" type="number" class="input w50" name="dabiangrade" id="dabiangrade" required min="0" max="100"/><span style="font-size: 30px">%</span>   
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <div class="label">
+          <label></label>
+        </div>
+        <div class="field">
+            <button class="button bg-main icon-check-square-o" type="button" id="butn"> 提交</button>   
+        </div>
+      </div>      
+    </form>
+  </div>
+</div>
+</body></html>

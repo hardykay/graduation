@@ -1,0 +1,208 @@
+[ 2018-05-25T17:03:18+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT * FROM tp_student s INNER JOIN ( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  ) t ON t.stu_number=s.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:03:18+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT * FROM tp_student s INNER JOIN ( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  ) t ON t.stu_number=s.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:03:19+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT * FROM tp_student s INNER JOIN ( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  ) t ON t.stu_number=s.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:03:19+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT * FROM tp_student s INNER JOIN ( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  ) t ON t.stu_number=s.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:03:19+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT * FROM tp_student s INNER JOIN ( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  ) t ON t.stu_number=s.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:04:15+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s INNER JOIN ( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  ) t ON t.stu_number=s.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:04:15+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s INNER JOIN ( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  ) t ON t.stu_number=s.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:04:15+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s INNER JOIN ( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  ) t ON t.stu_number=s.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:04:16+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s INNER JOIN ( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  ) t ON t.stu_number=s.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:04:16+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s INNER JOIN ( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  ) t ON t.stu_number=s.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:04:16+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s INNER JOIN ( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  ) t ON t.stu_number=s.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:04:35+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s INNER JOIN (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON t.stu_number=s.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:04:36+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s INNER JOIN (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON t.stu_number=s.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:04:36+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s INNER JOIN (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON t.stu_number=s.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:04:36+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s INNER JOIN (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON t.stu_number=s.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:04:36+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s INNER JOIN (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON t.stu_number=s.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:04:37+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s INNER JOIN (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON t.stu_number=s.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:04:37+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s INNER JOIN (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON t.stu_number=s.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:04:37+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s INNER JOIN (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON t.stu_number=s.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:04:37+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s INNER JOIN (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON t.stu_number=s.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:04:38+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s INNER JOIN (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON t.stu_number=s.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:05:53+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s LEFT JOIN  (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON t.stu_number=s.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:05:54+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s LEFT JOIN  (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON t.stu_number=s.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:05:54+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s LEFT JOIN  (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON t.stu_number=s.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:05:54+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s LEFT JOIN  (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON t.stu_number=s.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:05:55+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s LEFT JOIN  (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON t.stu_number=s.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:05:55+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s LEFT JOIN  (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON t.stu_number=s.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:05:55+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s LEFT JOIN  (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON t.stu_number=s.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:05:55+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s LEFT JOIN  (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON t.stu_number=s.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:06:52+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s LEFT JOIN  (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON  s.stu_number=t.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:06:53+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s LEFT JOIN  (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON  s.stu_number=t.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:06:53+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s LEFT JOIN  (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON  s.stu_number=t.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:06:53+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s LEFT JOIN  (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON  s.stu_number=t.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:06:53+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s LEFT JOIN  (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON  s.stu_number=t.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:06:54+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s LEFT JOIN  (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON  s.stu_number=t.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:06:54+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s LEFT JOIN  (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON  s.stu_number=t.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:06:54+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s LEFT JOIN  (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON  s.stu_number=t.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:06:54+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s LEFT JOIN  (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON  s.stu_number=t.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:06:54+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s LEFT JOIN  (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON  s.stu_number=t.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:07:46+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s LEFT JOIN  (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON  s.stu_number=t.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:07:46+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s LEFT JOIN  (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON  s.stu_number=t.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:07:47+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s LEFT JOIN  (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON  s.stu_number=t.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:07:47+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s LEFT JOIN  (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON  s.stu_number=t.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:07:47+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s LEFT JOIN  (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON  s.stu_number=t.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:07:47+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number,s.name FROM tp_student s LEFT JOIN  (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON  s.stu_number=t.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:08:34+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number as s1,s.name as s2 FROM tp_student s LEFT JOIN  (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON  s.stu_number=t.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:08:34+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number as s1,s.name as s2 FROM tp_student s LEFT JOIN  (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON  s.stu_number=t.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:08:34+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number as s1,s.name as s2 FROM tp_student s LEFT JOIN  (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON  s.stu_number=t.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:08:35+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number as s1,s.name as s2 FROM tp_student s LEFT JOIN  (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON  s.stu_number=t.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:08:35+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number as s1,s.name as s2 FROM tp_student s LEFT JOIN  (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON  s.stu_number=t.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:08:35+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number as s1,s.name as s2 FROM tp_student s LEFT JOIN  (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON  s.stu_number=t.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+
+[ 2018-05-25T17:08:36+08:00 ] ::1 /graduation/Teacher/Score/ScoreAllView.html
+ERR: 1052:Column 'stu_number' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT s.stu_number as s1,s.name as s2 FROM tp_student s LEFT JOIN  (( SELECT * FROM `tp_overall` WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) )  )) t ON  s.stu_number=t.stu_number  WHERE ( stu_number in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE `tea_number` = '009'  ) )  ) ) 
+

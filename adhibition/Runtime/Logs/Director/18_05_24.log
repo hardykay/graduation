@@ -1,0 +1,76 @@
+[ 2018-05-24T14:45:48+08:00 ] ::1 /graduation/Director/RandomAllotReview/Index.html
+ERR: 无法加载控制器:RandomAllotReview
+
+[ 2018-05-24T14:52:16+08:00 ] ::1 /graduation/Director/RandomAllotReview/CreateGroupView
+ERR: 1241:Operand should contain 1 column(s)
+ [ SQL语句 ] : SELECT * FROM `tp_specialty` WHERE ( dep_id=1,2,3 ) 
+
+[ 2018-05-24T14:52:17+08:00 ] ::1 /graduation/Director/RandomAllotReview/CreateGroupView
+ERR: 1241:Operand should contain 1 column(s)
+ [ SQL语句 ] : SELECT * FROM `tp_specialty` WHERE ( dep_id=1,2,3 ) 
+
+[ 2018-05-24T14:52:17+08:00 ] ::1 /graduation/Director/RandomAllotReview/CreateGroupView
+ERR: 1241:Operand should contain 1 column(s)
+ [ SQL语句 ] : SELECT * FROM `tp_specialty` WHERE ( dep_id=1,2,3 ) 
+
+[ 2018-05-24T14:52:17+08:00 ] ::1 /graduation/Director/RandomAllotReview/CreateGroupView
+ERR: 1241:Operand should contain 1 column(s)
+ [ SQL语句 ] : SELECT * FROM `tp_specialty` WHERE ( dep_id=1,2,3 ) 
+
+[ 2018-05-24T14:52:18+08:00 ] ::1 /graduation/Director/RandomAllotReview/CreateGroupView
+ERR: 1241:Operand should contain 1 column(s)
+ [ SQL语句 ] : SELECT * FROM `tp_specialty` WHERE ( dep_id=1,2,3 ) 
+
+[ 2018-05-24T14:52:38+08:00 ] ::1 /graduation/Director/RandomAllotReview/CreateGroupView
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `tp_specialty` WHERE ( dep_id in 1,2,3 ) 
+
+[ 2018-05-24T14:52:38+08:00 ] ::1 /graduation/Director/RandomAllotReview/CreateGroupView
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `tp_specialty` WHERE ( dep_id in 1,2,3 ) 
+
+[ 2018-05-24T14:52:38+08:00 ] ::1 /graduation/Director/RandomAllotReview/CreateGroupView
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `tp_specialty` WHERE ( dep_id in 1,2,3 ) 
+
+[ 2018-05-24T14:52:39+08:00 ] ::1 /graduation/Director/RandomAllotReview/CreateGroupView
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `tp_specialty` WHERE ( dep_id in 1,2,3 ) 
+
+[ 2018-05-24T14:52:39+08:00 ] ::1 /graduation/Director/RandomAllotReview/CreateGroupView
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `tp_specialty` WHERE ( dep_id in 1,2,3 ) 
+
+[ 2018-05-24T14:52:39+08:00 ] ::1 /graduation/Director/RandomAllotReview/CreateGroupView
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `tp_specialty` WHERE ( dep_id in 1,2,3 ) 
+
+[ 2018-05-24T14:52:39+08:00 ] ::1 /graduation/Director/RandomAllotReview/CreateGroupView
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,2,3 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `tp_specialty` WHERE ( dep_id in 1,2,3 ) 
+
+[ 2018-05-24T14:55:14+08:00 ] ::1 /graduation/Director/RandomAllotReview/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT `dep_name` FROM `tp_specialty` WHERE ( dep_id in () ) 
+
+[ 2018-05-24T14:58:23+08:00 ] ::1 /graduation/Director/RandomAllotReview/CollegeView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:58:25+08:00 ] ::1 /graduation/Director/RandomAllotReview/addTeacherView/dep/1/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:58:27+08:00 ] ::1 /graduation/Director/RandomAllotReview/CollegeView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:58:29+08:00 ] ::1 /graduation/Director/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:59:04+08:00 ] ::1 /graduation/Director/Review/Teacher/
+ERR: 参数错误或者未定义:dep
+
+[ 2018-05-24T14:59:10+08:00 ] ::1 /graduation/Director/Review/Student/dep/1/tea/021/name/6ZmI5by6/
+ERR: 参数错误或者未定义:num
+
+[ 2018-05-24T15:21:33+08:00 ] ::1 /graduation/Director/Review/ReviewView/dep/1
+ERR: 非法操作:ReviewView
+

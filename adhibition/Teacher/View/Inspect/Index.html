@@ -1,0 +1,54 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">  
+<link rel="stylesheet" href="__ROOT__/static/css/nav.css"> 
+<script src="__ROOT__/static/js/jquery.min.js"></script>
+<script src="__ROOT__/static/js/bootstrap.min.js"></script> 
+    
+	<title>指导教师审核中期检查</title>
+	
+</head>
+<body>
+<br>
+
+	<table class="table panel-info" >
+		<thead>
+			<tr class="success">
+				<th>编号</th>
+				<th>学生</th>
+				<th>所属专业</th>
+				<th>课题名称</th>
+				<th>操作</th>
+				<th>状态</th>
+			</tr>
+		</thead>
+		<tbody>	
+                 <volist name="list" id="vo">
+			<tr>
+				<td>{$i}</td>
+				<td>{$vo.sname} [{$vo.stu_number}]</td>
+				<td>{$vo.dep_name}</td>   
+				<td class="twidth">
+					<div class="ttext" >
+	    				<a href="__ROOT__/Home/Topic/Index/top/{$vo.top_id}" title="{$vo.sname}">
+	    					{$vo.name}
+	    				</a>
+					</div>
+				</td>
+                                <switch name="vo.audit" >
+                                    <case value="0"><td><a href="__ROOT__/Teacher/Inspect/Check/stu/{$vo.stu_number}/name/{$vo.sname|base64_encode}/dep/{$vo.dep_name|base64_encode}">审核</a></td><td class="red">未审核</td></case>
+                                    <case value="1"> <td><a href="__ROOT__/Teacher/Inspect/Look/stu/{$vo.stu_number}/name/{$vo.sname|base64_encode}/dep/{$vo.dep_name|base64_encode}">查看</a></td><td class="red">通过</td></case>
+                                    <case value="2"> <td>等待中...</td><td class="red">退回修改</td></case>
+                                    <default><td><a href=""></a></td><td class="red"></td></default>
+                                </switch>
+			</tr>
+                 </volist>
+		</tbody>
+
+	</table>
+
+</body>
+</html>

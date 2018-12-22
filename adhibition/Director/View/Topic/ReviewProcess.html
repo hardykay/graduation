@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择课题</title>
+    <link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__ROOT__/static/css/nav.css">
+    <script src="__ROOT__/static/js/jquery.min.js"></script>
+    <script src="__ROOT__/static/js/bootstrap.min.js"></script>
+    <script > 
+    function xuan(){
+            //获取name值
+            var qcheck=document.getElementsByName("checkbox[]");
+                for(var i=0;i<=qcheck.length;i++){
+                    qcheck[i].checked=true;
+                }
+            }
+    </script>
+</head>
+<body>
+<!--<br>
+--><form action="__CONTROLLER__/Pichuli.html" method="POST">
+    <table class="table panel-info bshadow" >
+        <thead>
+<!--                <tr>
+                    <th colspan="8" >课程名称：<input type="text">申报教师：<input type="text"> 状态：<select  name="select" id=""><option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select><input type="submit" name="submit" value="查询">
+                        </th>
+                </tr>-->
+                <tr>
+                    <th colspan="8" ><a href="__CONTROLLER__/Look">查看已审核的课题</a></th>
+                </tr>
+                <tr>
+                    <th><button type="button" onclick="xuan()">全选</button></th>
+                    <th>课题名称</th>
+                    <th>课题类型</th>
+                    <th>申报教师</th>
+                    <th>选题方式</th>
+                    <th>信息操作</th>
+                    <th>状态</th>
+                </tr>
+            </thead>
+        <tbody>
+        <volist name="list" id="vo">
+                <tr>
+                    <td><input type="checkbox" name="checkbox[]" value="{$vo.top_id}"></td>
+                    <td>{$vo.name}</td>
+                    <td>{$vo.genre}</td>
+                    <td>{$vo.tea_name}[工号:{$vo.tea_number}]</td>
+                    <td>
+                        <switch name="vo.top_type" >
+                            <case value="1">盲选</case>
+                            <case value="2">指定选</case>
+                            <case value="3">团队课题</case>
+                            <case value="4">外出毕设</case>
+                            <default />类型未知
+                        </switch>
+                    </td>
+                    
+                    <td><a href="__ROOT__/Director/Topic/ReviewProcess2/top/{$vo.top_id}/i/{$vo.top_type}" >立即审核</a><span class="red"> | </span><a href="__ROOT__/Director/Topic/Word/top/{$vo.top_id}/tea/{$vo.tea_name|base64_encode}/name/{$vo.name|base64_encode}" target="_blank">导出</a></td>
+                    <td>未审核</td>
+                </tr>
+        </volist>   
+            </tbody>
+
+        <tfoot>
+            <tr class="active">
+                    
+                <td colspan="9">
+                    <button style="float: left;margin-right: 20px;margin-top: 15px;" value="1" name="submit" class="btn btn-success">批量通过</button><button style="float: left;margin-top: 15px;" class="btn btn-success" value="2" name="submit">批量退回</button>
+                    {$page}
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</form>
+
+</body>
+</html>

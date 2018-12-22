@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>教学秘书发布成绩</title>
+       <link rel="stylesheet" href="__ROOT__/static/css/nav.css">
+    <link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">  
+   <script src="__ROOT__/static/js/jquery.min.js"></script>
+   <script src="__ROOT__/static/js/bootstrap.min.js"></script>
+   <script > 
+function xuan(){
+        //获取name值
+        var qcheck=document.getElementsByName("checkbox[]");
+            for(var i=0;i<=qcheck.length;i++){
+                qcheck[i].checked=true;
+            }
+        }
+</script>
+</head>
+<body>
+<br>
+<form action="{:U('Score/Sub')}" method="post">
+<div class="container" >
+    <table class="table panel-info bshadow" >
+        <thead>
+            <tr>
+                <th colspan="9">
+                    <i class="i"></i>
+                    课题名称：
+                    <input type="text">
+                    <i class="i"></i>
+                    申报教师：
+                    <input type="text">
+<!--                    <i class="i"></i>
+                    状态：
+                    <select name="" id="">
+                        <option value="">请选择</option>
+                        <option value="">未发布</option>
+                        <option value="">已发布</option>
+                    </select>-->
+                </th>
+            </tr>
+            <tr class="success">
+                <th><button type="button" onclick="xuan()">全选</button></th>
+                <th>编号</th>
+                <th>课题名称</th>
+                <th>选题学生</th>
+                <th>论文评分</th>
+                <th>总得分</th>
+                <th>总评</th>
+                <th>状态</th>
+            </tr>
+        </thead>
+        <tbody>
+        <volist name="list" id="vo">
+            <tr>
+                <td><input type="checkbox" name="checkbox[]" value="{$vo.stu_number}"></td>
+                <td>{$i}</td>
+                <td class="twidth">
+                    <div class="ttext" >
+                        <a href="__ROOT__/Home/Topic/Index/top/{$vo.top_id}" title="{$vo.top_name}">
+                            {$vo.top_name}
+                        </a>
+                    </div>
+                </td>
+                <td>姓名：{$vo.stu_name}<br>学号：{$vo.stu_number}</td>
+                <td>平时成绩评分：{$vo.grade} <br>指导老师评分：{$vo.zdgrade} <br>评阅教师评分：{$vo.pingyuegrade} <br>答辩评分：{$vo.dabiangrade}</td>
+                <td>{$vo.score}</td>
+                <td>{$vo.genera}</td>
+                <td>未发布</td>
+            </tr>
+        </volist>
+        </tbody>
+
+        <tfoot>
+            <tr class="active">
+                <td colspan="12">
+                    <div class="left">
+                        <i class="i"></i>
+                        <input type="submit" value="批量发布" class="btn btn-success">
+                        <i class="i"></i>
+<!--                        <input type="button" value="全部发布" class="btn btn-success"></a>
+                        <i class="i"></i>-->
+                        <input type="button" value="返回" class="btn btn-success" onclick="window.history.go(-1)">
+                    </div>
+                    {$page}
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+</form>
+</body>
+<script>
+function xuan(){
+        //获取name值
+        var qcheck=document.getElementsByName("checkbox[]");
+            for(var i=0;i<=qcheck.length;i++){
+                qcheck[i].checked=true;
+            }
+        }
+</script>
+</html>

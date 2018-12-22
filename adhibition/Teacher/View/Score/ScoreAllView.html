@@ -1,0 +1,41 @@
+<!DOCTYPE html>  
+<html>  
+    <head>  
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">  
+        <link rel="stylesheet" href="__ROOT__/static/css/nav.css"> 
+        <script src="__ROOT__/static/js/jquery.min.js"></script>
+        <script src="__ROOT__/static/js/bootstrap.min.js"></script> 
+        <title>教师选择学生</title>
+    </head>
+    <body>
+        <table class="table panel-info" >
+            <thead>
+                <tr class="success">
+                    <th>序号</th>
+                    <th>学生</th>
+                    <th>平时成绩</th>
+                    <th>论文成绩</th>
+                    <th>评阅成绩</th>
+                    <th>答辩成绩</th>
+                    <th>总成绩</th>
+                </tr>
+            </thead>
+            <tbody>
+            <volist name="list" id="vo" >
+                <tr>
+                    <td>{$i}</td>
+                    <td>{$vo.name}【{$vo.stu_number}】</td>
+                    <td>{$vo.grade}</td>
+                    <td>{$vo.zdgrade}</td>
+                    <td>{$vo.pingyuegrade}</td>
+                    <td>{$vo.dabiangrade}</td>
+                    <td>{$vo.score}</td>
+                </tr>
+            </volist>
+
+        </tbody>
+    </table>
+</body>
+</html>

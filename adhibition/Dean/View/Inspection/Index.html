@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>教学院长-课题发布</title>
+	<link rel="stylesheet" href="../">
+        <link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="__ROOT__/static/css/nav.css"> 
+        <script type="text/javascript" src="__ROOT__/static/js/jquery.min.js"> </script>
+</head>
+<body>
+<!--<div class="maofu" >-->
+	<table class="table panel-info bshadow" >
+		<thead>
+			<tr class="success">
+				<th>序号</th>
+				<th>专业名称</th>	
+				<th>专业总人数</th>
+				<th>已提交人数</th>
+				<th>未提交人数</th>				
+				<th>优秀</th>
+				<th>良好</th>
+				<th>中等</th>
+				<th>及格</th>
+                                <th>不及格</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+                <volist name="list" id="vo">
+			<tr>
+				<td>{$i}</td>
+				<td>{$vo.dep_name}</td>
+				<td>{$vo.renshu}</td>
+				<td>{$vo.tijiao}</td>
+				<td>{$vo.kong}</td>
+				<td>{$vo.you}</td>
+				<td>{$vo.lang}</td>
+				<td>{$vo.zhong}</td>	
+				<td>{$vo.jige}</td>
+				<td>{$vo.bujige}</td>
+				<td><a href="__ROOT__/Dean/Inspection/ClassGrade/dep/{$vo.dep_id}">进入</a></td>
+			</tr>
+                </volist>
+                
+		</tbody>
+	</table>
+
+<!--</div>-->
+</body>
+</html>

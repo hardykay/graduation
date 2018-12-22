@@ -1,0 +1,7 @@
+[ 2018-05-29T10:55:03+08:00 ] ::1 /graduation/Director/Ajax/Teacher.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002295s ]
+SQL: SHOW COLUMNS FROM `tp_teacher` [ RunTime:0.0012s ]
+SQL: SELECT tea_number as d,name as n FROM `tp_teacher` WHERE ( dep_id=1 )  [ RunTime:0.0009s ]
+

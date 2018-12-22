@@ -1,0 +1,32 @@
+.red{color:red;}
+.lxuankuang{width: 300px;height:200px;float: left;border: 2px solid #CCC;overflow: scroll;padding:5px 0 5px 20px;color: #29B6F6;}
+.zhongxuankuang{width: 30%;float: left;background-color: #FFF;}
+.youxuangkuang{width: 33%;float: left;background-color: #000;}
+
+.bsxys{width: 158px;height: 30px;line-height: 30px;overflow: hidden;display: block;font-size: 12px;padding-top: 1px;text-indent: 10px;background: #5DAEE5;letter-spacing: 2px;color: #fff;font-weight: bold;border-radius: 10px 30px 0px 0px;}
+
+
+/* table{
+	border: 2px;
+	box-shadow: 0px 0px 10px #888888;
+	margin-top: 50px;
+
+}
+
+th {
+    background-color: #A5F056;
+    color: #000;
+}
+
+tbody>tr:nth-child(odd){
+    background-color: #f5f1f9;
+}	
+tbody>tr:nth-child(even){
+    background-color: #ffffff;
+}
+tfoot {
+    background-color: #A5F056;
+}f5f1f9
+tfoot>tr>td>select{
+    color: #000;
+} */

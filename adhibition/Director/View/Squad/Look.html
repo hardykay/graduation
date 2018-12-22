@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../">
+        <link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="__ROOT__/static/css/nav.css"> 
+        <script type="text/javascript" src="__ROOT__/static/js/jquery.min.js"> </script>
+        <script type="text/javascript" src="__ROOT__/static/js/bootstrap.min.js"> </script>
+	<title>选择答辩小组学生</title>
+<script>
+function xuan(){
+        //获取name值
+        var qcheck=document.getElementsByName("checkbox[]");
+            for(var i=0;i<=qcheck.length;i++){
+                qcheck[i].checked=true;
+            }
+        }
+</script>
+</head>
+<body>
+
+<form action="{:U('Squad/Deletestu')}" method='post'>
+    <input type="hidden" name="id" value="{$data.id}">
+    <input type="hidden" name="dep" value="{$data.dep}">
+	<table class="table panel-info bshadow" >
+		<thead>
+                    <tr><th colspan="7"> 注意：已将该答辩小组成员所带的学生排除在外，如果答辩小组成员设置不真确，将无法完全分配学生。</th></tr>
+			<tr class="success">
+				<th><button type="button" onclick="xuan()">全选</button></th>
+				<th>编号</th>
+				<th>课题名称</th>
+				<th>申报老师</th>
+				<th>选题学生</th>
+				<th>所属专业</th>
+				<th>班级</th>
+			</tr>
+		</thead>
+		<tbody>
+                <volist name="list" id="vo">
+			<tr>
+                            <td><input type="checkbox" name="checkbox[]" value="{$vo.stu_number}"></td>
+				<td>{$i}</td>
+				<td class="twidth">
+					<div class="ttext" >
+	    				<a href="" title="{$vo.t_name}">
+	    					{$vo.t_name}
+	    				</a>
+					</div>
+				</td>
+				<td>{$vo.tea_name} [{$vo.tea_number}]</td>
+				<td>{$vo.stu_name}（{$vo.stu_number}）</td>
+				<td>{$vo.specialty}</td>
+                                <td>{$vo.class}</td>
+			</tr>
+                </volist>
+		</tbody>
+
+		<tfoot>
+			<tr class="active">
+				<td colspan="8">
+					<div class="left">
+						<i class="i"></i>
+						<input type="submit" value="删除选中" class="btn btn-danger">
+						<i class="i"></i>
+						<input type="button" value="返回" class="btn btn-success" onclick="window.history.go(-1)">
+					</div>
+                                        {$page}
+				</td>
+                                
+			</tr>
+		</tfoot>
+	</table>
+
+</form>
+</body>
+</html>

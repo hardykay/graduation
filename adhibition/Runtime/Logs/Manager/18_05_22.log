@@ -1,0 +1,81 @@
+[ 2018-05-22T16:44:20+08:00 ] ::1 /graduation/Manager/Inspection/Special/
+ERR: 参数错误或者未定义:dep
+
+[ 2018-05-22T16:44:23+08:00 ] ::1 /graduation/Manager/Inspection/Special/
+ERR: 参数错误或者未定义:dep
+
+[ 2018-05-22T16:44:28+08:00 ] ::1 /graduation/Manager/Gonggao/bootstrap/styles/bootstrap.css
+ERR: 非法操作:bootstrap
+
+[ 2018-05-22T16:44:55+08:00 ] ::1 /graduation/Manager/Gonggao/bootstrap/styles/bootstrap.css
+ERR: 非法操作:bootstrap
+
+[ 2018-05-22T16:46:21+08:00 ] ::1 /graduation/Manager/Gonggao/bootstrap/styles/bootstrap.css
+ERR: 非法操作:bootstrap
+
+[ 2018-05-22T16:46:28+08:00 ] ::1 /graduation/Manager/Gonggao/bootstrap/styles/bootstrap.css
+ERR: 非法操作:bootstrap
+
+[ 2018-05-22T17:18:32+08:00 ] ::1 /graduation/Manager/Ajax/Teacher.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004245s ]
+SQL: SHOW COLUMNS FROM `tp_teacher` [ RunTime:0.0014s ]
+SQL: SELECT tea_number as d,name as n FROM `tp_teacher` WHERE ( dep_id=1 )  [ RunTime:0.0008s ]
+
+[ 2018-05-22T17:20:16+08:00 ] ::1 /graduation/Manager/Ajax/Teacher.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002714s ]
+SQL: SHOW COLUMNS FROM `tp_teacher` [ RunTime:0.0011s ]
+SQL: SELECT tea_number as d,name as n FROM `tp_teacher` WHERE ( dep_id=1 )  [ RunTime:0.0005s ]
+
+[ 2018-05-22T17:29:48+08:00 ] ::1 /graduation/Manager/Topic/Index.html
+ERR: 参数错误或者未定义:dep
+
+[ 2018-05-22T17:29:51+08:00 ] ::1 /graduation/Manager/Topic/Index.html
+ERR: 参数错误或者未定义:dep
+
+[ 2018-05-22T18:20:59+08:00 ] ::1 /graduation/Manager/Topic/Teacher/dep/1
+ERR: 1055:Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'graduation_project.tp_topic.tea_number' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+ [ SQL语句 ] : SELECT `tea_number`,`tea_name`,sum(yixuan) as yixaun FROM `tp_topic` WHERE ( dep_id=1 ) GROUP BY tea_name ORDER BY yixaun 
+
+[ 2018-05-22T18:21:05+08:00 ] ::1 /graduation/Manager/Topic/Teacher/dep/1
+ERR: 1055:Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'graduation_project.tp_topic.tea_number' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+ [ SQL语句 ] : SELECT `tea_number`,`tea_name`,sum(yixuan) as yixaun FROM `tp_topic` WHERE ( dep_id=1 ) GROUP BY tea_name ORDER BY yixaun 
+
+[ 2018-05-22T18:21:07+08:00 ] ::1 /graduation/Manager/Topic/Teacher/dep/1
+ERR: 1055:Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'graduation_project.tp_topic.tea_number' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+ [ SQL语句 ] : SELECT `tea_number`,`tea_name`,sum(yixuan) as yixaun FROM `tp_topic` WHERE ( dep_id=1 ) GROUP BY tea_name ORDER BY yixaun 
+
+[ 2018-05-22T19:14:17+08:00 ] ::1 /graduation/Manager/Review/Index.html
+ERR: 参数错误或者未定义:dep
+
+[ 2018-05-22T19:17:50+08:00 ] ::1 /graduation/Manager/Review/Index/dep/1
+ERR: 1146:Table 'graduation_project.specialty' doesn't exist
+ [ SQL语句 ] : SELECT p.dep_name as name,r.review_count,s.student_count,(s.student_count-r.review_count) as undistibute FROM (( SELECT `dep_id`,count(*) as review_count FROM `tp_review` GROUP BY dep_id  )) r,(( SELECT `dep_major`,count(*) as student_count FROM `tp_student` GROUP BY dep_major  )) s,specialty p WHERE ( r.dep_id=p.dep_id and s.dep_id=p.dep_id and p.dep_father=1 ) 
+
+[ 2018-05-22T19:18:25+08:00 ] ::1 /graduation/Manager/Review/Index/dep/1
+ERR: 1054:Unknown column 's.dep_id' in 'where clause'
+ [ SQL语句 ] : SELECT p.dep_name as name,r.review_count,s.student_count,(s.student_count-r.review_count) as undistibute FROM (( SELECT `dep_id`,count(*) as review_count FROM `tp_review` GROUP BY dep_id  )) r,(( SELECT `dep_major`,count(*) as student_count FROM `tp_student` GROUP BY dep_major  )) s,tp_specialty p WHERE ( r.dep_id=p.dep_id and s.dep_id=p.dep_id and p.dep_father=1 ) 
+
+[ 2018-05-22T19:18:26+08:00 ] ::1 /graduation/Manager/Review/Index/dep/1
+ERR: 1054:Unknown column 's.dep_id' in 'where clause'
+ [ SQL语句 ] : SELECT p.dep_name as name,r.review_count,s.student_count,(s.student_count-r.review_count) as undistibute FROM (( SELECT `dep_id`,count(*) as review_count FROM `tp_review` GROUP BY dep_id  )) r,(( SELECT `dep_major`,count(*) as student_count FROM `tp_student` GROUP BY dep_major  )) s,tp_specialty p WHERE ( r.dep_id=p.dep_id and s.dep_id=p.dep_id and p.dep_father=1 ) 
+
+[ 2018-05-22T19:18:26+08:00 ] ::1 /graduation/Manager/Review/Index/dep/1
+ERR: 1054:Unknown column 's.dep_id' in 'where clause'
+ [ SQL语句 ] : SELECT p.dep_name as name,r.review_count,s.student_count,(s.student_count-r.review_count) as undistibute FROM (( SELECT `dep_id`,count(*) as review_count FROM `tp_review` GROUP BY dep_id  )) r,(( SELECT `dep_major`,count(*) as student_count FROM `tp_student` GROUP BY dep_major  )) s,tp_specialty p WHERE ( r.dep_id=p.dep_id and s.dep_id=p.dep_id and p.dep_father=1 ) 
+
+[ 2018-05-22T19:18:27+08:00 ] ::1 /graduation/Manager/Review/Index/dep/1
+ERR: 1054:Unknown column 's.dep_id' in 'where clause'
+ [ SQL语句 ] : SELECT p.dep_name as name,r.review_count,s.student_count,(s.student_count-r.review_count) as undistibute FROM (( SELECT `dep_id`,count(*) as review_count FROM `tp_review` GROUP BY dep_id  )) r,(( SELECT `dep_major`,count(*) as student_count FROM `tp_student` GROUP BY dep_major  )) s,tp_specialty p WHERE ( r.dep_id=p.dep_id and s.dep_id=p.dep_id and p.dep_father=1 ) 
+
+[ 2018-05-22T19:18:27+08:00 ] ::1 /graduation/Manager/Review/Index/dep/1
+ERR: 1054:Unknown column 's.dep_id' in 'where clause'
+ [ SQL语句 ] : SELECT p.dep_name as name,r.review_count,s.student_count,(s.student_count-r.review_count) as undistibute FROM (( SELECT `dep_id`,count(*) as review_count FROM `tp_review` GROUP BY dep_id  )) r,(( SELECT `dep_major`,count(*) as student_count FROM `tp_student` GROUP BY dep_major  )) s,tp_specialty p WHERE ( r.dep_id=p.dep_id and s.dep_id=p.dep_id and p.dep_father=1 ) 
+
+[ 2018-05-22T19:18:27+08:00 ] ::1 /graduation/Manager/Review/Index/dep/1
+ERR: 1054:Unknown column 's.dep_id' in 'where clause'
+ [ SQL语句 ] : SELECT p.dep_name as name,r.review_count,s.student_count,(s.student_count-r.review_count) as undistibute FROM (( SELECT `dep_id`,count(*) as review_count FROM `tp_review` GROUP BY dep_id  )) r,(( SELECT `dep_major`,count(*) as student_count FROM `tp_student` GROUP BY dep_major  )) s,tp_specialty p WHERE ( r.dep_id=p.dep_id and s.dep_id=p.dep_id and p.dep_father=1 ) 
+

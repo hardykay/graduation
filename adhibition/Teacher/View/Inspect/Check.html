@@ -1,0 +1,73 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">  
+<link rel="stylesheet" href="__ROOT__/static/css/nav.css"> 
+<script src="__ROOT__/static/js/jquery.min.js"></script>
+<script src="__ROOT__/static/js/bootstrap.min.js"></script> 
+</head>
+
+<body>
+    
+    <div class="container">
+<div class="panel panel-success">
+    <div class="panel-heading">
+        <h3 class="panel-title">中期检查</h3>
+    </div>
+    <div class="panel-body">
+        
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <label class="col-sm-4 control-label">学生</label>
+              <div class="col-sm-8">
+                <p class="form-control-static">{$li.sname|base64_decode}[{$li.stu_number}]</p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-4 control-label">专业</label>
+              <div class="col-sm-8">
+                <p class="form-control-static">{$li.dep|base64_decode}</p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-4 control-label">附件</label>
+              <div class="col-sm-8">
+                <p class="form-control-static"><empty name="li.url"> 无<else/><a href="__ROOT__/Home/Index/download/url/{$li.url|base64_encode}">附件下载</a></empty></p>
+              </div>
+            </div>
+        </form>
+    </div>
+</div>
+        <h3 style="text-align: center">中期进展内容如下</h3>
+        <div class="panel panel-info" style="padding: 20px;">{$li.progress|htmlspecialchars_decode}</div>
+<div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">立即评阅</h3>
+            </div>
+            <div class="panel-body">
+                <form role="form" action="{:U('/Teacher/Inspect/Alert/')}" method="post"  class="form-horizontal" role="form" enctype="multipart/form-data">
+
+                    <input type="hidden" value="{$li.stu_number}" name='stu_number'>
+                  <div style="clear:both;width: 100%;">
+                    <div class="shjg">
+                      <label class="red ">
+                       审核结果：
+                      </label>
+                       <select name="audit">
+                           <option selected = "selected"  value="1">通过</option>
+                           <option value="2">未通过</option>
+                       </select>
+                    </div>
+                  </div>
+             
+                  <div style="width: 5rem;margin:0px auto;">
+                  <input type="submit" id="fat-btn" class="btn btn-success" value="提交" >
+                  </div>
+                </form>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

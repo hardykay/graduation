@@ -1,0 +1,36 @@
+<!DOCTYPE html>  
+<html>  
+    <head>  
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">  
+        <link rel="stylesheet" href="__ROOT__/static/css/nav.css"> 
+        <script src="__ROOT__/static/js/jquery.min.js"></script>
+        <script src="__ROOT__/static/js/bootstrap.min.js"></script> 
+    </head>
+
+    <body>
+        <div class="container">
+            <h3>标题:{$li.title}</h3>   
+            <br>
+            <h3>一、工作完成情况</h3>
+            <div class="col-sm-12">{$li.jinzhan|htmlspecialchars_decode}</div>
+            <br>
+            <h3>二、下阶段工作内容</h3>
+            <div class="col-sm-12">{$li.down|htmlspecialchars_decode}</div>
+            <br>
+            <h3>三、审核状态</h3>
+            <br>
+            <div class="col-sm-12"><switch name="li.audit" ><case value="0">审核中</case><case value="1">已通过</case><case value="2">没通过</case></switch></div>
+            <br>
+            <h3>上传时间：{$li.t}</h3>
+            <br>
+            <h3><empty name="li.pingyu"><else/>评语：{$li.pingyu}</empty></h3>
+            <br>
+            <h3><empty name="li.url"><else/><a href="__ROOT__/Home/Index/download/url/{$li.url|base64_encode}">我的附件</a></empty></h3>
+            <br>
+            <h3><empty name="li.check_url"><else/><a href="__ROOT__/Home/Index/download/url/{$li.check_url|base64_encode}">指导老师审核的附件</a></empty></h3>
+            <br>
+        </div> 
+    </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>题目变更</title>
+        
+	<style>
+		td{
+			width: 200px;
+			border:1px solid #ddd;
+		}
+		td:first-child{
+			width: 150px;
+			text-align: center;
+		}
+		table{
+			border-collapse:collapse;
+			color:#333;
+			font-weight: 700;
+			line-height: 45px;
+			width: 900px;
+			margin:10px auto 50px auto;
+                      
+		}
+		input{
+			width: 100%;
+			height: 100%;
+			outline: 0;
+			border:0;
+                        font-size: 20px;
+		}
+		textarea{
+			width: 99%;
+			height: 300px;
+			outline: 0;
+			border:0px;
+                         font-size: 15px;
+		}
+	</style>
+</head>
+<body>
+<table>
+	<caption><h3 style="text-align:center">毕业设计题目变更审批表</h3></caption>
+	<tbody>
+		<tr  style="text-align: center;">
+			<td>学生姓名</td>
+			<td>{$vo.name}</td>
+			<td>学号</td>
+			<td>{$vo.stu_number}</td>
+		</tr>
+		<tr style="text-align: center;">
+			<td>学院</td>
+			<td>{$vo.college_name}</td>
+			<td>专业</td>
+			<td>{$vo.major_name}</td>
+		</tr>
+		<tr  style="text-align: center;">
+			<td>变更前题目</td>
+			<td colspan="3">{$vo.top_name}</td>
+		</tr>
+		<tr>
+			<td>变更后题目</td>
+                        <td colspan="3">{$vo.new_name}</td>
+		</tr>
+		<tr>
+			<td>题目变更原因</td>
+			<td colspan="3">{$vo.cause|htmlspecialchars_decode}</td>
+		</tr>
+		<tr>
+			<td>新题目内容、进度计划及完成任务的保障措施</td>
+			<td colspan="3">{$vo.plan|htmlspecialchars_decode}</td>
+		</tr>
+		<tr>
+			<td>指导老师意见</td>
+                        <td colspan="3">{$vo.adviser|htmlspecialchars_decode}</td>
+		</tr>
+		<tr>
+			<td>所在系意见</td>
+			<td colspan="3">{$vo.department|htmlspecialchars_decode}</td>
+		</tr>
+		<tr>
+			<td>学院领导意见</td>
+			<td colspan="3">{$vo.college|htmlspecialchars_decode}</td>
+		</tr>
+                <tr>
+                    <td colspan="4"><button type="submit" style="width:100px;height: 40px;background-color: #89e4cf;border:0;color:#fff;font-size: 20px;font-weight: 700;" onclick="history.go(-1)">返回</button> </td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>题目变更</title>
+        <link rel="stylesheet" href="__ROOT__/static/css/nav.css">  
+	<style>
+		th,td{
+			width: 200px;
+			border:1px solid #ddd;
+		}
+		td:first-child{
+			width: 400px;
+			text-align: center;
+		}
+		table{
+			border-collapse:collapse;
+			color:#333;
+			line-height: 45px;
+			width: 900px;
+			margin:10px auto;
+                        border: 2px solid #e5e5e5;
+		}
+                a{
+                    text-decoration: none;
+                }
+	</style>
+</head>
+<body>
+<table>
+<!-- 	<caption><h3>毕业设计题目变更审批表</h3></caption> -->
+	<thead>
+		<tr>
+			<th>变更题目</th>
+			<th>指导老师审核</th>
+			<th>系主任审核</th>
+			<th>操作</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr  style="text-align: center;">
+                    <td><b>{$vo.new_name}</b></td>
+                        <td>
+                            <switch name="vo.adviser_audit">
+                                <case value="0"><b class="huise">未审核</b></case>
+                                <case value="1"><b class="langse">已通过</b></case>
+                                <case value="2"><b class="red">退回修改</b></case>
+                            </switch>
+                        </td>
+                        <td>
+                            <switch name="vo.college_audit">
+                                <case value="0"><b class="huise">未审核</b></case>
+                                <case value="1"><b class="langse">已通过</b></case>
+                                <case value="2"><b class="red">退回修改</b></case>
+                            </switch>
+                        </td>
+                        <td>
+                            
+                            <if condition="($vo.adviser_audit eq 2) or ($vo.college_audit eq 2)">
+                                <a href="__CONTROLLER__/Alter.html">修改</a> 
+                            <else />
+                                <a href="__CONTROLLER__/Look.html">查看</a>
+                            </if>
+                        </td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>

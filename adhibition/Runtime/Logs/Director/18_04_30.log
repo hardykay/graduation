@@ -1,0 +1,68 @@
+[ 2018-04-30T20:57:37+08:00 ] ::1 /graduation/Director/NotYet/allot/dep/1
+ERR: 1054:Unknown column 'top_type' in 'having clause'
+ [ SQL语句 ] : SELECT `top_id`,(youxiao-yixuan)as num FROM `tp_topic` HAVING top_type=1 and opt=1 and number>0 and num>0 and top_id in ( SELECT `top_id` FROM `tp_topic_f` WHERE ( dep_id=1 and audit=1 )  ) ORDER BY num desc 
+
+[ 2018-04-30T20:59:22+08:00 ] ::1 /graduation/Director/NotYet/allot/dep/1
+ERR: 1054:Unknown column 'num' in 'where clause'
+ [ SQL语句 ] : SELECT `top_id`,(youxiao-yixuan)as num FROM `tp_topic` WHERE ( top_type=1 and opt=1 and number>0 and num>0 and top_id in ( SELECT `top_id` FROM `tp_topic_f` WHERE ( dep_id=1 and audit=1 )  ) ) ORDER BY num desc 
+
+[ 2018-04-30T20:59:23+08:00 ] ::1 /graduation/Director/NotYet/allot/dep/1
+ERR: 1054:Unknown column 'num' in 'where clause'
+ [ SQL语句 ] : SELECT `top_id`,(youxiao-yixuan)as num FROM `tp_topic` WHERE ( top_type=1 and opt=1 and number>0 and num>0 and top_id in ( SELECT `top_id` FROM `tp_topic_f` WHERE ( dep_id=1 and audit=1 )  ) ) ORDER BY num desc 
+
+[ 2018-04-30T20:59:24+08:00 ] ::1 /graduation/Director/NotYet/allot/dep/1
+ERR: 1054:Unknown column 'num' in 'where clause'
+ [ SQL语句 ] : SELECT `top_id`,(youxiao-yixuan)as num FROM `tp_topic` WHERE ( top_type=1 and opt=1 and number>0 and num>0 and top_id in ( SELECT `top_id` FROM `tp_topic_f` WHERE ( dep_id=1 and audit=1 )  ) ) ORDER BY num desc 
+
+[ 2018-04-30T20:59:24+08:00 ] ::1 /graduation/Director/NotYet/allot/dep/1
+ERR: 1054:Unknown column 'num' in 'where clause'
+ [ SQL语句 ] : SELECT `top_id`,(youxiao-yixuan)as num FROM `tp_topic` WHERE ( top_type=1 and opt=1 and number>0 and num>0 and top_id in ( SELECT `top_id` FROM `tp_topic_f` WHERE ( dep_id=1 and audit=1 )  ) ) ORDER BY num desc 
+
+[ 2018-04-30T20:59:24+08:00 ] ::1 /graduation/Director/NotYet/allot/dep/1
+ERR: 1054:Unknown column 'num' in 'where clause'
+ [ SQL语句 ] : SELECT `top_id`,(youxiao-yixuan)as num FROM `tp_topic` WHERE ( top_type=1 and opt=1 and number>0 and num>0 and top_id in ( SELECT `top_id` FROM `tp_topic_f` WHERE ( dep_id=1 and audit=1 )  ) ) ORDER BY num desc 
+
+[ 2018-04-30T20:59:24+08:00 ] ::1 /graduation/Director/NotYet/allot/dep/1
+ERR: 1054:Unknown column 'num' in 'where clause'
+ [ SQL语句 ] : SELECT `top_id`,(youxiao-yixuan)as num FROM `tp_topic` WHERE ( top_type=1 and opt=1 and number>0 and num>0 and top_id in ( SELECT `top_id` FROM `tp_topic_f` WHERE ( dep_id=1 and audit=1 )  ) ) ORDER BY num desc 
+
+[ 2018-04-30T20:59:25+08:00 ] ::1 /graduation/Director/NotYet/allot/dep/1
+ERR: 1054:Unknown column 'num' in 'where clause'
+ [ SQL语句 ] : SELECT `top_id`,(youxiao-yixuan)as num FROM `tp_topic` WHERE ( top_type=1 and opt=1 and number>0 and num>0 and top_id in ( SELECT `top_id` FROM `tp_topic_f` WHERE ( dep_id=1 and audit=1 )  ) ) ORDER BY num desc 
+
+[ 2018-04-30T20:59:25+08:00 ] ::1 /graduation/Director/NotYet/allot/dep/1
+ERR: 1054:Unknown column 'num' in 'where clause'
+ [ SQL语句 ] : SELECT `top_id`,(youxiao-yixuan)as num FROM `tp_topic` WHERE ( top_type=1 and opt=1 and number>0 and num>0 and top_id in ( SELECT `top_id` FROM `tp_topic_f` WHERE ( dep_id=1 and audit=1 )  ) ) ORDER BY num desc 
+
+[ 2018-04-30T20:59:25+08:00 ] ::1 /graduation/Director/NotYet/allot/dep/1
+ERR: 1054:Unknown column 'num' in 'where clause'
+ [ SQL语句 ] : SELECT `top_id`,(youxiao-yixuan)as num FROM `tp_topic` WHERE ( top_type=1 and opt=1 and number>0 and num>0 and top_id in ( SELECT `top_id` FROM `tp_topic_f` WHERE ( dep_id=1 and audit=1 )  ) ) ORDER BY num desc 
+
+[ 2018-04-30T20:59:25+08:00 ] ::1 /graduation/Director/NotYet/allot/dep/1
+ERR: 1054:Unknown column 'num' in 'where clause'
+ [ SQL语句 ] : SELECT `top_id`,(youxiao-yixuan)as num FROM `tp_topic` WHERE ( top_type=1 and opt=1 and number>0 and num>0 and top_id in ( SELECT `top_id` FROM `tp_topic_f` WHERE ( dep_id=1 and audit=1 )  ) ) ORDER BY num desc 
+
+[ 2018-04-30T20:59:40+08:00 ] ::1 /graduation/Director/NotYet/allot/dep/1
+ERR: 1054:Unknown column 'top_type' in 'having clause'
+ [ SQL语句 ] : SELECT `top_id`,(youxiao-yixuan)as num FROM `tp_topic` HAVING top_type=1 and opt=1 and number>0 and num>0 and top_id in ( SELECT `top_id` FROM `tp_topic_f` WHERE ( dep_id=1 and audit=1 )  ) ORDER BY num desc 
+
+[ 2018-04-30T20:59:40+08:00 ] ::1 /graduation/Director/NotYet/allot/dep/1
+ERR: 1054:Unknown column 'top_type' in 'having clause'
+ [ SQL语句 ] : SELECT `top_id`,(youxiao-yixuan)as num FROM `tp_topic` HAVING top_type=1 and opt=1 and number>0 and num>0 and top_id in ( SELECT `top_id` FROM `tp_topic_f` WHERE ( dep_id=1 and audit=1 )  ) ORDER BY num desc 
+
+[ 2018-04-30T20:59:41+08:00 ] ::1 /graduation/Director/NotYet/allot/dep/1
+ERR: 1054:Unknown column 'top_type' in 'having clause'
+ [ SQL语句 ] : SELECT `top_id`,(youxiao-yixuan)as num FROM `tp_topic` HAVING top_type=1 and opt=1 and number>0 and num>0 and top_id in ( SELECT `top_id` FROM `tp_topic_f` WHERE ( dep_id=1 and audit=1 )  ) ORDER BY num desc 
+
+[ 2018-04-30T20:59:41+08:00 ] ::1 /graduation/Director/NotYet/allot/dep/1
+ERR: 1054:Unknown column 'top_type' in 'having clause'
+ [ SQL语句 ] : SELECT `top_id`,(youxiao-yixuan)as num FROM `tp_topic` HAVING top_type=1 and opt=1 and number>0 and num>0 and top_id in ( SELECT `top_id` FROM `tp_topic_f` WHERE ( dep_id=1 and audit=1 )  ) ORDER BY num desc 
+
+[ 2018-04-30T20:59:41+08:00 ] ::1 /graduation/Director/NotYet/allot/dep/1
+ERR: 1054:Unknown column 'top_type' in 'having clause'
+ [ SQL语句 ] : SELECT `top_id`,(youxiao-yixuan)as num FROM `tp_topic` HAVING top_type=1 and opt=1 and number>0 and num>0 and top_id in ( SELECT `top_id` FROM `tp_topic_f` WHERE ( dep_id=1 and audit=1 )  ) ORDER BY num desc 
+
+[ 2018-04-30T20:59:42+08:00 ] ::1 /graduation/Director/NotYet/allot/dep/1
+ERR: 1054:Unknown column 'top_type' in 'having clause'
+ [ SQL语句 ] : SELECT `top_id`,(youxiao-yixuan)as num FROM `tp_topic` HAVING top_type=1 and opt=1 and number>0 and num>0 and top_id in ( SELECT `top_id` FROM `tp_topic_f` WHERE ( dep_id=1 and audit=1 )  ) ORDER BY num desc 
+

@@ -1,0 +1,21 @@
+[ 2018-04-30T23:52:27+08:00 ] ::1 /graduation/Student/Topic/Index.html
+ERR: 1054:Unknown column 's.top_is' in 'field list'
+ [ SQL语句 ] : SELECT s.top_is,s.name,t.name as tea_name,t.phone,t.email,t.qq FROM ( SELECT `top_id`,`name`,`tea_number` FROM `tp_topic` WHERE ( top_id=3 )  ) s,tp_teacher t WHERE ( s.tea_number=t.tea_number ) LIMIT 1  
+
+[ 2018-04-30T23:52:28+08:00 ] ::1 /graduation/Student/Topic/Index.html
+ERR: 1054:Unknown column 's.top_is' in 'field list'
+ [ SQL语句 ] : SELECT s.top_is,s.name,t.name as tea_name,t.phone,t.email,t.qq FROM ( SELECT `top_id`,`name`,`tea_number` FROM `tp_topic` WHERE ( top_id=3 )  ) s,tp_teacher t WHERE ( s.tea_number=t.tea_number ) LIMIT 1  
+
+[ 2018-04-30T23:52:28+08:00 ] ::1 /graduation/Student/Topic/Index.html
+ERR: 1054:Unknown column 's.top_is' in 'field list'
+ [ SQL语句 ] : SELECT s.top_is,s.name,t.name as tea_name,t.phone,t.email,t.qq FROM ( SELECT `top_id`,`name`,`tea_number` FROM `tp_topic` WHERE ( top_id=3 )  ) s,tp_teacher t WHERE ( s.tea_number=t.tea_number ) LIMIT 1  
+
+[ 2018-04-30T23:52:28+08:00 ] ::1 /graduation/Student/Topic/Index.html
+ERR: 1054:Unknown column 's.top_is' in 'field list'
+ [ SQL语句 ] : SELECT s.top_is,s.name,t.name as tea_name,t.phone,t.email,t.qq FROM ( SELECT `top_id`,`name`,`tea_number` FROM `tp_topic` WHERE ( top_id=3 )  ) s,tp_teacher t WHERE ( s.tea_number=t.tea_number ) LIMIT 1  
+
+[ 2018-04-30T23:53:13+08:00 ] ::1 /graduation/Student/Upload/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003743s ]
+

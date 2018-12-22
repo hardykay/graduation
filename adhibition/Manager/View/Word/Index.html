@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>教学院长-课题发布</title>
+	<link rel="stylesheet" href="../">
+        <link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="__ROOT__/static/css/nav.css"> 
+        <script type="text/javascript" src="__ROOT__/static/js/jquery.min.js"> </script>
+</head>
+<body>
+    <a href="{:U('Word/Add')}" class="a-title-style">上传表格/word模板</a>
+<!--<div class="maofu" >-->
+	<table class="table panel-info bshadow" >
+		<thead>
+			<tr class="success">
+				<th>序号</th>
+				<th>文件名</th>
+				<th>发布时间</th>
+                                <th>文件下载</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+                <volist name="list" id="vo">
+			<tr>
+				<td>{$i}</td>
+				<td>{$vo.title}</td>
+				<td>{$vo.publish}</td>
+                                <td><a href="__ROOT__{$vo.url}">下载</a></td>
+				<td><a href="__ROOT__/Manager/Gonggao/Del/id/{$vo.id}">删除</a></td>
+			</tr>
+                </volist>
+		</tbody>
+	</table>
+
+<!--</div>-->
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="__ROOT__/static/css/nav.css"> 
+    <script src="__ROOT__/static/js/jquery.min.js"></script>
+    <script src="__ROOT__/static/js/bootstrap.min.js"></script> 
+    <script>
+        function xuan(){
+           return  confirm("确认选择该学生？如果选择了，就不能修改了！");
+        }
+        function fang(){
+           return  confirm("确认放弃该学生？如果放弃了了，就等于删除！");
+        }
+    </script>
+<body>
+    
+	<table class="table panel-info" >
+		<thead>
+			<tr class="success">
+				<th>编号</th>
+				<th>课题名称</th>
+				<th>课题类型</th>
+				<th>所属专业</th>
+				<th>学生</th>
+				<th>联系电话</th>
+                                <th>Q Q</th>
+				<th>志愿</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+                <volist name="list" id="vo" >
+			<tr>
+				<td>{$i}</td>
+				<td class="twidth">
+                                    <div class="ttext" >{$name.name}</div>
+				</td>
+				<td>{$name.genre}</td>
+				<td>{$vo.dep_name}</td>
+				<td>{$vo.name}:{$vo.stu_number}</td>
+                                <td>{$vo.phone}</td> 
+                                <td>{$vo.qq}</td>
+				<td>{$vo.volunt}</td>
+                                <td><a href="__ROOT__/Teacher/Choose/Choose1/top/{$vo.top_id}/stu/{$vo.stu_number}/volunt/{$vo.volunt}" class="btn btn-info btn-ms"  id="white" onclick="return  confirm('确认选择“{$vo.name}”同学？')"><b>选择</b></a> <a href="__ROOT__/Teacher/Choose/Delete/top/{$vo.top_id}/stu/{$vo.stu_number}/volunt/{$vo.volunt}" class="btn btn-ms btn-danger " onclick="return  confirm('确认放弃“{$vo.name}”同学？')" id="white"><b>放弃</b></a> </td>
+			</tr>
+                </volist>
+		</tbody>
+	</table>
+<!--</div>
+</form>-->
+</body>
+</html>

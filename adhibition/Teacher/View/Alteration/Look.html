@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>题目变更</title>
+        
+	<style>
+		td{
+			width: 200px;
+			border:1px solid #ddd;
+		}
+		td:first-child{
+			width: 150px;
+			text-align: center;
+		}
+		table{
+			border-collapse:collapse;
+			color:#333;
+			font-weight: 700;
+			line-height: 45px;
+			width: 900px;
+			margin:10px auto 50px auto;
+                      
+		}
+		input{
+			width: 100%;
+			height: 100%;
+			outline: 0;
+			border:0;
+                        font-size: 20px;
+		}
+		textarea{
+			width: 99%;
+			height: 300px;
+			outline: 0;
+			border:0px;
+                         font-size: 15px;
+		}
+                .zheshizuo{text-align:left}
+                .huise{color: #ccc;font-weight: 900} 
+.langse{color: #5cb85c;font-weight: 900}.red{color: red;}
+	</style>
+</head>
+<body>
+<table>
+	<caption><h3>毕业设计题目变更审批表</h3></caption>
+	<tbody>
+		<tr  style="text-align: center;">
+			<td>学生姓名</td>
+			<td>{$vo.name}</td>
+			<td>学号</td>
+			<td>{$vo.stu_number}</td>
+		</tr>
+		<tr style="text-align: center;">
+			<td>学院</td>
+			<td>{$vo.college_name}</td>
+			<td>专业</td>
+			<td>{$vo.major_name}</td>
+		</tr>
+		<tr  style="text-align: center;">
+			<td>变更前题目</td>
+			<td colspan="3">{$vo.top_name}</td>
+		</tr>
+		<tr>
+			<td>变更后题目</td>
+                        <td colspan="3" class="zheshizuo">{$vo.new_name}</td>
+		</tr>
+		<tr>
+			<td>题目变更原因</td>
+			<td colspan="3" class="zheshizuo">{$vo.cause|htmlspecialchars_decode}</td>
+		</tr>
+		<tr>
+			<td>新题目内容、进度计划及完成任务的保障措施</td>
+			<td colspan="3" class="zheshizuo">{$vo.plan|htmlspecialchars_decode}</td>
+		</tr>
+		<tr>
+			<td>审核结果</td>
+                        <td colspan="3">
+                             <if condition="($vo.adviser_audit eq 1)">
+                                <b class="langse">通过审核</b>
+                            <elseif condition="$vo.adviser_audit eq 2"/>
+                                <b class="red">退回修改</b>
+                            <else />
+                                <b class="red">未审核，或者您没刷新，请退出这个界面再刷新！</b>
+                            </if>
+                        </td>
+		</tr>
+		<tr>
+			<td>指导老师意见</td>
+			<td colspan="3" class="zheshizuo">{$vo.adviser|htmlspecialchars_decode}</td>
+		</tr>
+                <tr>
+                    <td colspan="4"><button type="submit" onclick="history.go(-1)" style="width:100px;height: 40px;background-color: #89e4cf;border:0;color:#fff;font-size: 20px;font-weight: 700;">返回</button> </td>
+		</tr>
+	</tbody>
+</table>
+        
+</body>
+</html>

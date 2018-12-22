@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>教学院长-课题发布</title>
+        <link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="__ROOT__/static/css/nav.css"> 
+        <script type="text/javascript" src="__ROOT__/static/js/jquery.min.js"> </script>
+</head>
+<body>
+<!--<div class="maofu" >-->
+	<table class="table panel-info bshadow" >
+		<thead>
+			<tr class="success">
+				<th>序号</th>
+				<th>学院名称</th>
+                                <th>专业数</th>
+                                <th>班级数</th>
+				<th>学生人数</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+                <volist name="list" id="vo">
+			<tr>
+				<td>{$i}</td>
+				<td>{$vo.dep_name}</td>
+				<td>{$vo.zy}</td>
+				<td>{$vo.bj}</td>
+                                <td>{$vo.xs}</td>
+				<td><a href="__ROOT__/Manager/Student/Specialty/dep/{$vo.dep_id}">进入</a></td>
+			</tr>
+                </volist>
+		</tbody>
+	</table>
+
+<!--</div>-->
+</body>
+</html>

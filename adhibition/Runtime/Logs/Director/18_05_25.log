@@ -1,0 +1,21 @@
+[ 2018-05-25T22:21:48+08:00 ] ::1 /graduation/Director/Review/Teacher/
+ERR: 参数错误或者未定义:dep
+
+[ 2018-05-25T22:21:52+08:00 ] ::1 /graduation/Director/Review/Student/dep/1/tea/001/name/5YiY6aKW/
+ERR: 参数错误或者未定义:num
+
+[ 2018-05-25T22:46:38+08:00 ] ::1 /graduation/Director/NotYet/Teacher/
+ERR: 参数错误或者未定义:dep
+
+[ 2018-05-25T22:50:54+08:00 ] ::1 /graduation/Director/Allocation/Teacher/
+ERR: 参数错误或者未定义:stu
+
+[ 2018-05-25T22:50:58+08:00 ] ::1 /graduation/Director/Allocation/Topic/tea/008/
+ERR: 参数错误或者未定义:stu
+
+[ 2018-05-25T22:51:08+08:00 ] ::1 /graduation/Director/Allocation/Topic/tea/008/
+ERR: 参数错误或者未定义:stu
+
+[ 2018-05-25T22:51:21+08:00 ] ::1 /graduation/Director/Allocation/Topic/tea/008/
+ERR: 参数错误或者未定义:stu
+

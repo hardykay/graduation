@@ -1,0 +1,151 @@
+[ 2018-12-04T17:06:31+08:00 ] ::1 /graduation/Manager/Student/Specialty/
+ERR: 参数错误或者未定义:dep
+
+[ 2018-12-04T17:15:41+08:00 ] ::1 /graduation/Manager/Ajax/Specialty.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002444s ]
+SQL: SHOW COLUMNS FROM `tp_specialty` [ RunTime:0.0036s ]
+SQL: SELECT dep_id as d,dep_name as n FROM `tp_specialty` WHERE `dep_father` = 5  [ RunTime:0.0005s ]
+
+[ 2018-12-04T17:16:29+08:00 ] ::1 /graduation/Manager/Ajax/Specialty.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001649s ]
+SQL: SHOW COLUMNS FROM `tp_specialty` [ RunTime:0.0024s ]
+SQL: SELECT dep_id as d,dep_name as n FROM `tp_specialty` WHERE `dep_father` = 5  [ RunTime:0.0003s ]
+
+[ 2018-12-04T17:42:48+08:00 ] ::1 /graduation/Manager/Rank/Admin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001467s ]
+SQL: SHOW COLUMNS FROM `tp_teacher` [ RunTime:0.0030s ]
+SQL: UPDATE `tp_teacher` SET `admin`='1' WHERE `tea_number` = 'cs1' [ RunTime:0.0151s ]
+
+[ 2018-12-04T17:42:52+08:00 ] ::1 /graduation/Manager/Rank/dean
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001576s ]
+SQL: SHOW COLUMNS FROM `tp_teacher` [ RunTime:0.0010s ]
+SQL: UPDATE `tp_teacher` SET `dean`='1' WHERE `tea_number` = 'cs1' [ RunTime:0.0337s ]
+
+[ 2018-12-04T17:43:14+08:00 ] ::1 /graduation/Manager/Ajax/Specialty.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `tp_specialty` [ RunTime:0.0006s ]
+SQL: SELECT dep_id as d,dep_name as n FROM `tp_specialty` WHERE `dep_father` = 5  [ RunTime:0.0003s ]
+
+[ 2018-12-04T17:43:18+08:00 ] ::1 /graduation/Manager/Ajax/banji.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001518s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0006s ]
+SQL: SELECT dep_id as d,dep_name as n FROM `tp_class` WHERE `dep_father` = 9  [ RunTime:0.0003s ]
+
+[ 2018-12-04T22:25:04+08:00 ] ::1 /graduation/Manager/OutTopic/Specialty/
+ERR: 参数错误或者未定义:dep
+
+[ 2018-12-04T22:25:07+08:00 ] ::1 /graduation/Manager/OutTopic/Banji/dep/5/
+ERR: 参数错误或者未定义:name
+
+[ 2018-12-04T22:25:13+08:00 ] ::1 /graduation/Manager/OutTopic/claExcel/dep/6/spe/6L2v5Lu25bel56iL/name/5LiA54+t
+ERR: Invalid cell coordinate A
+
+[ 2018-12-04T22:25:24+08:00 ] ::1 /graduation/Manager/OutTopic/Banji/dep/5/
+ERR: 参数错误或者未定义:name
+
+[ 2018-12-04T22:25:28+08:00 ] ::1 /graduation/Manager/OutTopic/claExcel/dep/6/spe/6L2v5Lu25bel56iL/name/5LiA54+t
+ERR: Invalid cell coordinate A
+
+[ 2018-12-04T22:28:08+08:00 ] ::1 /graduation/Manager/Ajax/Specialty.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004177s ]
+SQL: SHOW COLUMNS FROM `tp_specialty` [ RunTime:0.0013s ]
+SQL: SELECT dep_id as d,dep_name as n FROM `tp_specialty` WHERE `dep_father` = 5  [ RunTime:0.0006s ]
+
+[ 2018-12-04T22:28:10+08:00 ] ::1 /graduation/Manager/Ajax/banji.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002190s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003518s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0008s ]
+SQL: SELECT dep_id as d,dep_name as n FROM `tp_class` WHERE `dep_father` = 8  [ RunTime:0.0005s ]
+
+[ 2018-12-04T22:28:37+08:00 ] ::1 /graduation/Manager/Ajax/Specialty.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002760s ]
+SQL: SHOW COLUMNS FROM `tp_specialty` [ RunTime:0.0010s ]
+SQL: SELECT dep_id as d,dep_name as n FROM `tp_specialty` WHERE `dep_father` = 5  [ RunTime:0.0006s ]
+
+[ 2018-12-04T22:28:39+08:00 ] ::1 /graduation/Manager/Ajax/banji.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005290s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0010s ]
+SQL: SELECT dep_id as d,dep_name as n FROM `tp_class` WHERE `dep_father` = 8  [ RunTime:0.0005s ]
+
+[ 2018-12-04T22:28:56+08:00 ] ::1 /graduation/Manager/Ajax/Specialty.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003093s ]
+SQL: SHOW COLUMNS FROM `tp_specialty` [ RunTime:0.0014s ]
+SQL: SELECT dep_id as d,dep_name as n FROM `tp_specialty` WHERE `dep_father` = 5  [ RunTime:0.0006s ]
+
+[ 2018-12-04T22:28:58+08:00 ] ::1 /graduation/Manager/Ajax/banji.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002910s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0014s ]
+SQL: SELECT dep_id as d,dep_name as n FROM `tp_class` WHERE `dep_father` = 9  [ RunTime:0.0005s ]
+
+[ 2018-12-04T22:29:00+08:00 ] ::1 /graduation/Manager/Ajax/banji.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003701s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0010s ]
+SQL: SELECT dep_id as d,dep_name as n FROM `tp_class` WHERE `dep_father` = 8  [ RunTime:0.0008s ]
+
+[ 2018-12-04T22:29:17+08:00 ] ::1 /graduation/Manager/Ajax/Specialty.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002537s ]
+SQL: SHOW COLUMNS FROM `tp_specialty` [ RunTime:0.0011s ]
+SQL: SELECT dep_id as d,dep_name as n FROM `tp_specialty` WHERE `dep_father` = 5  [ RunTime:0.0007s ]
+
+[ 2018-12-04T22:29:18+08:00 ] ::1 /graduation/Manager/Ajax/banji.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002613s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0010s ]
+SQL: SELECT dep_id as d,dep_name as n FROM `tp_class` WHERE `dep_father` = 9  [ RunTime:0.0006s ]
+
+[ 2018-12-04T22:29:54+08:00 ] ::1 /graduation/Manager/Ajax/Specialty.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002464s ]
+SQL: SHOW COLUMNS FROM `tp_specialty` [ RunTime:0.0009s ]
+SQL: SELECT dep_id as d,dep_name as n FROM `tp_specialty` WHERE `dep_father` = 5  [ RunTime:0.0005s ]
+
+[ 2018-12-04T22:29:55+08:00 ] ::1 /graduation/Manager/Ajax/banji.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002668s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0009s ]
+SQL: SELECT dep_id as d,dep_name as n FROM `tp_class` WHERE `dep_father` = 9  [ RunTime:0.0007s ]
+
+[ 2018-12-04T22:30:16+08:00 ] ::1 /graduation/Manager/Ajax/Specialty.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003586s ]
+SQL: SHOW COLUMNS FROM `tp_specialty` [ RunTime:0.0013s ]
+SQL: SELECT dep_id as d,dep_name as n FROM `tp_specialty` WHERE `dep_father` = 5  [ RunTime:0.0006s ]
+
+[ 2018-12-04T22:30:17+08:00 ] ::1 /graduation/Manager/Ajax/banji.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002115s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004162s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0035s ]
+SQL: SELECT dep_id as d,dep_name as n FROM `tp_class` WHERE `dep_father` = 9  [ RunTime:0.0007s ]
+

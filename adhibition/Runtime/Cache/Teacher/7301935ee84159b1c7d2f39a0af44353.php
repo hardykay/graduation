@@ -1,0 +1,81 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>  
+<html>  
+<head>  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/graduation/static/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="/graduation/static/css/nav.css"> 
+    <script src="/graduation/static/js/jquery.min.js"></script>
+    <script src="/graduation/static/js/bootstrap.min.js"></script> 
+    <title>29-答辩秘书或答辩录入员录入答辩成绩和评语</title>
+</head>
+<body>
+<br>
+<div class="container" >
+     <div class="col-md-1 col-lg-1 col-xs-12"></div>
+      <div class="col-md-10 col-lg-10 col-xs-12" >
+      <form action="<?php echo U('Score/Opinion');?>" method="post" >
+          <input type="hidden" name="stu_number" value="<?php echo ($li["stu_number"]); ?>">
+          <input type="hidden" name="id" value="<?php echo ($id); ?>">
+        <table  class="table panel-info" border=""  align="center" cellpadding="5" class="table" cellspacing="0">
+            <thead align="center" >
+                <tr  align="left">
+                    <th colspan="4" >中国石油大学本科生毕业设计（论文）答辩成绩和评语</th>
+                </tr>
+            </thead>
+            <tbody align="center">
+                <tr>
+                    <td><b>课题名称:</b></td>
+                    <td colspan="3"><?php echo ($li["top_name"]); ?></td>
+                </tr>
+                <tr >
+                    <td><b>学生姓名:</b></td>
+                    <td><?php echo ($li["stu_name"]); ?></td>
+                    <td><b>学生学号:</b></td>
+                    <td><?php echo ($li["stu_number"]); ?>  </td>
+                </tr>
+                <tr>
+                    <td><b>所在专业:</b></td>
+                    <td><?php echo ($li["z_name"]); ?></td>
+                    <td><b>所在班级:</b></td>
+                    <td><?php echo ($li["b_name"]); ?></td>
+                </tr>
+                <tr >
+                    <td><b>评价项目</b></td>
+                    <td colspan="2"><b>评价内容</b></td>
+                    <td><b>得分</b></td>
+                </tr>
+                <tr >
+                    <td><b>毕业论文（百分制）:</b></td>
+                    <td colspan="2">论文规范性;论文撰写水平:综合能力;理论与实践结合;创新性</td>
+                    <td><input type="number" name="dabiangrade" min="0" max="100" value="<?php echo ($li["dabiangrade"]); ?>" required></td>
+                </tr>
+                <tr align="left">
+                    <td colspan="4" class="red">答辩结果：
+                        <select required name="dabian"> 
+                            <option value="">请选择</option>
+                            <option value="1">答辩完成</option>
+                            <option value="2">进入二辩</option>
+                            <option value="3">进入优秀答辩</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr align="left">
+                    <td colspan="4"><b>评语(特点,改进意见等):</b><br><textarea  style="width: 100%;height: 200px;" name="content3"><?php echo (htmlspecialchars_decode($li["content3"])); ?></textarea></td>
+                </tr>
+               
+            </tbody>
+            <tfoot >
+                <tr>
+                    <td colspan="7" align="center">
+                        <input type="submit" class="btn btn-success" value="提交更改">
+                        <input type="button" class="btn btn-success" onclick="window.history.go(-2)" value="返回">
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        </form>
+    </div>
+ </div>
+</body>
+</html>

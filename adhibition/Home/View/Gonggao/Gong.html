@@ -1,0 +1,53 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    
+
+<link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">  
+    
+<link rel="stylesheet" href="__ROOT__/static/css/common.css">
+<link rel="stylesheet" href="__ROOT__/static/css/download_index.css">
+<script src="__ROOT__/static/js/jquery.min.js"></script>
+<script src="__ROOT__/static/js/bootstrap.min.js"></script> 
+<link rel="shortcut icon" href="__ROOT__/static/images/icon.ico" />
+<title>{$geng}</title>
+<style>
+    .navbar {margin-bottom: 0px;}
+</style>
+</head> 
+<body>
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="navbar-header">
+                    <a class="navbar-brand" href="__ROOT__/Home/Index/index.html">返回首页</a>
+            </div>-
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+  <div class="resouces_tab_shows tab_nav J_tabSwitch">
+    <div class="tab_con_box">
+      <div class="tab_page tab1_con">
+        <div class="album_detail_wrap">
+        <volist name="list" id="vo">
+         <dl class="album_detail_list clearfix">
+            <dt><a target="_blank" href="__ROOT__/Home/Gonggao/Index/id/{$vo.id}"><img src="__ROOT__/static/images/gong.jpg" alt="img"></a></dt>
+            <dd><a target="_blank" href="__ROOT__/Home/Gonggao/Index/id/{$vo.id}" class="album_detail_title">{$vo.title}</a>
+              <div class="album_detail_bot clearfix">
+                <label><span>发布时间：</span><em class="upl_time">{$vo.publish}</em></label>
+              </div>
+            </dd>
+          </dl>
+         </volist>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

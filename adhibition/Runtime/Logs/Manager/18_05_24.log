@@ -1,0 +1,1473 @@
+[ 2018-05-24T00:20:46+08:00 ] ::1 /graduation/Manager/RandomAllotReview/CollegeView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:20:48+08:00 ] ::1 /graduation/Manager/RandomAllotReview/addTeacherView/dep/1/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:24:32+08:00 ] ::1 /graduation/Manager/Ajax/specialty
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002317s ]
+SQL: SHOW COLUMNS FROM `tp_specialty` [ RunTime:0.0011s ]
+SQL: SELECT dep_id as d,dep_name as n FROM `tp_specialty` WHERE `dep_father` = 1  [ RunTime:0.0011s ]
+
+[ 2018-05-24T00:24:38+08:00 ] ::1 /graduation/Manager/RandomAllotReview/CollegeView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:24:40+08:00 ] ::1 /graduation/Manager/RandomAllotReview/addTeacherView/dep/1/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:24:45+08:00 ] ::1 /graduation/Manager/RandomAllotReview/addTeacherView/dep/1/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:24:49+08:00 ] ::1 /graduation/Manager/RandomAllotReview/addTeacherView/dep/1/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:24:54+08:00 ] ::1 /graduation/Manager/RandomAllotReview/addTeacherView/dep/1/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:25:09+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Teacher/dep//name/
+ERR: 非法操作:Teacher
+
+[ 2018-05-24T00:34:38+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/id/6
+ERR: 1054:Unknown column 'number_poeple' in 'field list'
+ [ SQL语句 ] : SELECT g.id,g.tea_number,g.number_poeple,t.name FROM ( SELECT `id`,`tea_number`,`number_poeple` FROM `tp_grade_group_teacher` WHERE ( id=6 )  ) g,tp_teacher t WHERE ( g.tea_number=t.tea_number ) ORDER BY tea_number LIMIT 0,10  
+
+[ 2018-05-24T00:34:39+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/id/6
+ERR: 1054:Unknown column 'number_poeple' in 'field list'
+ [ SQL语句 ] : SELECT g.id,g.tea_number,g.number_poeple,t.name FROM ( SELECT `id`,`tea_number`,`number_poeple` FROM `tp_grade_group_teacher` WHERE ( id=6 )  ) g,tp_teacher t WHERE ( g.tea_number=t.tea_number ) ORDER BY tea_number LIMIT 0,10  
+
+[ 2018-05-24T00:34:40+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/id/6
+ERR: 1054:Unknown column 'number_poeple' in 'field list'
+ [ SQL语句 ] : SELECT g.id,g.tea_number,g.number_poeple,t.name FROM ( SELECT `id`,`tea_number`,`number_poeple` FROM `tp_grade_group_teacher` WHERE ( id=6 )  ) g,tp_teacher t WHERE ( g.tea_number=t.tea_number ) ORDER BY tea_number LIMIT 0,10  
+
+[ 2018-05-24T00:34:40+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/id/6
+ERR: 1054:Unknown column 'number_poeple' in 'field list'
+ [ SQL语句 ] : SELECT g.id,g.tea_number,g.number_poeple,t.name FROM ( SELECT `id`,`tea_number`,`number_poeple` FROM `tp_grade_group_teacher` WHERE ( id=6 )  ) g,tp_teacher t WHERE ( g.tea_number=t.tea_number ) ORDER BY tea_number LIMIT 0,10  
+
+[ 2018-05-24T00:34:40+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/id/6
+ERR: 1054:Unknown column 'number_poeple' in 'field list'
+ [ SQL语句 ] : SELECT g.id,g.tea_number,g.number_poeple,t.name FROM ( SELECT `id`,`tea_number`,`number_poeple` FROM `tp_grade_group_teacher` WHERE ( id=6 )  ) g,tp_teacher t WHERE ( g.tea_number=t.tea_number ) ORDER BY tea_number LIMIT 0,10  
+
+[ 2018-05-24T00:34:40+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/id/6
+ERR: 1054:Unknown column 'number_poeple' in 'field list'
+ [ SQL语句 ] : SELECT g.id,g.tea_number,g.number_poeple,t.name FROM ( SELECT `id`,`tea_number`,`number_poeple` FROM `tp_grade_group_teacher` WHERE ( id=6 )  ) g,tp_teacher t WHERE ( g.tea_number=t.tea_number ) ORDER BY tea_number LIMIT 0,10  
+
+[ 2018-05-24T00:35:47+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/id/6
+ERR: 1054:Unknown column 'number_poeple' in 'field list'
+ [ SQL语句 ] : SELECT g.id,g.tea_number,g.number_people,t.name FROM ( SELECT `id`,`tea_number`,`number_poeple` FROM `tp_grade_group_teacher` WHERE ( id=6 )  ) g,tp_teacher t WHERE ( g.tea_number=t.tea_number ) ORDER BY tea_number LIMIT 0,10  
+
+[ 2018-05-24T00:35:47+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/id/6
+ERR: 1054:Unknown column 'number_poeple' in 'field list'
+ [ SQL语句 ] : SELECT g.id,g.tea_number,g.number_people,t.name FROM ( SELECT `id`,`tea_number`,`number_poeple` FROM `tp_grade_group_teacher` WHERE ( id=6 )  ) g,tp_teacher t WHERE ( g.tea_number=t.tea_number ) ORDER BY tea_number LIMIT 0,10  
+
+[ 2018-05-24T00:36:13+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:36:14+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:36:14+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:36:21+08:00 ] ::1 /graduation/Manager/RandomAllotReview/addTeacherView/dep//id/6/page/2
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:36:23+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:36:48+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:36:49+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:36:49+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:36:50+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:36:50+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:36:50+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:36:50+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:37:45+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:37:45+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:37:46+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:39:31+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:39:32+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:39:32+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:39:32+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:39:33+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:39:40+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:39:41+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:39:42+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:39:42+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:39:42+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:39:51+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:39:52+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:39:52+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:39:52+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:39:52+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:39:53+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:39:53+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:39:53+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:39:53+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:39:57+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:40:03+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:40:03+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:40:04+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:40:59+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:41:06+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:41:06+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:41:06+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:41:07+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:41:10+08:00 ] ::1 /graduation/Manager/RandomAllotReview/addTeacherView/dep//id/6/page/2
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:41:12+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T00:41:46+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T01:04:15+08:00 ] ::1 /graduation/Manager/Ajax/specialty
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003103s ]
+
+[ 2018-05-24T01:10:22+08:00 ] ::1 /graduation/Manager/Ajax/specialty
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002839s ]
+
+[ 2018-05-24T01:10:30+08:00 ] ::1 /graduation/Manager/Ajax/specialty
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004558s ]
+
+[ 2018-05-24T01:11:06+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003658s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0010s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='0' WHERE `id` = 0 AND `tea_number` = '' [ RunTime:0.0770s ]
+
+[ 2018-05-24T01:11:18+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003201s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0010s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='0' WHERE `id` = 0 AND `tea_number` = '' [ RunTime:0.0005s ]
+
+[ 2018-05-24T01:12:24+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003107s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0011s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='0' WHERE `id` = 0 AND `tea_number` = '' [ RunTime:0.0008s ]
+
+[ 2018-05-24T01:12:53+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002489s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0012s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='0' WHERE `id` = 0 AND `tea_number` = '' [ RunTime:0.0005s ]
+
+[ 2018-05-24T01:13:45+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002218s ]
+
+[ 2018-05-24T01:13:57+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002988s ]
+
+[ 2018-05-24T01:14:19+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003394s ]
+
+[ 2018-05-24T01:14:31+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004493s ]
+
+[ 2018-05-24T01:15:04+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003570s ]
+
+[ 2018-05-24T01:15:25+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003450s ]
+
+[ 2018-05-24T01:15:45+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003037s ]
+
+[ 2018-05-24T01:17:10+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003463s ]
+
+[ 2018-05-24T01:17:37+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003825s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0011s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='55' WHERE `id` = 6 AND `tea_number` = '011' [ RunTime:0.2886s ]
+
+[ 2018-05-24T01:17:47+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004877s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0010s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='444' WHERE `id` = 6 AND `tea_number` = '012' [ RunTime:0.0729s ]
+
+[ 2018-05-24T01:17:54+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002413s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0008s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='0' WHERE `id` = 6 AND `tea_number` = '012' [ RunTime:0.1370s ]
+
+[ 2018-05-24T01:21:23+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002491s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0012s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='222' WHERE `id` = 6 AND `tea_number` = '011' [ RunTime:0.0451s ]
+
+[ 2018-05-24T01:21:30+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002587s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0013s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='6' WHERE `id` = 6 AND `tea_number` = '011' [ RunTime:0.1292s ]
+
+[ 2018-05-24T01:21:37+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003996s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0016s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='6' WHERE `id` = 6 AND `tea_number` = '012' [ RunTime:0.1594s ]
+
+[ 2018-05-24T01:21:42+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001143s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002206s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0008s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='8' WHERE `id` = 6 AND `tea_number` = '013' [ RunTime:0.0479s ]
+
+[ 2018-05-24T01:21:44+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002470s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0011s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 6 AND `tea_number` = '014' [ RunTime:0.0275s ]
+
+[ 2018-05-24T01:21:46+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003069s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0010s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='7' WHERE `id` = 6 AND `tea_number` = '015' [ RunTime:0.0293s ]
+
+[ 2018-05-24T01:21:49+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002243s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0010s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='8' WHERE `id` = 6 AND `tea_number` = '016' [ RunTime:0.0584s ]
+
+[ 2018-05-24T01:22:31+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002256s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0034s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='100' WHERE `id` = 6 AND `tea_number` = '011' [ RunTime:0.0270s ]
+
+[ 2018-05-24T01:22:49+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002248s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0011s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='40' WHERE `id` = 6 AND `tea_number` = '011' [ RunTime:0.0534s ]
+
+[ 2018-05-24T01:23:08+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004057s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0008s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='56' WHERE `id` = 6 AND `tea_number` = '011' [ RunTime:0.0227s ]
+
+[ 2018-05-24T01:23:11+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003474s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0010s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='90' WHERE `id` = 6 AND `tea_number` = '012' [ RunTime:0.2304s ]
+
+[ 2018-05-24T01:23:15+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002668s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0009s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='7' WHERE `id` = 6 AND `tea_number` = '013' [ RunTime:0.0509s ]
+
+[ 2018-05-24T01:23:24+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002230s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0013s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 6 AND `tea_number` = '011' [ RunTime:0.0728s ]
+
+[ 2018-05-24T01:23:26+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002769s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0016s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 6 AND `tea_number` = '012' [ RunTime:0.0336s ]
+
+[ 2018-05-24T01:23:27+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002110s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0011s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 6 AND `tea_number` = '013' [ RunTime:0.2176s ]
+
+[ 2018-05-24T01:23:29+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002290s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0009s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 6 AND `tea_number` = '015' [ RunTime:0.0442s ]
+
+[ 2018-05-24T01:23:31+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002832s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0015s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 6 AND `tea_number` = '016' [ RunTime:0.0570s ]
+
+[ 2018-05-24T01:23:32+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003141s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0013s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 6 AND `tea_number` = '017' [ RunTime:0.1093s ]
+
+[ 2018-05-24T01:23:34+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003310s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0009s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 6 AND `tea_number` = '018' [ RunTime:0.1093s ]
+
+[ 2018-05-24T01:23:36+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002200s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0010s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 6 AND `tea_number` = '019' [ RunTime:0.2745s ]
+
+[ 2018-05-24T01:23:37+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003392s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0010s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 6 AND `tea_number` = '020' [ RunTime:0.0293s ]
+
+[ 2018-05-24T01:23:45+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005400s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0012s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 6 AND `tea_number` = '001' [ RunTime:0.0411s ]
+
+[ 2018-05-24T01:23:49+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002410s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0008s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 6 AND `tea_number` = '002' [ RunTime:0.0718s ]
+
+[ 2018-05-24T01:23:54+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002313s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0009s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 6 AND `tea_number` = '003' [ RunTime:0.0355s ]
+
+[ 2018-05-24T01:23:55+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002186s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0008s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 6 AND `tea_number` = '004' [ RunTime:0.0254s ]
+
+[ 2018-05-24T01:23:56+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002383s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0009s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 6 AND `tea_number` = '005' [ RunTime:0.1460s ]
+
+[ 2018-05-24T01:23:57+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003079s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0011s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 6 AND `tea_number` = '006' [ RunTime:0.0284s ]
+
+[ 2018-05-24T01:23:58+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002299s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0008s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 6 AND `tea_number` = '007' [ RunTime:0.0286s ]
+
+[ 2018-05-24T01:24:00+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003944s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0009s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 6 AND `tea_number` = '008' [ RunTime:0.0404s ]
+
+[ 2018-05-24T01:24:01+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002538s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0010s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 6 AND `tea_number` = '009' [ RunTime:0.0717s ]
+
+[ 2018-05-24T01:24:04+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003644s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0012s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 6 AND `tea_number` = '010' [ RunTime:0.2712s ]
+
+[ 2018-05-24T01:24:07+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005634s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0011s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 6 AND `tea_number` = '021' [ RunTime:0.1367s ]
+
+[ 2018-05-24T01:24:11+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004332s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0014s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 6 AND `tea_number` = '022' [ RunTime:0.0271s ]
+
+[ 2018-05-24T01:24:14+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003883s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0011s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 6 AND `tea_number` = '023' [ RunTime:0.0653s ]
+
+[ 2018-05-24T01:24:18+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003231s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0010s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 6 AND `tea_number` = '024' [ RunTime:0.0792s ]
+
+[ 2018-05-24T01:24:22+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003442s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0015s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 6 AND `tea_number` = '025' [ RunTime:0.0405s ]
+
+[ 2018-05-24T01:24:55+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:35:40+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:36:38+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:36:39+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:40:17+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:40:18+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:40:47+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:42:42+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:42:42+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:42:42+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:42:43+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:42:50+08:00 ] ::1 /graduation/Manager/RandomAllotReview/DeleteTeacher/id/6/tea_number/004
+ERR: 非法操作:DeleteTeacher
+
+[ 2018-05-24T11:45:29+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:45:54+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:45:54+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:45:55+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:47:09+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:47:11+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:47:11+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:47:12+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:47:12+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:47:19+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:47:23+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:47:24+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:47:24+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:47:25+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:47:35+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:47:36+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:48:04+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/id/6
+ERR: 参数错误或者未定义:page
+
+[ 2018-05-24T11:48:05+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/id/6
+ERR: 参数错误或者未定义:page
+
+[ 2018-05-24T11:48:05+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/id/6
+ERR: 参数错误或者未定义:page
+
+[ 2018-05-24T11:48:11+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:48:12+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:48:12+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:48:12+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:53:21+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:53:27+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:53:31+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:53:36+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:53:42+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T11:53:43+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T12:07:24+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT * FROM tp_grade_group_teacher t  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON t.tea_number = r.tea_number  WHERE `id` = '6' 
+
+[ 2018-05-24T12:07:25+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT * FROM tp_grade_group_teacher t  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON t.tea_number = r.tea_number  WHERE `id` = '6' 
+
+[ 2018-05-24T12:07:50+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT * FROM `tp_grade_group_teacher`  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON t.tea_number = r.tea_number  WHERE `id` = '6' 
+
+[ 2018-05-24T12:07:50+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT * FROM `tp_grade_group_teacher`  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON t.tea_number = r.tea_number  WHERE `id` = '6' 
+
+[ 2018-05-24T12:07:51+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT * FROM `tp_grade_group_teacher`  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON t.tea_number = r.tea_number  WHERE `id` = '6' 
+
+[ 2018-05-24T12:07:51+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT * FROM `tp_grade_group_teacher`  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON t.tea_number = r.tea_number  WHERE `id` = '6' 
+
+[ 2018-05-24T12:07:51+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT * FROM `tp_grade_group_teacher`  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON t.tea_number = r.tea_number  WHERE `id` = '6' 
+
+[ 2018-05-24T12:07:52+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT * FROM `tp_grade_group_teacher`  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON t.tea_number = r.tea_number  WHERE `id` = '6' 
+
+[ 2018-05-24T12:07:52+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT * FROM `tp_grade_group_teacher`  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON t.tea_number = r.tea_number  WHERE `id` = '6' 
+
+[ 2018-05-24T12:07:52+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT * FROM `tp_grade_group_teacher`  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON t.tea_number = r.tea_number  WHERE `id` = '6' 
+
+[ 2018-05-24T12:08:05+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT * FROM `tp_grade_group_teacher`  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON tp_Grade_group_teacher.tea_number = r.tea_number  WHERE `id` = '6' 
+
+[ 2018-05-24T12:08:06+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT * FROM `tp_grade_group_teacher`  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON tp_Grade_group_teacher.tea_number = r.tea_number  WHERE `id` = '6' 
+
+[ 2018-05-24T12:08:06+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT * FROM `tp_grade_group_teacher`  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON tp_Grade_group_teacher.tea_number = r.tea_number  WHERE `id` = '6' 
+
+[ 2018-05-24T12:08:06+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT * FROM `tp_grade_group_teacher`  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON tp_Grade_group_teacher.tea_number = r.tea_number  WHERE `id` = '6' 
+
+[ 2018-05-24T12:08:06+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT * FROM `tp_grade_group_teacher`  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON tp_Grade_group_teacher.tea_number = r.tea_number  WHERE `id` = '6' 
+
+[ 2018-05-24T12:08:07+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT * FROM `tp_grade_group_teacher`  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON tp_Grade_group_teacher.tea_number = r.tea_number  WHERE `id` = '6' 
+
+[ 2018-05-24T12:08:07+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT * FROM `tp_grade_group_teacher`  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON tp_Grade_group_teacher.tea_number = r.tea_number  WHERE `id` = '6' 
+
+[ 2018-05-24T12:08:07+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT * FROM `tp_grade_group_teacher`  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON tp_Grade_group_teacher.tea_number = r.tea_number  WHERE `id` = '6' 
+
+[ 2018-05-24T12:09:20+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT * FROM tp_grade_group_teacher t  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON t.tea_number = r.tea_number  WHERE ( t.id=6 ) 
+
+[ 2018-05-24T12:09:21+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT * FROM tp_grade_group_teacher t  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON t.tea_number = r.tea_number  WHERE ( t.id=6 ) 
+
+[ 2018-05-24T12:09:21+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT * FROM tp_grade_group_teacher t  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON t.tea_number = r.tea_number  WHERE ( t.id=6 ) 
+
+[ 2018-05-24T12:09:21+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT * FROM tp_grade_group_teacher t  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON t.tea_number = r.tea_number  WHERE ( t.id=6 ) 
+
+[ 2018-05-24T12:09:22+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT * FROM tp_grade_group_teacher t  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON t.tea_number = r.tea_number  WHERE ( t.id=6 ) 
+
+[ 2018-05-24T12:09:22+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT * FROM tp_grade_group_teacher t  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON t.tea_number = r.tea_number  WHERE ( t.id=6 ) 
+
+[ 2018-05-24T12:09:22+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT * FROM tp_grade_group_teacher t  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON t.tea_number = r.tea_number  WHERE ( t.id=6 ) 
+
+[ 2018-05-24T12:10:38+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT t.tea_number FROM tp_grade_group_teacher t  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON t.tea_number = r.tea_number  WHERE ( t.id=6 ) 
+
+[ 2018-05-24T12:10:39+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT t.tea_number FROM tp_grade_group_teacher t  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON t.tea_number = r.tea_number  WHERE ( t.id=6 ) 
+
+[ 2018-05-24T12:10:39+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT t.tea_number FROM tp_grade_group_teacher t  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON t.tea_number = r.tea_number  WHERE ( t.id=6 ) 
+
+[ 2018-05-24T12:10:39+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT t.tea_number FROM tp_grade_group_teacher t  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON t.tea_number = r.tea_number  WHERE ( t.id=6 ) 
+
+[ 2018-05-24T12:10:40+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT t.tea_number FROM tp_grade_group_teacher t  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON t.tea_number = r.tea_number  WHERE ( t.id=6 ) 
+
+[ 2018-05-24T12:12:13+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT t.tea_number FROM tp_grade_group_teacher t  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON t.tea_number = r.tea_number  WHERE ( t.id=6 ) 
+
+[ 2018-05-24T12:12:45+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT t.tea_number FROM tp_grade_group_teacher t  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON t.tea_number = r.tea_number  WHERE ( t.id=6 ) 
+
+[ 2018-05-24T12:12:45+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT t.tea_number FROM tp_grade_group_teacher t  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON t.tea_number = r.tea_number  WHERE ( t.id=6 ) 
+
+[ 2018-05-24T12:12:46+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT t.tea_number FROM tp_grade_group_teacher t  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON t.tea_number = r.tea_number  WHERE ( t.id=6 ) 
+
+[ 2018-05-24T12:12:46+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1248:Every derived table must have its own alias
+ [ SQL语句 ] : SELECT t.tea_number FROM tp_grade_group_teacher t  LEFT JOIN ( SELECT `tea_number`,count(*) as amount FROM `tp_review` GROUP BY tea_number  ) ON t.tea_number = r.tea_number  WHERE ( t.id=6 ) 
+
+[ 2018-05-24T12:37:17+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T12:37:21+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002221s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0009s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='1' WHERE `id` = 6 AND `tea_number` = '009' [ RunTime:0.0496s ]
+
+[ 2018-05-24T12:47:42+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1146:Table 'graduation_project.tp_tp_stu_topic' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tp_tp_stu_topic`
+
+[ 2018-05-24T12:47:43+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1146:Table 'graduation_project.tp_tp_stu_topic' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tp_tp_stu_topic`
+
+[ 2018-05-24T13:03:56+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T13:04:00+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002210s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0008s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 6 AND `tea_number` = '009' [ RunTime:0.2308s ]
+
+[ 2018-05-24T13:12:37+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  ) )' at line 1
+ [ SQL语句 ] : SELECT * FROM `tp_student` WHERE (  dep_id in (1,2,3) and stu_number not in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE ( tea_number='009' )  ) )  ) UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  ) ) LIMIT 3  
+
+[ 2018-05-24T13:12:38+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  ) )' at line 1
+ [ SQL语句 ] : SELECT * FROM `tp_student` WHERE (  dep_id in (1,2,3) and stu_number not in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE ( tea_number='009' )  ) )  ) UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  ) ) LIMIT 3  
+
+[ 2018-05-24T13:12:38+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  ) )' at line 1
+ [ SQL语句 ] : SELECT * FROM `tp_student` WHERE (  dep_id in (1,2,3) and stu_number not in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE ( tea_number='009' )  ) )  ) UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  ) ) LIMIT 3  
+
+[ 2018-05-24T13:12:38+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  ) )' at line 1
+ [ SQL语句 ] : SELECT * FROM `tp_student` WHERE (  dep_id in (1,2,3) and stu_number not in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE ( tea_number='009' )  ) )  ) UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  ) ) LIMIT 3  
+
+[ 2018-05-24T13:13:21+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  ) )' at line 1
+ [ SQL语句 ] : SELECT * FROM `tp_student` WHERE (  dep_id in (1,2,3) and stu_number not in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE ( tea_number='009' )  ) )  ) UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  ) ) LIMIT 3  
+
+[ 2018-05-24T13:13:27+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1054:Unknown column 'dep_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `tp_student` WHERE (  dep_id in (1,2,3)  ) LIMIT 3  
+
+[ 2018-05-24T13:13:28+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1054:Unknown column 'dep_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `tp_student` WHERE (  dep_id in (1,2,3)  ) LIMIT 3  
+
+[ 2018-05-24T13:13:28+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1054:Unknown column 'dep_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `tp_student` WHERE (  dep_id in (1,2,3)  ) LIMIT 3  
+
+[ 2018-05-24T13:13:28+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1054:Unknown column 'dep_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `tp_student` WHERE (  dep_id in (1,2,3)  ) LIMIT 3  
+
+[ 2018-05-24T13:13:28+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1054:Unknown column 'dep_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `tp_student` WHERE (  dep_id in (1,2,3)  ) LIMIT 3  
+
+[ 2018-05-24T13:13:29+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1054:Unknown column 'dep_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `tp_student` WHERE (  dep_id in (1,2,3)  ) LIMIT 3  
+
+[ 2018-05-24T13:13:29+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1054:Unknown column 'dep_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `tp_student` WHERE (  dep_id in (1,2,3)  ) LIMIT 3  
+
+[ 2018-05-24T13:13:57+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  ) )' at line 1
+ [ SQL语句 ] : SELECT * FROM `tp_student` WHERE (  dep_major in (1,2,3) and stu_number not in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE ( tea_number='009' )  ) )  ) UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  ) ) LIMIT 3  
+
+[ 2018-05-24T13:13:58+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  ) )' at line 1
+ [ SQL语句 ] : SELECT * FROM `tp_student` WHERE (  dep_major in (1,2,3) and stu_number not in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE ( tea_number='009' )  ) )  ) UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  ) ) LIMIT 3  
+
+[ 2018-05-24T13:13:58+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  ) )' at line 1
+ [ SQL语句 ] : SELECT * FROM `tp_student` WHERE (  dep_major in (1,2,3) and stu_number not in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE ( tea_number='009' )  ) )  ) UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  ) ) LIMIT 3  
+
+[ 2018-05-24T13:13:58+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  ) )' at line 1
+ [ SQL语句 ] : SELECT * FROM `tp_student` WHERE (  dep_major in (1,2,3) and stu_number not in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE ( tea_number='009' )  ) )  ) UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  ) ) LIMIT 3  
+
+[ 2018-05-24T13:13:59+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  ) )' at line 1
+ [ SQL语句 ] : SELECT * FROM `tp_student` WHERE (  dep_major in (1,2,3) and stu_number not in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE ( tea_number='009' )  ) )  ) UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  ) ) LIMIT 3  
+
+[ 2018-05-24T13:13:59+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  ) )' at line 1
+ [ SQL语句 ] : SELECT * FROM `tp_student` WHERE (  dep_major in (1,2,3) and stu_number not in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE ( tea_number='009' )  ) )  ) UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  ) ) LIMIT 3  
+
+[ 2018-05-24T13:14:53+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  )) ' at line 1
+ [ SQL语句 ] : SELECT * FROM `tp_student` WHERE (  dep_major in (1,2,3) and stu_number not in (( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE ( tea_number='009' )  ) )  ) UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  )) ) LIMIT 3  
+
+[ 2018-05-24T13:14:53+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  )) ' at line 1
+ [ SQL语句 ] : SELECT * FROM `tp_student` WHERE (  dep_major in (1,2,3) and stu_number not in (( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE ( tea_number='009' )  ) )  ) UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  )) ) LIMIT 3  
+
+[ 2018-05-24T13:14:53+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  )) ' at line 1
+ [ SQL语句 ] : SELECT * FROM `tp_student` WHERE (  dep_major in (1,2,3) and stu_number not in (( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE ( tea_number='009' )  ) )  ) UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  )) ) LIMIT 3  
+
+[ 2018-05-24T13:14:54+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  )) ' at line 1
+ [ SQL语句 ] : SELECT * FROM `tp_student` WHERE (  dep_major in (1,2,3) and stu_number not in (( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE ( tea_number='009' )  ) )  ) UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  )) ) LIMIT 3  
+
+[ 2018-05-24T13:14:54+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  )) ' at line 1
+ [ SQL语句 ] : SELECT * FROM `tp_student` WHERE (  dep_major in (1,2,3) and stu_number not in (( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE ( tea_number='009' )  ) )  ) UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  )) ) LIMIT 3  
+
+[ 2018-05-24T13:14:54+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  )) ' at line 1
+ [ SQL语句 ] : SELECT * FROM `tp_student` WHERE (  dep_major in (1,2,3) and stu_number not in (( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE ( tea_number='009' )  ) )  ) UNION  ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  )) ) LIMIT 3  
+
+[ 2018-05-24T13:31:44+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT (select '009') as tea_number,`stu_number`,dep_major as dep_id FROM `tp_st' at line 1
+ [ SQL语句 ] : INSERT INTO  tp_review (tea_nmber,stu_number,dep_id) VALUES ( SELECT (select '009') as tea_number,`stu_number`,dep_major as dep_id FROM `tp_student` WHERE (  dep_major in (1,2,3) and stu_number not in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE ( tea_number='009' )  ) )  ) and stu_number not in ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  ) ) LIMIT 3   )
+
+[ 2018-05-24T13:33:49+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT (select '009') as tea_number,`stu_number`,dep_major as dep_id FROM `tp_st' at line 1
+ [ SQL语句 ] : INSERT INTO  tp_review (tea_nmber,stu_number,dep_id) VALUES ( SELECT (select '009') as tea_number,`stu_number`,dep_major as dep_id FROM `tp_student` WHERE (  dep_major in (1,2,3) and stu_number not in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE ( tea_number='009' )  ) )  ) and stu_number not in ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  ) ) LIMIT 3   )
+
+[ 2018-05-24T13:33:50+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT (select '009') as tea_number,`stu_number`,dep_major as dep_id FROM `tp_st' at line 1
+ [ SQL语句 ] : INSERT INTO  tp_review (tea_nmber,stu_number,dep_id) VALUES ( SELECT (select '009') as tea_number,`stu_number`,dep_major as dep_id FROM `tp_student` WHERE (  dep_major in (1,2,3) and stu_number not in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE ( tea_number='009' )  ) )  ) and stu_number not in ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  ) ) LIMIT 3   )
+
+[ 2018-05-24T13:33:50+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT (select '009') as tea_number,`stu_number`,dep_major as dep_id FROM `tp_st' at line 1
+ [ SQL语句 ] : INSERT INTO  tp_review (tea_nmber,stu_number,dep_id) VALUES ( SELECT (select '009') as tea_number,`stu_number`,dep_major as dep_id FROM `tp_student` WHERE (  dep_major in (1,2,3) and stu_number not in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE ( tea_number='009' )  ) )  ) and stu_number not in ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  ) ) LIMIT 3   )
+
+[ 2018-05-24T13:33:50+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT (select '009') as tea_number,`stu_number`,dep_major as dep_id FROM `tp_st' at line 1
+ [ SQL语句 ] : INSERT INTO  tp_review (tea_nmber,stu_number,dep_id) VALUES ( SELECT (select '009') as tea_number,`stu_number`,dep_major as dep_id FROM `tp_student` WHERE (  dep_major in (1,2,3) and stu_number not in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE ( tea_number='009' )  ) )  ) and stu_number not in ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  ) ) LIMIT 3   )
+
+[ 2018-05-24T13:33:51+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT (select '009') as tea_number,`stu_number`,dep_major as dep_id FROM `tp_st' at line 1
+ [ SQL语句 ] : INSERT INTO  tp_review (tea_nmber,stu_number,dep_id) VALUES ( SELECT (select '009') as tea_number,`stu_number`,dep_major as dep_id FROM `tp_student` WHERE (  dep_major in (1,2,3) and stu_number not in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE ( tea_number='009' )  ) )  ) and stu_number not in ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  ) ) LIMIT 3   )
+
+[ 2018-05-24T13:35:10+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT (select '009') as tea_number,`stu_number`,dep_major as dep_id FROM `tp_st' at line 1
+ [ SQL语句 ] : insert  into   tp_review (tea_nmber,stu_number,dep_id) values ( SELECT (select '009') as tea_number,`stu_number`,dep_major as dep_id FROM `tp_student` WHERE (  dep_major in (1,2,3) and stu_number not in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE ( tea_number='009' )  ) )  ) and stu_number not in ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  ) ) LIMIT 3   )
+
+[ 2018-05-24T13:35:11+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT (select '009') as tea_number,`stu_number`,dep_major as dep_id FROM `tp_st' at line 1
+ [ SQL语句 ] : insert  into   tp_review (tea_nmber,stu_number,dep_id) values ( SELECT (select '009') as tea_number,`stu_number`,dep_major as dep_id FROM `tp_student` WHERE (  dep_major in (1,2,3) and stu_number not in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE ( tea_number='009' )  ) )  ) and stu_number not in ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  ) ) LIMIT 3   )
+
+[ 2018-05-24T13:35:11+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT (select '009') as tea_number,`stu_number`,dep_major as dep_id FROM `tp_st' at line 1
+ [ SQL语句 ] : insert  into   tp_review (tea_nmber,stu_number,dep_id) values ( SELECT (select '009') as tea_number,`stu_number`,dep_major as dep_id FROM `tp_student` WHERE (  dep_major in (1,2,3) and stu_number not in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE ( tea_number='009' )  ) )  ) and stu_number not in ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  ) ) LIMIT 3   )
+
+[ 2018-05-24T13:35:11+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Onekey/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT (select '009') as tea_number,`stu_number`,dep_major as dep_id FROM `tp_st' at line 1
+ [ SQL语句 ] : insert  into   tp_review (tea_nmber,stu_number,dep_id) values ( SELECT (select '009') as tea_number,`stu_number`,dep_major as dep_id FROM `tp_student` WHERE (  dep_major in (1,2,3) and stu_number not in ( SELECT `stu_number` FROM `tp_stu_topic` WHERE ( top_id in ( SELECT `top_id` FROM `tp_topic` WHERE ( tea_number='009' )  ) )  ) and stu_number not in ( SELECT `stu_number` FROM `tp_review` WHERE (  dep_id in (1,2,3)  )  ) ) LIMIT 3   )
+
+[ 2018-05-24T13:39:56+08:00 ] ::1 /graduation/Manager/Review/Teacher/dep/1/
+ERR: 参数错误或者未定义:college
+
+[ 2018-05-24T13:43:35+08:00 ] ::1 /graduation/Manager/RandomAllotReview/CollegeView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T13:43:36+08:00 ] ::1 /graduation/Manager/RandomAllotReview/addTeacherView/dep/1/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T13:43:43+08:00 ] ::1 /graduation/Manager/RandomAllotReview/addTeacherView/dep/1/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T13:43:47+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T13:45:11+08:00 ] ::1 /graduation/Manager/RandomAllotReview/SetTeacherNumberView/id/6/page/1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ace' at line 1
+ [ SQL语句 ] : SELECT g.id,g.tea_number,g.number_people,t.name FROM ( SELECT `id`,`tea_number`,`number_people` FROM `tp_grade_group_teacher` WHERE ( id=6 ) LIMIT 0,10   ) g,tp_teacher t WHERE ( g.tea_number=t.tea_number ) ORDER BY g.tea_number ace 
+
+[ 2018-05-24T13:45:12+08:00 ] ::1 /graduation/Manager/RandomAllotReview/SetTeacherNumberView/id/6/page/1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ace' at line 1
+ [ SQL语句 ] : SELECT g.id,g.tea_number,g.number_people,t.name FROM ( SELECT `id`,`tea_number`,`number_people` FROM `tp_grade_group_teacher` WHERE ( id=6 ) LIMIT 0,10   ) g,tp_teacher t WHERE ( g.tea_number=t.tea_number ) ORDER BY g.tea_number ace 
+
+[ 2018-05-24T13:45:12+08:00 ] ::1 /graduation/Manager/RandomAllotReview/SetTeacherNumberView/id/6/page/1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ace' at line 1
+ [ SQL语句 ] : SELECT g.id,g.tea_number,g.number_people,t.name FROM ( SELECT `id`,`tea_number`,`number_people` FROM `tp_grade_group_teacher` WHERE ( id=6 ) LIMIT 0,10   ) g,tp_teacher t WHERE ( g.tea_number=t.tea_number ) ORDER BY g.tea_number ace 
+
+[ 2018-05-24T13:45:12+08:00 ] ::1 /graduation/Manager/RandomAllotReview/SetTeacherNumberView/id/6/page/1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ace' at line 1
+ [ SQL语句 ] : SELECT g.id,g.tea_number,g.number_people,t.name FROM ( SELECT `id`,`tea_number`,`number_people` FROM `tp_grade_group_teacher` WHERE ( id=6 ) LIMIT 0,10   ) g,tp_teacher t WHERE ( g.tea_number=t.tea_number ) ORDER BY g.tea_number ace 
+
+[ 2018-05-24T13:45:23+08:00 ] ::1 /graduation/Manager/RandomAllotReview/SetTeacherNumberView/id/6/page/1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ase' at line 1
+ [ SQL语句 ] : SELECT g.id,g.tea_number,g.number_people,t.name FROM ( SELECT `id`,`tea_number`,`number_people` FROM `tp_grade_group_teacher` WHERE ( id=6 ) LIMIT 0,10   ) g,tp_teacher t WHERE ( g.tea_number=t.tea_number ) ORDER BY g.tea_number ase 
+
+[ 2018-05-24T13:45:24+08:00 ] ::1 /graduation/Manager/RandomAllotReview/SetTeacherNumberView/id/6/page/1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ase' at line 1
+ [ SQL语句 ] : SELECT g.id,g.tea_number,g.number_people,t.name FROM ( SELECT `id`,`tea_number`,`number_people` FROM `tp_grade_group_teacher` WHERE ( id=6 ) LIMIT 0,10   ) g,tp_teacher t WHERE ( g.tea_number=t.tea_number ) ORDER BY g.tea_number ase 
+
+[ 2018-05-24T13:45:24+08:00 ] ::1 /graduation/Manager/RandomAllotReview/SetTeacherNumberView/id/6/page/1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ase' at line 1
+ [ SQL语句 ] : SELECT g.id,g.tea_number,g.number_people,t.name FROM ( SELECT `id`,`tea_number`,`number_people` FROM `tp_grade_group_teacher` WHERE ( id=6 ) LIMIT 0,10   ) g,tp_teacher t WHERE ( g.tea_number=t.tea_number ) ORDER BY g.tea_number ase 
+
+[ 2018-05-24T13:45:24+08:00 ] ::1 /graduation/Manager/RandomAllotReview/SetTeacherNumberView/id/6/page/1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ase' at line 1
+ [ SQL语句 ] : SELECT g.id,g.tea_number,g.number_people,t.name FROM ( SELECT `id`,`tea_number`,`number_people` FROM `tp_grade_group_teacher` WHERE ( id=6 ) LIMIT 0,10   ) g,tp_teacher t WHERE ( g.tea_number=t.tea_number ) ORDER BY g.tea_number ase 
+
+[ 2018-05-24T13:45:25+08:00 ] ::1 /graduation/Manager/RandomAllotReview/SetTeacherNumberView/id/6/page/1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ase' at line 1
+ [ SQL语句 ] : SELECT g.id,g.tea_number,g.number_people,t.name FROM ( SELECT `id`,`tea_number`,`number_people` FROM `tp_grade_group_teacher` WHERE ( id=6 ) LIMIT 0,10   ) g,tp_teacher t WHERE ( g.tea_number=t.tea_number ) ORDER BY g.tea_number ase 
+
+[ 2018-05-24T13:45:25+08:00 ] ::1 /graduation/Manager/RandomAllotReview/SetTeacherNumberView/id/6/page/1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ase' at line 1
+ [ SQL语句 ] : SELECT g.id,g.tea_number,g.number_people,t.name FROM ( SELECT `id`,`tea_number`,`number_people` FROM `tp_grade_group_teacher` WHERE ( id=6 ) LIMIT 0,10   ) g,tp_teacher t WHERE ( g.tea_number=t.tea_number ) ORDER BY g.tea_number ase 
+
+[ 2018-05-24T13:47:49+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002170s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0008s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='8' WHERE `id` = 6 AND `tea_number` = '001' [ RunTime:0.0423s ]
+
+[ 2018-05-24T13:48:02+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T13:48:27+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T13:48:49+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T13:48:50+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T13:48:50+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T13:48:50+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T13:48:50+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T13:48:51+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T13:48:51+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T13:48:51+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T13:58:04+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/id/6
+ERR: 1146:Table 'graduation_project.(' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `(`
+
+[ 2018-05-24T13:58:05+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/id/6
+ERR: 1146:Table 'graduation_project.(' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `(`
+
+[ 2018-05-24T13:58:05+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/id/6
+ERR: 1146:Table 'graduation_project.(' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `(`
+
+[ 2018-05-24T13:58:05+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/id/6
+ERR: 1146:Table 'graduation_project.(' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `(`
+
+[ 2018-05-24T13:58:06+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/id/6
+ERR: 1146:Table 'graduation_project.(' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `(`
+
+[ 2018-05-24T13:58:06+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/id/6
+ERR: 1146:Table 'graduation_project.(' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `(`
+
+[ 2018-05-24T13:58:06+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/id/6
+ERR: 1146:Table 'graduation_project.(' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `(`
+
+[ 2018-05-24T13:58:06+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/id/6
+ERR: 1146:Table 'graduation_project.(' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `(`
+
+[ 2018-05-24T13:58:33+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/id/6
+ERR: 1054:Unknown column 'count' in 'field list'
+ [ SQL语句 ] : SELECT s.id,s.tea_number,s.number_people,s.name,am.amount FROM ( SELECT g.id,g.tea_number,g.number_people,t.name FROM ( SELECT `id`,`tea_number`,`number_people` FROM `tp_grade_group_teacher` WHERE ( id=6 ) ORDER BY tea_number ASC LIMIT 0,10   ) g,tp_teacher t WHERE ( g.tea_number=t.tea_number ) ORDER BY tea_number  ) s Left join (( SELECT `tea_number`,count amount FROM `tp_review`  )) am ON am.tea_number=s.tea_number  
+
+[ 2018-05-24T13:58:33+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/id/6
+ERR: 1054:Unknown column 'count' in 'field list'
+ [ SQL语句 ] : SELECT s.id,s.tea_number,s.number_people,s.name,am.amount FROM ( SELECT g.id,g.tea_number,g.number_people,t.name FROM ( SELECT `id`,`tea_number`,`number_people` FROM `tp_grade_group_teacher` WHERE ( id=6 ) ORDER BY tea_number ASC LIMIT 0,10   ) g,tp_teacher t WHERE ( g.tea_number=t.tea_number ) ORDER BY tea_number  ) s Left join (( SELECT `tea_number`,count amount FROM `tp_review`  )) am ON am.tea_number=s.tea_number  
+
+[ 2018-05-24T13:58:34+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/id/6
+ERR: 1054:Unknown column 'count' in 'field list'
+ [ SQL语句 ] : SELECT s.id,s.tea_number,s.number_people,s.name,am.amount FROM ( SELECT g.id,g.tea_number,g.number_people,t.name FROM ( SELECT `id`,`tea_number`,`number_people` FROM `tp_grade_group_teacher` WHERE ( id=6 ) ORDER BY tea_number ASC LIMIT 0,10   ) g,tp_teacher t WHERE ( g.tea_number=t.tea_number ) ORDER BY tea_number  ) s Left join (( SELECT `tea_number`,count amount FROM `tp_review`  )) am ON am.tea_number=s.tea_number  
+
+[ 2018-05-24T13:58:34+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/id/6
+ERR: 1054:Unknown column 'count' in 'field list'
+ [ SQL语句 ] : SELECT s.id,s.tea_number,s.number_people,s.name,am.amount FROM ( SELECT g.id,g.tea_number,g.number_people,t.name FROM ( SELECT `id`,`tea_number`,`number_people` FROM `tp_grade_group_teacher` WHERE ( id=6 ) ORDER BY tea_number ASC LIMIT 0,10   ) g,tp_teacher t WHERE ( g.tea_number=t.tea_number ) ORDER BY tea_number  ) s Left join (( SELECT `tea_number`,count amount FROM `tp_review`  )) am ON am.tea_number=s.tea_number  
+
+[ 2018-05-24T13:58:34+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/id/6
+ERR: 1054:Unknown column 'count' in 'field list'
+ [ SQL语句 ] : SELECT s.id,s.tea_number,s.number_people,s.name,am.amount FROM ( SELECT g.id,g.tea_number,g.number_people,t.name FROM ( SELECT `id`,`tea_number`,`number_people` FROM `tp_grade_group_teacher` WHERE ( id=6 ) ORDER BY tea_number ASC LIMIT 0,10   ) g,tp_teacher t WHERE ( g.tea_number=t.tea_number ) ORDER BY tea_number  ) s Left join (( SELECT `tea_number`,count amount FROM `tp_review`  )) am ON am.tea_number=s.tea_number  
+
+[ 2018-05-24T13:58:34+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/id/6
+ERR: 1054:Unknown column 'count' in 'field list'
+ [ SQL语句 ] : SELECT s.id,s.tea_number,s.number_people,s.name,am.amount FROM ( SELECT g.id,g.tea_number,g.number_people,t.name FROM ( SELECT `id`,`tea_number`,`number_people` FROM `tp_grade_group_teacher` WHERE ( id=6 ) ORDER BY tea_number ASC LIMIT 0,10   ) g,tp_teacher t WHERE ( g.tea_number=t.tea_number ) ORDER BY tea_number  ) s Left join (( SELECT `tea_number`,count amount FROM `tp_review`  )) am ON am.tea_number=s.tea_number  
+
+[ 2018-05-24T13:59:18+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as amount FROM `tp_review` GROUP BY tea_number  )) am ON am.tea_number=s.tea_num' at line 1
+ [ SQL语句 ] : SELECT s.id,s.tea_number,s.number_people,s.name,am.amount FROM ( SELECT g.id,g.tea_number,g.number_people,t.name FROM ( SELECT `id`,`tea_number`,`number_people` FROM `tp_grade_group_teacher` WHERE ( id=6 ) ORDER BY tea_number ASC LIMIT 0,10   ) g,tp_teacher t WHERE ( g.tea_number=t.tea_number ) ORDER BY tea_number  ) s Left join (( SELECT `tea_number`,count(*)a as amount FROM `tp_review` GROUP BY tea_number  )) am ON am.tea_number=s.tea_number  
+
+[ 2018-05-24T13:59:19+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as amount FROM `tp_review` GROUP BY tea_number  )) am ON am.tea_number=s.tea_num' at line 1
+ [ SQL语句 ] : SELECT s.id,s.tea_number,s.number_people,s.name,am.amount FROM ( SELECT g.id,g.tea_number,g.number_people,t.name FROM ( SELECT `id`,`tea_number`,`number_people` FROM `tp_grade_group_teacher` WHERE ( id=6 ) ORDER BY tea_number ASC LIMIT 0,10   ) g,tp_teacher t WHERE ( g.tea_number=t.tea_number ) ORDER BY tea_number  ) s Left join (( SELECT `tea_number`,count(*)a as amount FROM `tp_review` GROUP BY tea_number  )) am ON am.tea_number=s.tea_number  
+
+[ 2018-05-24T13:59:19+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as amount FROM `tp_review` GROUP BY tea_number  )) am ON am.tea_number=s.tea_num' at line 1
+ [ SQL语句 ] : SELECT s.id,s.tea_number,s.number_people,s.name,am.amount FROM ( SELECT g.id,g.tea_number,g.number_people,t.name FROM ( SELECT `id`,`tea_number`,`number_people` FROM `tp_grade_group_teacher` WHERE ( id=6 ) ORDER BY tea_number ASC LIMIT 0,10   ) g,tp_teacher t WHERE ( g.tea_number=t.tea_number ) ORDER BY tea_number  ) s Left join (( SELECT `tea_number`,count(*)a as amount FROM `tp_review` GROUP BY tea_number  )) am ON am.tea_number=s.tea_number  
+
+[ 2018-05-24T13:59:19+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as amount FROM `tp_review` GROUP BY tea_number  )) am ON am.tea_number=s.tea_num' at line 1
+ [ SQL语句 ] : SELECT s.id,s.tea_number,s.number_people,s.name,am.amount FROM ( SELECT g.id,g.tea_number,g.number_people,t.name FROM ( SELECT `id`,`tea_number`,`number_people` FROM `tp_grade_group_teacher` WHERE ( id=6 ) ORDER BY tea_number ASC LIMIT 0,10   ) g,tp_teacher t WHERE ( g.tea_number=t.tea_number ) ORDER BY tea_number  ) s Left join (( SELECT `tea_number`,count(*)a as amount FROM `tp_review` GROUP BY tea_number  )) am ON am.tea_number=s.tea_number  
+
+[ 2018-05-24T13:59:19+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as amount FROM `tp_review` GROUP BY tea_number  )) am ON am.tea_number=s.tea_num' at line 1
+ [ SQL语句 ] : SELECT s.id,s.tea_number,s.number_people,s.name,am.amount FROM ( SELECT g.id,g.tea_number,g.number_people,t.name FROM ( SELECT `id`,`tea_number`,`number_people` FROM `tp_grade_group_teacher` WHERE ( id=6 ) ORDER BY tea_number ASC LIMIT 0,10   ) g,tp_teacher t WHERE ( g.tea_number=t.tea_number ) ORDER BY tea_number  ) s Left join (( SELECT `tea_number`,count(*)a as amount FROM `tp_review` GROUP BY tea_number  )) am ON am.tea_number=s.tea_number  
+
+[ 2018-05-24T13:59:19+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/id/6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as amount FROM `tp_review` GROUP BY tea_number  )) am ON am.tea_number=s.tea_num' at line 1
+ [ SQL语句 ] : SELECT s.id,s.tea_number,s.number_people,s.name,am.amount FROM ( SELECT g.id,g.tea_number,g.number_people,t.name FROM ( SELECT `id`,`tea_number`,`number_people` FROM `tp_grade_group_teacher` WHERE ( id=6 ) ORDER BY tea_number ASC LIMIT 0,10   ) g,tp_teacher t WHERE ( g.tea_number=t.tea_number ) ORDER BY tea_number  ) s Left join (( SELECT `tea_number`,count(*)a as amount FROM `tp_review` GROUP BY tea_number  )) am ON am.tea_number=s.tea_number  
+
+[ 2018-05-24T13:59:38+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T13:59:39+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T13:59:39+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:00:18+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:00:28+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:00:29+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:00:29+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:00:29+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:00:30+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:00:30+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:00:30+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:00:31+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:00:31+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:03:54+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:05:09+08:00 ] ::1 /graduation/Manager/Ajax/specialty
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002649s ]
+SQL: SHOW COLUMNS FROM `tp_specialty` [ RunTime:0.0060s ]
+SQL: SELECT dep_id as d,dep_name as n FROM `tp_specialty` WHERE `dep_father` = 1  [ RunTime:0.0010s ]
+
+[ 2018-05-24T14:05:34+08:00 ] ::1 /graduation/Manager/RandomAllotReview/CollegeView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:05:36+08:00 ] ::1 /graduation/Manager/RandomAllotReview/addTeacherView/dep/1/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:05:44+08:00 ] ::1 /graduation/Manager/RandomAllotReview/addTeacherView/dep/1/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:05:53+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:05:57+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:06:01+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002362s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0009s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 7 AND `tea_number` = '001' [ RunTime:0.0373s ]
+
+[ 2018-05-24T14:06:06+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002329s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0009s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 7 AND `tea_number` = '002' [ RunTime:0.0803s ]
+
+[ 2018-05-24T14:06:11+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002350s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0009s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 7 AND `tea_number` = '003' [ RunTime:0.0558s ]
+
+[ 2018-05-24T14:06:16+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002398s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0008s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 7 AND `tea_number` = '004' [ RunTime:0.1335s ]
+
+[ 2018-05-24T14:06:22+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002355s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0009s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 7 AND `tea_number` = '005' [ RunTime:0.1381s ]
+
+[ 2018-05-24T14:06:27+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002334s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0009s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 7 AND `tea_number` = '006' [ RunTime:0.0229s ]
+
+[ 2018-05-24T14:06:31+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002296s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0009s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 7 AND `tea_number` = '007' [ RunTime:0.1149s ]
+
+[ 2018-05-24T14:06:36+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002310s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0010s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 7 AND `tea_number` = '008' [ RunTime:0.0192s ]
+
+[ 2018-05-24T14:06:40+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002286s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0008s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 7 AND `tea_number` = '009' [ RunTime:0.0743s ]
+
+[ 2018-05-24T14:06:45+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002881s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0009s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 7 AND `tea_number` = '010' [ RunTime:0.0316s ]
+
+[ 2018-05-24T14:06:57+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:06:58+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:06:58+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:06:58+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:07:16+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:17:07+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Index.html
+ERR: 1054:Unknown column 'domain' in 'field list'
+ [ SQL语句 ] : SELECT `domain` FROM `tp_specialty` WHERE ( dep_id in (1,2,3) ) LIMIT 1  
+
+[ 2018-05-24T14:17:08+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Index.html
+ERR: 1054:Unknown column 'domain' in 'field list'
+ [ SQL语句 ] : SELECT `domain` FROM `tp_specialty` WHERE ( dep_id in (1,2,3) ) LIMIT 1  
+
+[ 2018-05-24T14:17:08+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Index.html
+ERR: 1054:Unknown column 'domain' in 'field list'
+ [ SQL语句 ] : SELECT `domain` FROM `tp_specialty` WHERE ( dep_id in (1,2,3) ) LIMIT 1  
+
+[ 2018-05-24T14:17:08+08:00 ] ::1 /graduation/Manager/RandomAllotReview/Index.html
+ERR: 1054:Unknown column 'domain' in 'field list'
+ [ SQL语句 ] : SELECT `domain` FROM `tp_specialty` WHERE ( dep_id in (1,2,3) ) LIMIT 1  
+
+[ 2018-05-24T14:29:54+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:31:12+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:31:16+08:00 ] ::1 /graduation/Manager/RandomAllotReview/CollegeView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:33:21+08:00 ] ::1 /graduation/Manager/Ajax/specialty
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002336s ]
+SQL: SHOW COLUMNS FROM `tp_specialty` [ RunTime:0.0008s ]
+SQL: SELECT dep_id as d,dep_name as n FROM `tp_specialty` WHERE `dep_father` = 1  [ RunTime:0.0006s ]
+
+[ 2018-05-24T14:33:49+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:33:54+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:33:56+08:00 ] ::1 /graduation/Manager/RandomAllotReview/CollegeView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:33:59+08:00 ] ::1 /graduation/Manager/RandomAllotReview/addTeacherView/dep/1/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:34:03+08:00 ] ::1 /graduation/Manager/RandomAllotReview/addTeacherView/dep/1/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:34:06+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:34:13+08:00 ] ::1 /graduation/Manager/RandomAllotReview/TeacherView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:35:04+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T14:48:06+08:00 ] ::1 /graduation/Manager/Ajax/specialty
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002115s ]
+
+[ 2018-05-24T16:11:33+08:00 ] ::1 /graduation/Manager/Ajax/specialty
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002314s ]
+SQL: SHOW COLUMNS FROM `tp_specialty` [ RunTime:0.0010s ]
+SQL: SELECT dep_id as d,dep_name as n FROM `tp_specialty` WHERE `dep_father` = 1  [ RunTime:0.0005s ]
+
+[ 2018-05-24T16:14:49+08:00 ] ::1 /graduation/Manager/RandomAllotReview/CollegeView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T16:15:33+08:00 ] ::1 /graduation/Manager/RandomAllotReview/addTeacherView/dep/1/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T16:17:09+08:00 ] ::1 /graduation/Manager/RandomAllotReview/CollegeView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T16:17:11+08:00 ] ::1 /graduation/Manager/RandomAllotReview/addTeacherView/dep/1/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T16:17:16+08:00 ] ::1 /graduation/Manager/RandomAllotReview/addTeacherView/dep/1/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T16:17:20+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T16:17:53+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002367s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0009s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 11 AND `tea_number` = '001' [ RunTime:0.0316s ]
+
+[ 2018-05-24T16:19:38+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T16:19:41+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002370s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0008s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='3' WHERE `id` = 11 AND `tea_number` = '002' [ RunTime:0.0730s ]
+
+[ 2018-05-24T16:19:46+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002249s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0009s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='3' WHERE `id` = 11 AND `tea_number` = '003' [ RunTime:0.0303s ]
+
+[ 2018-05-24T16:19:48+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002262s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0081s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 11 AND `tea_number` = '004' [ RunTime:0.0342s ]
+
+[ 2018-05-24T16:19:49+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002315s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0010s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 11 AND `tea_number` = '005' [ RunTime:0.0806s ]
+
+[ 2018-05-24T16:19:50+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002869s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0008s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 11 AND `tea_number` = '006' [ RunTime:0.0382s ]
+
+[ 2018-05-24T16:19:52+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003153s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0009s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 11 AND `tea_number` = '007' [ RunTime:0.0649s ]
+
+[ 2018-05-24T16:19:53+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003800s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0589s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 11 AND `tea_number` = '008' [ RunTime:0.0301s ]
+
+[ 2018-05-24T16:19:54+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003246s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0008s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 11 AND `tea_number` = '009' [ RunTime:0.0881s ]
+
+[ 2018-05-24T16:19:55+08:00 ] ::1 /graduation/Manager/RandomAllotReview/alterAjax/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003183s ]
+SQL: SHOW COLUMNS FROM `tp_grade_group_teacher` [ RunTime:0.0010s ]
+SQL: UPDATE `tp_grade_group_teacher` SET `number_people`='5' WHERE `id` = 11 AND `tea_number` = '010' [ RunTime:0.0151s ]
+
+[ 2018-05-24T16:20:00+08:00 ] ::1 /graduation/Manager/RandomAllotReview/setTeacherNumberView/
+ERR: 参数错误或者未定义:id
+
+[ 2018-05-24T16:25:48+08:00 ] ::1 /graduation/Manager/Review/Teacher/dep/2/
+ERR: 参数错误或者未定义:college
+
+[ 2018-05-24T16:26:43+08:00 ] ::1 /graduation/Manager/Review/Student/dep/2/tea/001/name/5YiY6aKW/
+ERR: 参数错误或者未定义:num
+

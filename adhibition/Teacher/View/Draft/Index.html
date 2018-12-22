@@ -1,0 +1,64 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">  
+<link rel="stylesheet" href="__ROOT__/static/css/nav.css"> 
+<script src="__ROOT__/static/js/jquery.min.js"></script>
+<script src="__ROOT__/static/js/bootstrap.min.js"></script> 
+	<title>指导教师审阅论文草稿</title>
+	
+</head>
+<body>
+<br>
+
+
+	<table class="table panel-info">
+		<thead>
+                    <tr>
+                        <th colspan="6">总共有<span class="red">{$zo.zong}</span>名学生选了您的课题，其中有<span class="red">{$zo.dingz}</span>名学生已提交论文草稿。这其中未审核<span class="red">{$zo.dingw}</span>名，已通过<span class="red">{$zo.dingt}</span>名，退回修改<span class="red">{$zo.dingg}</span>名。</th>
+                    </tr>
+			<tr class="success">
+				<th>编号</th>
+				<th>课题名称</th>
+				<th>选题学生</th>
+				<th>所属专业</th>
+				<th>论文草稿</th>
+				<th>状态</th>
+		</thead>
+		<tbody>	
+                <volist name="list" id="vo">
+			<tr>
+				<td>{$i}</td>
+				<td class="twidth">
+					<div class="ttext" >
+	    				<a href="" title="{$vo.name}">
+	    					{$vo.name}
+	    				</a>
+					</div>
+				</td>
+				<td>{$vo.sname}[{$vo.stu_number}]</td>
+				<td>{$vo.dep_name}</td>
+				<td>
+                                    <switch name="vo.audit">
+                                        <case value="0">
+      <a href="__ROOT__/Teacher/Draft/ThesisDetermine/name/{$vo.name|base64_encode}/sname/{$vo.sname|base64_encode}/stu/{$vo.stu_number}/dep/{$vo.dep_name|base64_encode}/top/{$vo.top_id}">立即审核</a></case>
+                                        <case value="1"><a href="__ROOT__/Teacher/Draft/Look/name/{$vo.name|base64_encode}/sname/{$vo.sname|base64_encode}/stu/{$vo.stu_number}/dep/{$vo.dep_name|base64_encode}/top/{$vo.top_id}">查看</a></case>
+                                        <case value="2">等待中</case>
+                                    </switch>
+                                </td>
+				<td>
+                                    <switch name="vo.audit">
+                                         <case value="0">未审核</case>
+                                         <case value="1">已通过</case>
+                                         <case value="2">退回修改</case>
+                                     </switch>
+                                </td>
+			</tr>
+               </volist>
+		</tbody>
+	</table>
+
+</body>
+</html>

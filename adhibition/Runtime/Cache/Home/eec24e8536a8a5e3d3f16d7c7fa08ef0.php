@@ -1,0 +1,85 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>完善个人信息</title>
+        <link rel="stylesheet" href="/graduation/static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/graduation/static/css/public.style.css"> 
+        <link rel="shortcut icon" href="/graduation/static/images/logon.ico" />
+</head>
+<body>
+<br>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-2">
+		</div>
+		<div class="col-sm-7">
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title">请完善个人信息</h3>
+				</div>
+				<div class="panel-body">
+                                    <form action="/graduation/Home/Complete/Student" role="form" class="form-horizontal" method="post">
+						<div class="form-group">
+							<label for="firstname" class="col-sm-3 control-label">姓名(<b style="color: red">必填</b>)</label>
+							<div class="col-sm-6">
+                                                            <input type="text" class="form-control" id="firstname" name="name" required placeholder="请输入姓名"  value="<?php echo (session('name')); ?>">
+							</div>
+                                                        <label for="lastname" class="col-sm-3 control-label red"><?php echo ($errorInfo["name"]); ?></label>
+						</div>
+						<div class="form-group">
+							<label for="lastname" class="col-sm-3 control-label">常用邮箱(<b style="color: red">必填</b>)</label>
+							<div class="col-sm-6">
+                                                            <input type="email" name="email" class="form-control" required placeholder="请输入常用邮箱" >
+							</div>
+                                                        <label for="lastname" class="col-sm-3 control-label red"><?php echo ($errorInfo["email"]); ?></label>
+						</div>
+						<div class="form-group">
+							<label for="lastname" class="col-sm-3 control-label">手机号码</label>
+							<div class="col-sm-6">
+                                                            <input type="text" name="phone" class="form-control" placeholder="请输入手机号码"  pattern="1\d{10}" title="请输入您的手机号">
+							</div>
+                                                         <label for="lastname" class="col-sm-3 control-label red"><?php echo ($errorInfo["phone"]); ?></label>
+						</div>
+						<div class="form-group">
+							<label for="lastname" class="col-sm-3 control-label">Q Q/微信</label>
+							<div class="col-sm-6">
+                                                            <input type="text" class="form-control" name="qq" placeholder="请输入QQ/微信">
+							</div>
+                                                         <label for="lastname" class="col-sm-3 control-label red"><?php echo ($errorInfo["qq"]); ?></label>
+						</div>
+						<div class="form-group">
+							<label for="lastname" class="col-sm-3 control-label">籍贯</label>
+							<div class="col-sm-6">
+                                                            <input type="text" class="form-control" name="native_place" placeholder="请输入家庭住址">
+							</div>
+                                                         <label for="lastname" class="col-sm-3 control-label red"><?php echo ($errorInfo["native_place"]); ?></label>
+						</div>
+						<div class="form-group">
+							<label for="lastname" class="col-sm-3 control-label">政治面貌</label>
+							<div class="col-sm-6">
+                                                            <input type="text" class="form-control" name="politics_status" placeholder="请输入政治面貌">
+							</div>
+                                                        <label for="lastname" class="col-sm-3 control-label red"><?php echo ($errorInfo["politics_status"]); ?></label>
+						</div>
+						<div class="form-group">
+							<label for="lastname" class="col-sm-3 control-label">社会职务</label>
+							<div class="col-sm-6">
+                                                            <input type="text" class="form-control" name="duty" placeholder="请输入社会职务">
+							</div>
+                                                        <label for="lastname" class="col-sm-3 control-label red"><?php echo ($errorInfo["duty"]); ?></label>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-5 col-sm-7">
+								<button type="submit" class="btn btn-info">保 存</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>	
+</html>

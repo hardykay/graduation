@@ -1,0 +1,71 @@
+<!DOCTYPE html>  
+<html>  
+    <head>  
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">  
+        <link rel="stylesheet" href="__ROOT__/static/css/nav.css"> 
+        <title>学生</title>
+        <style>
+            .hui{color: #ccc}
+            .l1{color: #5cb85c}
+        </style>
+    </head>
+    <body>
+        <br>
+
+        <table class="table panel-info" >
+            <thead>
+                <tr class="success">
+                    <th>学生</th>
+                    <th>所属学院</th>
+                    <th>所在专业</th>
+                    <th>指导老师审核</th>
+                    <th>系主任审核</th>
+                    <th>教学院长审核</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>	
+            <volist name="list" id="vo">
+                <tr>
+                    <td>{$vo.stu_name}</td>
+                    <td>{$vo.college}</td>   
+                    <td>{$vo.major}</td>
+                    <td>
+                        <switch name="vo.shenhe1">
+                <case value="0"><b class="hui">未审核</b></case>
+                <case value="1"><b class="l1">通过</b></case>
+                <case value="2"><b class="red">未通过</b></case>
+                </switch>
+
+                </td>
+                <td>
+                    <switch name="vo.shenhe2">
+                <case value="0"><b class="hui">未审核</b></case>
+                <case value="1"><b class="l1">通过</b></case>
+                <case value="2"><b class="red">未通过</b></case>
+                </switch>
+                </td>
+                <td>
+                    <switch name="vo.shenhe3">
+                <case value="0"><b class="hui">未审核</b></case>
+                <case value="1"><b class="l1">通过</b></case>
+                <case value="2"><b class="red">未通过</b></case>
+                </switch>
+                </td>
+                <td>
+                    <if condition="($vo.shenhe1 eq 0) OR($vo.shenhe1 eq 2) OR ($vo.shenhe2 eq 2) OR ($vo.shenhe3 eq 2) "> 
+                         <a href="__CONTROLLER__/Alter.html">修改</a>
+                    <else /> 
+                         <a href="__CONTROLLER__/Look.html">查看</a>
+                    </if>
+                </td>
+                </tr>
+            </volist>
+        </tbody>
+
+    </table>
+
+</body>
+</html>

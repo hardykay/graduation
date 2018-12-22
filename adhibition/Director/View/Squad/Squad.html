@@ -1,0 +1,59 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="__ROOT__/static/css/nav.css"> 
+    <script src="__ROOT__/static/js/jquery.min.js"></script>
+    <script src="__ROOT__/static/js/bootstrap.min.js"></script> 
+	<title>专业毕业设计负责添加答辩小组</title>
+	
+</head>
+<body>
+	<table class="table panel-info">
+		<thead>
+			<tr class="success">
+				<th>编号</th>
+				<th>答辩组名称</th>
+				<th>答辩地点</th>
+				<th>答辩时间</th>
+				<th>答辩组长</th>
+				<th>答辩秘书</th>
+				<th>答辩学生</th>
+				<th>已分配</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+                <volist name="list" id="vo">
+			<tr>
+				<td>{$i}</td>
+				<td>{$vo.name}</td>
+				<td>{$vo.place}</td>
+				<td>{$vo.dtime}</td>
+				<td>{$vo.zz_name}<br>[{$vo.zz_number}]</td>
+                                <td><empty name="vo.tea_number"><a href="__ROOT__/Director/Squad/Teacher/id/{$vo.id}">选择秘书</a><else/>{$vo.tea_name}<br>[{$vo.tea_number}]</empty></td>
+				<td><a href="__ROOT__/Director/Squad/Student/id/{$vo.id}/dep/{$dep}">进入选择</a></td>
+				<td><a href="__ROOT__/Director/Squad/Look/id/{$vo.id}/dep/{$dep}">查看({$vo.coun})</a></td>
+				<td><a href="__ROOT__/Director/Squad/Alert/id/{$vo.id}/dep/{$dep}">修改</a> <span class="red">|</span> <a href="__ROOT__/Director/Squad/del/id/{$vo.id}/dep/{$dep}">删除</a></td>
+			</tr>
+               </volist>
+		</tbody>
+
+		<tfoot>
+			<tr class="active">
+				<td colspan="9">
+					<div class="left">
+						<a href="__ROOT__/Director/Squad/Add/dep/{$dep}"><input type="button" value="添加答辩小组" class="btn btn-success"></a>
+						<i class="i"></i>
+                                                <a style="color: white" value="返回" class="btn btn-success" href="__ROOT__/Director/Squad/Index.html" >返回</a>
+					</div>
+					
+				</td>
+			</tr>
+		</tfoot>
+	</table>
+
+</body>
+</html>

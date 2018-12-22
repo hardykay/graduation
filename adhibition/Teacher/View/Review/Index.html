@@ -1,0 +1,67 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">  
+<link rel="stylesheet" href="__ROOT__/static/css/nav.css"> 
+<script src="__ROOT__/static/js/jquery.min.js"></script>
+<script src="__ROOT__/static/js/bootstrap.min.js"></script> 
+	<title>指导教师审阅论文定稿</title>
+	
+</head>
+<body>
+<br>
+
+
+	<table class="table panel-info">
+		<thead>
+			<tr class="success">
+				<th>编号</th>
+				<th>课题名称</th>
+				<th>选题学生</th>
+				<th>所属专业</th>
+				<th>操作</th>
+				<th>论文状态</th>
+				<th>论文下载</th>
+		</thead>
+		<tbody>	
+                <volist name="list" id="vo">
+			<tr>
+				<td>{$i}</td>
+				<td class="twidth">
+					<div class="ttext" >
+	    				<a href="__ROOT__/Home/Topic/Index/top/{$vo.top_id}" title="{$vo.name}">
+	    					{$vo.name}
+	    				</a>
+					</div>
+				</td>
+				<td>{$vo.sname}[{$vo.stu_number}]</td>
+				<td>{$vo.dep_name}</td>
+				<td>
+                                    <switch name="vo.audit">
+                                        <case value="0">
+                                    <a href="__ROOT__/Teacher/Review/ThesisDetermine/stu/{$vo.stu_number}">立即评阅</a></case>
+                                        <case value="1"><a href="__ROOT__/Teacher/Review/Check1/stu/{$vo.stu_number}">查看</a></case>
+                               
+                                    </switch>
+                                </td>
+				<td>
+                                    <switch name="vo.audit">
+                                <case value="0"><span class="red">未评阅</span></case>
+                                         <case value="1">已通过</case>
+                                     </switch>
+                                </td>
+				<td>
+                                    <switch name="vo.audit">
+                                <case value="0"><a href="__ROOT__/Teacher/Review/DownloadFile/stu/{$vo.stu_number}">立即下载</a></case>
+                                         <case value="1"><a href="__ROOT__/Teacher/Review/DownloadFile/stu/{$vo.stu_number}">立即下载</a></case>
+                                     </switch>
+                                </td>
+			</tr>
+               </volist>
+		</tbody>
+	</table>
+
+</body>
+</html>

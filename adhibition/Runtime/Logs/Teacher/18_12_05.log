@@ -1,0 +1,50 @@
+[ 2018-12-05T20:11:15+08:00 ] ::1 /graduation/Teacher/Ajax/spe2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001687s ]
+SQL: SHOW COLUMNS FROM `tp_teacher_specialty` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `tp_specialty` [ RunTime:0.0021s ]
+SQL: SELECT dep_id as d,dep_name as n FROM `tp_specialty` WHERE ( dep_father=5 and dep_id in ( SELECT `dep_id` FROM `tp_teacher_specialty` WHERE ( (topic_close>'2018-12-05 20:11:15') and (topic_strat<'2018-12-05 20:11:15') )  ) )  [ RunTime:0.0005s ]
+
+[ 2018-12-05T20:11:18+08:00 ] ::1 /graduation/Teacher/Ajax/cla
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001565s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0792s ]
+SQL: SELECT dep_id as d,dep_name as n FROM `tp_class` WHERE ( dep_father=8 )  [ RunTime:0.0004s ]
+
+[ 2018-12-05T20:11:20+08:00 ] ::1 /graduation/Teacher/Ajax/mStu
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003176s ]
+SQL: SHOW COLUMNS FROM `tp_student` [ RunTime:0.0023s ]
+SQL: SELECT stu_number as d,name as n,dep_major as m FROM `tp_student` WHERE ( stu_number not in (select stu_number from tp_stu_topic) and dep_class=9 )  [ RunTime:0.0658s ]
+
+[ 2018-12-05T20:11:27+08:00 ] ::1 /graduation/Teacher/Ajax/cla
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002923s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0027s ]
+SQL: SELECT dep_id as d,dep_name as n FROM `tp_class` WHERE ( dep_father=9 )  [ RunTime:0.0004s ]
+
+[ 2018-12-05T20:11:29+08:00 ] ::1 /graduation/Teacher/Ajax/mStu
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001565s ]
+SQL: SHOW COLUMNS FROM `tp_student` [ RunTime:0.0028s ]
+SQL: SELECT stu_number as d,name as n,dep_major as m FROM `tp_student` WHERE ( stu_number not in (select stu_number from tp_stu_topic) and dep_class=10 )  [ RunTime:0.0026s ]
+
+[ 2018-12-05T20:12:17+08:00 ] ::1 /graduation/Teacher/Ajax/ajaxchuli.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003298s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0024s ]
+SQL: SELECT dep_id as d,dep_name as n FROM `tp_class` WHERE ( dep_father=9 )  [ RunTime:0.0004s ]
+
+[ 2018-12-05T20:12:19+08:00 ] ::1 /graduation/Teacher/Ajax/mStu.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003099s ]
+SQL: SHOW COLUMNS FROM `tp_student` [ RunTime:0.0024s ]
+SQL: SELECT stu_number as d,name as n,dep_major as m FROM `tp_student` WHERE ( stu_number not in (select stu_number from tp_stu_topic) and dep_class=10 )  [ RunTime:0.0005s ]
+

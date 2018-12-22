@@ -1,0 +1,4 @@
+[ 2018-05-25T18:08:44+08:00 ] ::1 /graduation/Student/Inspect/Index.html
+ERR: 1054:Unknown column 'rele' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `tp_topic_f` WHERE ( rele=2 and top_id=1 ) LIMIT 1  
+

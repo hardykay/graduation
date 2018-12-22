@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>教师下达任务书</title>
+	<link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="__ROOT__/static/css/nav.css">
+	<script src="__ROOT__/static/js/jquery.min.js"></script>
+	<script src="__ROOT__/static/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<table class="table panel-info" >
+	<thead>
+		<tr class="success">
+			<th>编号</th>
+			<th>专业名称</th>
+			<th>操作</th>
+		</tr>
+	</thead>
+	<tbody>	
+            <volist name="list" id="vo">
+		<tr>
+			
+			<td>{$i}</td>
+			<td>{$vo.dep_name}</td>
+                        <td><a href="__CONTROLLER__/Tsetting/dep_id/{$vo.dep_id}">立即设置</a></td>
+		</tr>
+             </volist>
+	</tbody>
+</table>
+
+</body>
+</html>

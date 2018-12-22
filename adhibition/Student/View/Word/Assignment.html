@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>任务书</title>
+	<style>
+		hr{height: 5px;background-color: #e5e5e5;}
+		.haung{min-height: 100px;min-width: 900px;background-color: #e5e5e5;
+			padding:20px 40px 20px 40px;}
+	</style>
+</head>
+<body style="background-color: #e5e5e5">
+	<div style="width: 99%;height: 700px;border:1px solid #e5e5e5">
+		<h1 style="text-align: center;">任务书</h1>
+		<hr>
+		<div class="haung">
+			<h3>一、研究的主要内容</h3>
+			{$vo.research|htmlspecialchars_decode}
+		</div>
+		<div class="haung">
+			<h3>二、涉及的知识和基本要求</h3>
+				{$vo.basic|htmlspecialchars_decode}
+		</div>
+		<div class="haung">
+			<h3>三、预期目标</h3>
+				{$vo.expect|htmlspecialchars_decode}
+		</div>
+		<div class="haung">
+			<h3>四、进度安排</h3>
+				{$vo.arrange|htmlspecialchars_decode}
+		</div>
+                <div class="haung">
+		</div>
+	</div>	
+</body>
+</html>

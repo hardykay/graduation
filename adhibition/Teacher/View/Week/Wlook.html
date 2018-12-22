@@ -1,0 +1,41 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">  
+<link rel="stylesheet" href="__ROOT__/static/css/nav.css"> 
+<script src="__ROOT__/static/js/jquery.min.js"></script>
+<script src="__ROOT__/static/js/bootstrap.min.js"></script> 
+    
+	<title>周进展</title>
+	
+</head>
+<body>
+<br>
+
+	<table class="table panel-info" >
+                
+		<thead>
+			<tr class="success">
+				<th>编号</th>
+                                <th>标题</th>
+				<th>发布时间</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>	
+                 <volist name="list" id="vo">
+			<tr>
+				<td>{$i}</td>
+				<td>{$vo.title}</td>
+				<td>{$vo.t}</td>
+                                <td><a href="__ROOT__/Teacher/Week/Check/b/{$vo.bianhao}">立即审核</a></td>
+			</tr>
+                 </volist>
+		</tbody>
+                
+	</table>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>教学院长-课题发布</title>
+	<link rel="stylesheet" href="../">
+        <link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="__ROOT__/static/css/nav.css"> 
+        <script type="text/javascript" src="__ROOT__/static/js/jquery.min.js"> </script>
+</head>
+<body>
+<!--<div class="maofu" >-->
+<table class="table panel-info bshadow" style="width: 700px;margin: 0 auto" >
+		<tbody>
+			<tr>
+                            <td><b>学院教师总数</b></td>
+				<td>{$top.teacher}人</td>
+			</tr>
+			<tr>
+                            <td><b>课题总数</b></td>
+				<td>{$top.topic}个</td>
+			</tr>
+			<tr>
+                            <td><b>课题通过审核的总数</b></td>
+				<td>{$top.audit}个</td>
+			</tr>
+			<tr>
+                            <td><b>学院总学生数</b></td>
+                            <td>{$top.student}人</td>
+			</tr>
+                        <tr>
+                            <td><b>学院已有课题学生的总数</b></td>
+                            <td>{$top.stuTopic}人</td>
+			</tr>
+                <volist id="vo" name="dep">
+			<tr>
+                            <td><b>{$vo.dep_name}</b></td>
+				<td><b>学生总数：</b>{$vo.student}人；<b>已选课题：</b>{$vo.notset}人；<b>未选：</b>{$vo['student']-$vo['notset']}人；</td>
+			</tr>
+                        </volist>
+			<tr>
+                            <td><b>操作</b></td>
+                            
+                            <td><a href="__ROOT__/Dean/Topic/Specialty.html">进入发布双选结果</a></td>
+<!--                            <td><a href="__ROOT__/Dean/Topic/Two.html">进入发布双选结果</a></td>-->
+			</tr>
+		</tbody>
+	</table>
+
+<!--</div>-->
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>系主任-将学生分配的评阅老师</title>
+        <link rel="stylesheet" href="../">
+        <link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="__ROOT__/static/css/nav.css"> 
+        <script type="text/javascript" src="__ROOT__/static/js/jquery.min.js"></script>
+        <script type="text/javascript" src="__ROOT__/static/js/bootstrap.min.js"></script>
+        <script >
+            function xuan() {
+                //获取name值
+                var qcheck = document.getElementsByName("checkbox[]");
+                for (var i = 0; i <= qcheck.length; i++) {
+                    qcheck[i].checked = true;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form action="{:U('RandomAllotReview/addTeacher')}" method="post">
+            <!--<div class="maofu" >-->
+            <input type="hidden" name="id" value="{$id}">
+            <table class="table panel-info bshadow" >
+                <thead>
+                    <tr class="success">
+                        <th><button type="button" onclick="xuan()">全选</button></th>
+                        <th>编号</th>
+                        <th>工号</th>
+                        <th>教师姓名</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <volist name="list" id="vo">
+                    <tr>
+                        <td><input type="checkbox" name="checkbox[]" value="{$vo.tea_number}"></td>
+                        <td>{$i}</td>
+                        <td>{$vo.tea_number}</td>
+                        <td>{$vo.name}</td>
+                    </tr>
+                </volist>
+                </tbody>
+
+                <tfoot>
+                    <tr class="active">
+                        <td colspan="9">
+                            <div class="left">
+                                <i class="i"></i>
+                                <input type="submit" value="分配选中的老师" class="btn btn-success"><i class="i"></i>
+                                <a  class="btn btn-success" href="__CONTROLLER__/Index" >返回</a>
+                            </div>
+                            {$page}
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+            <!--</div>-->
+        </form>
+    </body>
+</html>

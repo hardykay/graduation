@@ -1,0 +1,9 @@
+[ 2018-05-01T00:28:08+08:00 ] ::1 /graduation/Teacher/Choose/Index.html
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2018-05-01T00:28:43+08:00 ] ::1 /graduation/Teacher/Choose/Index.html
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2018-05-01T00:29:04+08:00 ] ::1 /graduation/Teacher/Choose/Index.html
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+

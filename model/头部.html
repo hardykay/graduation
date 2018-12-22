@@ -1,0 +1,22 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">  
+<link rel="stylesheet" href="__ROOT__/static/css/nav.css"> 
+<script src="__ROOT__/static/js/jquery.min.js"></script>
+<script src="__ROOT__/static/js//bootstrap.min.js"></script> 
+    
+    
+    echo '<script language="javascript"> alert("请您先登录！"); top.location=\''.__ROOT__.'/Home/Index/index\'; </script> ';
+    
+    
+<volist name="list" id="vo">
+    <td>{$i}</td>
+    <td>{$vo.genre}</td>
+    
+</volist>
+sendMail($data['email'],' 欢迎使用中国石油大学胜利学院毕业设计管理系统', '<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们第一次认识,但我们即将在一年里长期共处，希望能相处愉快，若有何不足，敬请担待，因为开发这个系统的学长早已毕业工作了.</p><p>&nbsp;&nbsp;&nbsp;&nbsp;祝你愉快毕业</p>');
+               
+,sum(case audit when 0 then 1 else 0 end) wei,

@@ -1,0 +1,196 @@
+[ 2018-04-29T15:44:40+08:00 ] ::1 /graduation/Manager/Bak/index.html
+ERR: 模板不存在:./adhibition/Manager/View/Bak/index.html
+
+[ 2018-04-29T15:44:41+08:00 ] ::1 /graduation/Manager/Bak/index.html
+ERR: 模板不存在:./adhibition/Manager/View/Bak/index.html
+
+[ 2018-04-29T16:28:01+08:00 ] ::1 /graduation/Manager/Student/Specialty/
+ERR: 参数错误或者未定义:dep
+
+[ 2018-04-29T16:28:09+08:00 ] ::1 /graduation/Manager/Student/Banji/dep/1/
+ERR: 参数错误或者未定义:name
+
+[ 2018-04-29T16:28:10+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:28:17+08:00 ] ::1 /graduation/Manager/Ajax/Specialty.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002288s ]
+SQL: SHOW COLUMNS FROM `tp_specialty` [ RunTime:0.0009s ]
+SQL: SELECT dep_id as d,dep_name as n FROM `tp_specialty` WHERE `dep_father` = 1  [ RunTime:0.0009s ]
+
+[ 2018-04-29T16:28:19+08:00 ] ::1 /graduation/Manager/Ajax/banji.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002138s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0027s ]
+SQL: SELECT dep_id as d,dep_name as n FROM `tp_class` WHERE `dep_father` = 1  [ RunTime:0.0005s ]
+
+[ 2018-04-29T16:28:35+08:00 ] ::1 /graduation/Manager/Student/Specialty/
+ERR: 参数错误或者未定义:dep
+
+[ 2018-04-29T16:28:37+08:00 ] ::1 /graduation/Manager/Student/Banji/dep/1/
+ERR: 参数错误或者未定义:name
+
+[ 2018-04-29T16:28:39+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:28:47+08:00 ] ::1 /graduation/Manager/Student/Specialty/
+ERR: 参数错误或者未定义:dep
+
+[ 2018-04-29T16:28:49+08:00 ] ::1 /graduation/Manager/Student/Banji/dep/1/
+ERR: 参数错误或者未定义:name
+
+[ 2018-04-29T16:28:59+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:29:00+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:29:29+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:29:30+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:29:30+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:29:30+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:29:45+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:29:46+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:29:46+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:29:46+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:29:47+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:30:07+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:30:07+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:30:07+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:30:08+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:30:13+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:30:20+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:46:50+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:47:05+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:47:05+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:47:05+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:47:12+08:00 ] ::1 /graduation/Manager/Initialize/student/number/11
+ERR: 无法加载控制器:Initialize
+
+[ 2018-04-29T16:47:14+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:47:34+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:47:34+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:47:38+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:47:43+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:52:37+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:52:38+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:52:38+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:54:00+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:54:00+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:54:00+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:54:26+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:54:26+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:54:26+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:54:37+08:00 ] ::1 /graduation/Manager/Student/Student/dep/1/zy/6K6h566X5py656eR5a2m5LiO5oqA5pyv/
+ERR: 参数错误或者未定义:bj
+
+[ 2018-04-29T16:54:48+08:00 ] ::1 /graduation/Manager/Student/Specialty/
+ERR: 参数错误或者未定义:dep
+
+[ 2018-04-29T16:56:46+08:00 ] ::1 /graduation/Manager/Ajax/Specialty.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002284s ]
+SQL: SHOW COLUMNS FROM `tp_specialty` [ RunTime:0.0009s ]
+SQL: SELECT dep_id as d,dep_name as n FROM `tp_specialty` WHERE `dep_father` = 1  [ RunTime:0.0006s ]
+
+[ 2018-04-29T16:56:48+08:00 ] ::1 /graduation/Manager/Ajax/banji.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002252s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0009s ]
+SQL: SELECT dep_id as d,dep_name as n FROM `tp_class` WHERE `dep_father` = 1  [ RunTime:0.0005s ]
+
+[ 2018-04-29T16:56:53+08:00 ] ::1 /graduation/Manager/Ajax/banji.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002424s ]
+
+[ 2018-04-29T16:56:54+08:00 ] ::1 /graduation/Manager/Ajax/Specialty.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002317s ]
+
+[ 2018-04-29T16:56:56+08:00 ] ::1 /graduation/Manager/Ajax/Specialty.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002101s ]
+SQL: SHOW COLUMNS FROM `tp_specialty` [ RunTime:0.0008s ]
+SQL: SELECT dep_id as d,dep_name as n FROM `tp_specialty` WHERE `dep_father` = 1  [ RunTime:0.0005s ]
+
+[ 2018-04-29T16:56:57+08:00 ] ::1 /graduation/Manager/Ajax/banji.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002207s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0009s ]
+SQL: SELECT dep_id as d,dep_name as n FROM `tp_class` WHERE `dep_father` = 1  [ RunTime:0.0004s ]
+

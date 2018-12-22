@@ -1,0 +1,75 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="__ROOT__/static/css/nav.css"> 
+    <script src="__ROOT__/static/js/jquery.min.js"></script>
+    <script src="__ROOT__/static/js/bootstrap.min.js"></script> 
+    <title>我的课题</title>
+    <style>
+        .l1{color: #009688}
+        .hui{color:#9e9e9e}
+    </style>
+</head>
+<body>
+	<table class="table panel-info" >
+		<thead>
+			<tr class="success">
+				<th>编号</th>
+				<th>课题名称</th>
+				<th>课题类型</th>
+                                <th>课题属性</th>
+                                <th>已选学生</th>
+				<th>选题状态</th>
+				<th>是否发布</th>
+				<th>是否通过审核</th>
+                                <th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+                <volist name="list" id="vo" >
+			<tr>
+				<td>{$i}</td>
+				<td class="twidth">
+					<div class="ttext" >
+	    				<a href="__ROOT__/Home/Topic/Index/top/{$vo.top_id}" title="{$vo.name}">
+	    					{$vo.name}
+	    				</a>
+					</div>
+				</td>
+				<td>{$vo.genre}</td>
+                                <td>
+                                    <switch name="vo.top_type">
+                                        <case value="1">盲选</case>
+                                        <case value="2">指定选</case>
+                                        <case value="3">团队课题</case>
+                                        <case value="4">外出毕设</case>
+                                    </switch>
+                                </td>
+                                <td> <empty name="vo.yixuan">无<else/><a href="__ROOT__/Teacher/MagerTop/Look/top/{$vo.top_id}">查看</a><br><span class="red">{$vo.yixuan}</span> 个</empty></td>
+                                <eq name="vo.opt" value="0">
+                                    <td  class="l1"><a href="__ROOT__/Teacher/Choose/Verify1/top/{$vo.top_id}" class="btn btn-xs btn-info " id="white">开启</a></td>
+                                <else/>
+                                    <td class="red">
+                                        <a href="__ROOT__/Teacher/Choose/Verify/top/{$vo.top_id}" class="btn btn-xs btn-info " onclick="return  confirm('确认该课题后，就不能再选择学生，确定要进行此操作吗？')" id="white">停止选题</a>
+                                    </td>
+                                </eq>
+                                <eq name="vo.rele" value="0"><td class="hui">未发布</td><else/><td class="l1">已发布</td></eq>
+                                
+                                <switch name="vo.audit" >
+                                <case value="0" ><td><a href="__CONTROLLER__/Change/top_id/{$vo.top_id}.html">更改</a></td></case>
+                                        <case value="1"><td class="l1">已通过</td></case>
+                                        <case value="2"><td style="color:red"><a href="__ROOT__/Teacher/MagerTop/ApplyFor/id/{$vo.top_id}">退回修改</a></td></case>
+                                </switch>
+                                
+                                <td class="hui"><a style="color:red" href="__ROOT__/Teacher/Choose/Del/top/{$vo.top_id}" onclick="return confirm('确定要删除？')" >删除</a></td>
+			</tr>
+                 </volist>
+			
+		</tbody>
+	</table>
+    注意：若需要修改"盲选适合的专业"，请重新申请课题。
+</body>
+</html>

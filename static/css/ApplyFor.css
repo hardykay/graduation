@@ -1,0 +1,52 @@
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+h2{  
+    margin:0 auto;  
+    text-align: center;  
+}  
+table{  
+    margin: 0 auto;  
+}  
+#time span{  
+    width: 30px;  
+}  
+.input{
+    display: block;
+    width: 99%;
+    height: 50px;
+    margin:0; padding:0;
+}
+.input2{
+    display: block;
+    width: 99%;
+    height: 250px;
+    margin:0; padding:0;
+}
+.radio{
+    width: 50%;
+    height: 22px;
+    margin: auto;
+    background: red;
+}
+.right{
+    margin-right:0px;
+    float: right;
+    width: 100px;
+}
+.left{
+    margin-left: 0px;
+    float: right;
+    width: 100px;
+}
+.bcolor{
+    border-right:0px solid red;
+    border-left:0px solid red;
+}
+td{
+    padding-left: 10px;
+    vertical-align:middle;
+}
+.none{
+    display: none;
+}

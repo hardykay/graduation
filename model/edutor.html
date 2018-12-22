@@ -1,0 +1,132 @@
+
+<link rel="stylesheet" type="text/css" href="__ROOT__/static/Redactor/css/style.css" /> 	
+<script type="text/javascript" src="__ROOT__/static/Redactor/lib/jquery-1.7.min.js"></script>	
+<link rel="stylesheet" href="__ROOT__/static/Redactor/redactor/css/redactor.css" />
+<script src="__ROOT__/static/Redactor/redactor/redactor.js"></script>
+<script type="text/javascript">
+    $(document).ready(
+            function ()
+            {
+                $('#editor').redactor({
+                   // fixed: true,
+                    lang: "zh_cn",
+                    wym: true,
+                    air: true,
+                });
+            }
+    );
+</script>
+
+
+style="height:400px;" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+
+
+        <title>My JSP 'index.jsp' starting page</title>
+        <link media="all" rel="stylesheet" type="text/css" href="__ROOT__/static/simditor-2.0.1/styles/font-awesome.css" />
+        <link media="all" rel="stylesheet" type="text/css" href="__ROOT__/static/simditor-2.0.1/styles/simditor.css" />
+        <link media="all" rel="stylesheet" type="text/css" href="bootstrap/styles/bootstrap.css" />
+        <link media="all" rel="stylesheet" type="text/css" href="__ROOT__/static/css/bootstrap.css" />
+        <script type="text/javascript" src="__ROOT__/static/simditor-2.0.1/scripts/jquery.min.js"></script>
+        <script type="text/javascript" src="__ROOT__/static/simditor-2.0.1/scripts/module.js"></script>
+        <script type="text/javascript" src="__ROOT__/static/simditor-2.0.1/scripts/uploader.js"></script>
+        <script type="text/javascript" src="__ROOT__/static/simditor-2.0.1/scripts/simditor.js"></script>
+
+        <style type="text/css">
+            .wrapper {
+                width: 950px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form action="/cephp/Home/Cs/ArticleSave" method="post">
+            <div class="wrapper">
+                <br />
+                <br />
+
+                <br />
+                <textarea id="editor" name="content" autofocus></textarea>
+                <br />
+                <button type="submit" class="btn btn-default">提交</button>
+                <br />
+                <br />
+                <div class="alert alert-warning" role="alert">输入标题及内容，并对内容进行编辑。也可插入代码和上传本地图片 然后点击提交。</div>
+            </div>
+        </form>
+    </body>
+    <script type="text/javascript">
+              $(function () {
+                  toolbar = ['title', 'bold', 'italic', 'underline', 'strikethrough',
+                      'color', '|', 'ol', 'ul', 'blockquote', 'code', 'table', '|',
+                      'link', 'image', 'hr', '|', 'indent', 'outdent'];
+                  var editor = new Simditor({
+                      textarea: $('#editor'),
+                      placeholder: '这里输入内容...',
+                      toolbar: toolbar, //工具栏
+                      defaultImage: 'simditor-2.0.1/images/image.png', //编辑器插入图片时使用的默认图片
+                      upload: {
+                          url: 'ImgUpload.action', //文件上传的接口地址
+                          params: null, //键值对,指定文件上传接口的额外参数,上传的时候随文件一起提交
+                          fileKey: 'fileDataFileName', //服务器端获取文件数据的参数名
+                          connectionCount: 3,
+                          leaveConfirm: '正在上传文件'
+                      }
+                  });
+              })
+              $(function () {
+                  toolbar = ['title', 'bold', 'italic', 'underline', 'strikethrough',
+                      'color', '|', 'ol', 'ul', 'blockquote', 'code', 'table', '|',
+                      'link', 'image', 'hr', '|', 'indent', 'outdent'];
+                  var editor = new Simditor({
+                      textarea: $('#editor'),
+                      placeholder: '这里输入内容...',
+                      toolbar: toolbar, //工具栏
+                      defaultImage: 'simditor-2.0.1/images/image.png', //编辑器插入图片时使用的默认图片
+                      upload: {
+                          url: 'ImgUpload.action', //文件上传的接口地址
+                          params: null, //键值对,指定文件上传接口的额外参数,上传的时候随文件一起提交
+                          fileKey: 'fileDataFileName', //服务器端获取文件数据的参数名
+                          connectionCount: 3,
+                          leaveConfirm: '正在上传文件'
+                      }
+                  });
+              })
+    </script>
+</html>
+ <script type="text/javascript">
+        $(function () {
+            toolbar = ['title', 'bold', 'italic', 'underline', 'strikethrough',
+                'color', '|', 'ol', 'ul', 'blockquote', 'code', 'table', '|',
+                'link', 'image', 'hr', '|', 'indent', 'outdent'];
+            var editor = new Simditor({
+                textarea: $('#research'),
+                placeholder: '这里输入研究主要内容...',
+                toolbar: toolbar, //工具栏
+                defaultImage: 'simditor-2.0.1/images/image.png', //编辑器插入图片时使用的默认图片
+                upload: {
+                    url: '__MODULE__/Upload/index', //文件上传的接口地址
+                    params: null, //键值对,指定文件上传接口的额外参数,上传的时候随文件一起提交
+                    fileKey: 'fileDataFileName', //服务器端获取文件数据的参数名
+                    connectionCount: 3,
+                    leaveConfirm: '正在上传文件'
+                }
+            });
+        })
+    </script>

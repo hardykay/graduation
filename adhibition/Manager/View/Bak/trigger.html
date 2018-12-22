@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            DROP TRIGGER IF EXISTS `tp_topic_blind_add`;<br>
+            DELIMITER ;;<br>
+CREATE TRIGGER `tp_topic_blind_add` AFTER INSERT ON `tp_chaos_topic` FOR EACH ROW begin
+update tp_topic set number=number+1 where top_id=new.top_id;
+end<br>
+;;
+DELIMITER ;<br>
+DROP TRIGGER IF EXISTS `tp_topic_blind_choice`;<br>
+DELIMITER ;;<br>
+CREATE TRIGGER `tp_topic_blind_choice` AFTER DELETE ON `tp_chaos_topic` FOR EACH ROW begin<br>
+ 
+update tp_topic set number=number-1 where top_id=old.top_id;<br>
+ 
+end
+;;<br>
+DELIMITER ;<br>
+DROP TRIGGER IF EXISTS `tp_choice_topic`;<br>
+DELIMITER ;;<br>
+CREATE TRIGGER `tp_choice_topic` AFTER INSERT ON `tp_stu_topic` FOR EACH ROW begin<br>
+update tp_topic set  yixuan=yixuan+1 where top_id=new.top_id;<br>
+delete from tp_chaos_topic where stu_number=new.stu_number;<br>
+end<br>
+;;<br>
+DELIMITER ;<br>
+DROP TRIGGER IF EXISTS `tp_delete_topic`;<br>
+DELIMITER ;;<br>
+CREATE TRIGGER `tp_delete_topic` AFTER DELETE ON `tp_stu_topic` FOR EACH ROW begin 
+update tp_topic set  yixuan=yixuan-1 where top_id=old.top_id;<br>
+end<br>
+;;<br>
+DELIMITER ;</div><br>
+    </body>
+</html>

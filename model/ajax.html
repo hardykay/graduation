@@ -1,0 +1,53 @@
+$sql = "(select top_id from tp_topic_f where audit=1 and rele!=2 and dep_id in (select dep_id from tp_specialty where dep_father={$dep}))";
+<script type="text/javascript">
+    /**
+     * 
+     * @param {type} obj
+     * @returns {undefined}获得班级
+     */
+    function r(obj){
+           var val=jQuery("#"+obj).val();
+            $.ajax({
+            url:"{:U('/Teacher/Ajax/ajaxchuli')}",//这里指向的就不再是页面了，而是一个方法。
+            data:{'dep':val},
+            type:"POST",
+            dataType:"JSON",
+            success: function(data){
+                //alert(data[0].code);//这里要用索引，使用eq读取不出来数据。
+                var str='<option value="">请选择班级</option>';
+                //alert(data);//alert(data[1].dep_id)
+                $(data).each(function (i) { 
+                    //alert(data[i].dep_name);
+                    str += "<option value='"+data[i].d+"'>"+data[i].n+"</option>";
+                });
+                $('#banji').empty();
+                $('#banji').append(str);
+            }
+        });
+    }
+    /**
+     * 获得学生
+     */
+     function stu(obj){
+           var val=jQuery("#"+obj).val();
+           //alert(val)
+            $.ajax({
+            url:"{:U('/Teacher/Ajax/ajaxStu')}",//这里指向的就不再是页面了，而是一个方法。
+            data:{'dep':val},
+            type:"POST",
+            dataType:"JSON",
+            success: function(data){
+                //alert(data[0].code);//这里要用索引，使用eq读取不出来数据。
+                var str='<option value="">请选择学生</option>';
+                //alert(data);//alert(data[1].dep_id)
+                $(data).each(function (i) { 
+                    //alert(data[i].dep_name);
+                    str += "<option value='"+data[i].d+"'>"+data[i].n+"("+data[i].d+")</option>";
+                });
+                $('#student').empty();
+                $('#student').append(str);
+            }
+        });
+    }
+
+</script>

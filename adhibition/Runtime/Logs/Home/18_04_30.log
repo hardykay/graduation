@@ -1,0 +1,34 @@
+[ 2018-04-30T21:19:59+08:00 ] ::1 /graduation/Home/Switchover/Dean.html
+ERR: 1146:Table 'diploma_project.tp_teacher' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tp_teacher`
+
+[ 2018-04-30T21:20:02+08:00 ] ::1 /graduation/Home/Switchover/Dean.html
+ERR: 1146:Table 'diploma_project.tp_teacher' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tp_teacher`
+
+[ 2018-04-30T21:20:02+08:00 ] ::1 /graduation/Home/Switchover/Dean.html
+ERR: 1146:Table 'diploma_project.tp_teacher' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tp_teacher`
+
+[ 2018-04-30T21:20:03+08:00 ] ::1 /graduation/Home/Switchover/Dean.html
+ERR: 1146:Table 'diploma_project.tp_teacher' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tp_teacher`
+
+[ 2018-04-30T21:20:03+08:00 ] ::1 /graduation/Home/Switchover/Dean.html
+ERR: 1146:Table 'diploma_project.tp_teacher' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tp_teacher`
+
+[ 2018-04-30T21:20:03+08:00 ] ::1 /graduation/Home/Switchover/Dean.html
+ERR: 1146:Table 'diploma_project.tp_teacher' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tp_teacher`
+
+[ 2018-04-30T21:20:04+08:00 ] ::1 /graduation/Home/Switchover/Dean.html
+ERR: 1146:Table 'diploma_project.tp_teacher' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tp_teacher`
+
+[ 2018-04-30T23:50:07+08:00 ] ::1 /graduation/Home/Topic/Index/top/
+ERR: 参数错误或者未定义:top
+
+[ 2018-04-30T23:50:19+08:00 ] ::1 /graduation/Home/Topic/Index/top/
+ERR: 参数错误或者未定义:top
+

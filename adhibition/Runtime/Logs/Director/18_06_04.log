@@ -1,0 +1,19 @@
+[ 2018-06-04T05:11:28+08:00 ] ::1 /graduation/Director/Review/Teacher/
+ERR: 参数错误或者未定义:dep
+
+[ 2018-06-04T05:11:35+08:00 ] ::1 /graduation/Director/Review/Student/dep/3/tea/001/name/5YiY6aKW/
+ERR: 参数错误或者未定义:num
+
+[ 2018-06-04T05:14:59+08:00 ] ::1 /graduation/Director/Ajax/Teacher.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002252s ]
+SQL: SHOW COLUMNS FROM `tp_teacher` [ RunTime:0.0036s ]
+SQL: SELECT tea_number as d,name as n FROM `tp_teacher` WHERE ( dep_id=1 )  [ RunTime:0.0006s ]
+
+[ 2018-06-04T05:15:20+08:00 ] ::1 /graduation/Director/Squad/Teacher/
+ERR: 参数错误或者未定义:id
+
+[ 2018-06-04T05:15:45+08:00 ] ::1 /graduation/Director/Squad/Student/id/2/
+ERR: 参数错误或者未定义:dep
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">  
+<link rel="stylesheet" href="__ROOT__/static/css/nav.css"> 
+<script src="__ROOT__/static/js/jquery.min.js"></script>
+<script src="__ROOT__/static/js/bootstrap.min.js"></script> 
+    
+	<title>教学院长审核</title>
+	
+</head>
+<body>
+<br>
+
+	<table class="table panel-info" >
+		<thead>
+			<tr class="success">
+				<th>编号</th>
+				<th>学生</th>
+				<th>所属学院</th>
+				<th>所在专业</th>
+				<th>状态</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>	
+                 <volist name="list" id="vo">
+			<tr>
+				<td>{$i}</td>
+				<td>{$vo.stu_name}</td>
+				<td>{$vo.college}</td>   
+				<td>{$vo.major}</td>
+                                <td><empty name="vo.shenhe3"><span class="huise">未审核</sapn><else/><sapn class="langse">已审核</sapn> </empty></td>
+                                 <td>
+                                 <if condition="($vo.shenhe3 eq 0)">
+                                    <a href="__CONTROLLER__/Alter/id/{$vo.id}">立即审核</a>
+                                <elseif condition="$vo.shenhe3 eq 2"/>
+                                    <a href="__CONTROLLER__/Alter/id/{$vo.id}">查看或修改</a>
+                                <else />
+                                    <a href="__CONTROLLER__/Look/id/{$vo.id}">查看</a>
+                                </if>
+                                </td>
+			</tr>
+                 </volist>
+		</tbody>
+
+	</table>
+
+</body>
+</html>

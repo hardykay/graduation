@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>完善个人信息</title>
+        <link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="__ROOT__/static/css/public.style.css"> 
+        <link rel="shortcut icon" href="__ROOT__/static/images/logon.ico" />
+</head>
+<body>
+<br>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-2">
+		</div>
+		<div class="col-sm-7">
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title">个人信息</h3>
+				</div>
+				<div class="panel-body">
+                                    <form action="__ROOT__/Home/Teacher/Check" role="form" class="form-horizontal" method="post">
+						<div class="form-group">
+							<label for="firstname" class="col-sm-3 control-label">学院</label>
+							<div class="col-sm-6">
+                                                             <p class="form-control-static">{$tea.dep_name}</p>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="lastname" class="col-sm-3 control-label">工号</label>
+							<div class="col-sm-6">
+                                                             <p class="form-control-static">{$tea.tea_number}</p>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="firstname" class="col-sm-3 control-label">姓名</label>
+							<div class="col-sm-6">
+                                                             <p class="form-control-static">{$tea.name}</p>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="lastname" class="col-sm-3 control-label">职称</label>
+							<div class="col-sm-6">
+                                                             <p class="form-control-static">{$tea.title}</p>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="lastname" class="col-sm-3 control-label">学历</label>
+							<div class="col-sm-6">
+                                                             <p class="form-control-static">{$tea.education}</p>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="lastname" class="col-sm-3 control-label">学位</label>
+							<div class="col-sm-6">
+                                                             <p class="form-control-static">{$tea.duty}</p>
+							</div>
+                            <label for="lastname" class="col-sm-3 control-label red">{$errorInfo.degree}</label>
+						</div>
+						<div class="form-group">
+							<label for="lastname" class="col-sm-3 control-label">职务</label>
+							<div class="col-sm-6">
+                                                            <p class="form-control-static">{$tea.post1}</p>
+                                                            
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="lastname" class="col-sm-3 control-label">学术专长</label>
+							<div class="col-sm-6">
+                                                             <p class="form-control-static">{$tea.acaspe}</p>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="lastname" class="col-sm-3 control-label">所在单位</label>
+							<div class="col-sm-6">
+                                                             <p class="form-control-static">{$tea.belong}</p>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="lastname" class="col-sm-3 control-label">手机号码</label>
+							<div class="col-sm-6">
+                                                             <p class="form-control-static">{$tea.phone}</p>
+                                                        </div>
+						</div>
+						<div class="form-group">
+							<label for="lastname" class="col-sm-3 control-label">常用邮箱</label>
+							<div class="col-sm-6">
+                                                             <p class="form-control-static">{$tea.email}</p>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="lastname" class="col-sm-3 control-label">Q Q</label>
+							<div class="col-sm-6">
+                                                             <p class="form-control-static">{$tea.qq}</p>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>	
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="__ROOT__/static/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="__ROOT__/static/css/public.style.css"> 
+    <script src="__ROOT__/static/js/jquery.min.js"></script>
+    <script src="__ROOT__/static/js/bootstrap.min.js"></script> 
+	<title>专业毕业设计负责添加答辩小组</title>
+</head>
+<body>
+<br>
+
+<div class="container" >
+    <form class="form-horizontal" role="form" action="__SELF__" method="post">
+  <div class="form-group">
+    <label class="col-sm-3 control-label">答辩组名称</label>
+    <div class="col-sm-6">
+        <input class="form-control" id="focusedInput" type="text" name="name"  value="{$data.name}" >
+    </div>
+    <label class="col-sm-3 control-label"></label>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-3 control-label">答辩组地点</label>
+    <div class="col-sm-6">
+        <input class="form-control" id="focusedInput" type="text" name="place"  value="{$data.place}" >
+    </div>
+    <label class="col-sm-3 control-label"></label>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-3 control-label">答辩组日期</label>
+    <div class="col-sm-4">
+        <input class="form-control" id="focusedInput" type="text" name="dtime" value="{$data.dtime}">
+    </div>
+    <label class="col-sm-3 control-label"><div style="float:left;color: red;">例：2017/05/05 8:30-17:30</div></label>
+  </div>
+   <div class="form-group">
+    <label class="col-sm-2 control-label"></label>
+    <div  >
+     使用说明：在以下输入框中输入教师工号、姓名或在选项卡中选中某个学院，然后在名单中<b>单击选中</b>即可添加或者删除该成员。
+    </div>
+    <label class="col-sm-3 control-label"></label>
+  </div>
+   <div class="form-group">
+    <label class="col-sm-3 control-label">请选择学院：</label>
+    <div class="col-sm-2">
+      <select class="form-control" name="" id="college" onchange="teacher('college')">
+          
+          <option value="">请选择学院</option>
+          <volist name="list" id="vo">
+              <option value="{$vo.dep_id}">{$vo.dep_name}</option>
+          </volist>
+      </select>
+    </div>
+    <label class="col-sm-1 control-label">查询：</label>
+    <div class="col-sm-3">
+        <input type="text" class="form-control">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-3 control-label"></label>
+    
+    <label class="col-sm-3 control-label"></label>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label"></label>
+    <div class="col-sm-10">
+    	<div style="float: left;margin-right: 30px;">
+    		<div class="bsxys">待选答辩组教师</div>
+			<div class="lxuankuang" id="weixuan" >
+				
+	      	</div>
+    	</div>
+      <div style="float: left;">
+    		<div class="bsxys">已选的答辩组教师</div>
+			<div class="lxuankuang" >
+				<div id="stb">
+                                    <volist name="tea" id="t">
+  <div class="yixuan"><span class="glyphicon glyphicon-remove-circle red"></span><span class="na">{$t.name}</span><span>({$t.tea_number})</span><input type="hidden" value="{$t.tea_number}" name="hao[]"></div>
+				</volist>
+                                </div>
+	      	</div>
+    	</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-3 control-label">答辩组长</label>
+    <div class="col-sm-2">
+        <select name="zz_number" id="selet" class="form-control" onchange="zz('selet')">
+      	<option value="{$data.zz_number}">{$data.zz_name}</option>
+      </select>
+    </div>
+    <label class="col-sm-3 control-label"></label>
+  </div>
+    <div class="form-group">
+    <label class="col-sm-6 control-label"></label>
+    <div class="col-sm-6">
+        
+    <input type="hidden" id="zz_name" name="zz_name" value="{$data.zz_name}" >
+    <input type="hidden" name="dep_id" value="{$data.dep_id}"> 
+    <input type="hidden" name="id" value="{$data.id}"> 
+     <button type="submit" class="btn btn-primary">提交</button> <button type="button" onclick="window.history.go(-1)" class="btn btn-primary">返回</button>
+    </div>
+  </div>
+</form>
+</div>
+</body>
+
+ <script>
+$(document).ready(function(){
+  $("#weixuan").on('click','.opti',function(){
+	  var name = $(this).children(".name1").text();
+	  var hao = $(this).children(".hao").text();			  
+	  var nav1 = '<div class="yixuan"><span class="glyphicon glyphicon-remove-circle red"></span><span class="na">'+name+'</span><span>('+hao+')</span><input type="hidden" value="'+hao+'" name="hao[]"></div>';
+	  $("#stb").append(nav1);
+	  var sel = '<option id="'+hao+'" value="'+hao+'">'+name+'</option>';
+	  $("#selet").append(sel);
+	  $(this).remove();
+  });
+  $("#stb").on('click','.yixuan',function(){
+  	//alert("jkfgjgjjg")
+  	 var name = $(this).children(".na").text();
+	 var hao = $(this).children("input").val();
+	 var nav1 = '<div><span  class="glyphicon glyphicon-plus-sign opti"><span class="name1">'+name+'</span>(<span class="hao">'+hao+'</span>)</span></div>';
+	  $("#weixuan").append(nav1);
+	  $(this).remove();
+	  $('#'+hao).remove();
+  });
+
+});
+
+/**
+     * 
+     * @param {type} obj
+     * @returns {undefined}获得班级
+     */
+    function teacher(obj){
+           var val=jQuery("#"+obj).val();
+            $.ajax({
+            url:"{:U('/Manager/Ajax/Teacher')}",//这里指向的就不再是页面了，而是一个方法。
+            data:{'dep':val},
+            type:"POST",
+            dataType:"JSON",
+            success: function(data){
+                //alert(data[0].code);//这里要用索引，使用eq读取不出来数据。
+                var str='';
+                //alert(data);//alert(data[1].dep_id)
+                $(data).each(function (i) { 
+                    //alert(data[i].dep_name);
+                   str += '<div><span  class="glyphicon glyphicon-plus-sign opti"><span class="name1">'+data[i].n+'</span>(<span class="hao">'+data[i].d+'</span>)</span></div>';
+                     //"<option value='"++"'>""</option>";
+                });
+                //alert(str);
+                $('#weixuan').empty();
+                $('#weixuan').append(str);
+            }
+        });
+    }
+    
+    function zz(obj){
+        //$("#"+obj).find("option:selected").text();
+        var val= $("#"+obj).find("option:selected").text();//jQuery("#"+obj).text();
+        $('#zz_name').val(val);
+    }
+    /**
+     * 获得学生
+     */
+     function stu(obj){
+           var val=jQuery("#"+obj).val();
+           //alert(val)
+            $.ajax({
+            url:"{:U('/Teacher/Ajax/ajaxStu')}",//这里指向的就不再是页面了，而是一个方法。
+            data:{'dep':val},
+            type:"POST",
+            dataType:"JSON",
+            success: function(data){
+                //alert(data[0].code);//这里要用索引，使用eq读取不出来数据。
+                var str='<option value="">请选择学生</option>';
+                //alert(data);//alert(data[1].dep_id)
+                $(data).each(function (i) { 
+                    //alert(data[i].dep_name);
+                    str += "<option value='"+data[i].d+"'>"+data[i].n+"("+data[i].d+")</option>";
+                });
+                $('#student').empty();
+                $('#student').append(str);
+            }
+        });
+    }
+</script>
+</html>
